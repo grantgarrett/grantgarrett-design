@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i");
+
+header {
+  background: #171c23;
+}
+header h1 a {
+  font-size: 14px;
+  font-weight: 100;
+  color: #49515e;
+  text-decoration: none;
+}
+header h1 a span {
+  font-weight: 500;
+}
+header h1 a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+section.bio {
+  background: #171c23;
+}
+section.bio img {
+  width: 192px;
+  height: 205px;
+  border: solid 10px rgba(255, 255, 255, 0.1);
+}
+
+section.bio h1 {
+  font-size: 26px;
+  color: #f6f9fd;
+  font-weight: 300;
+}
+section.bio h1 span {
+  font-weight: bold;
+}
+
+section.bio p {
+  color: #abb9c9;
+  font-size: 16px;
+}
