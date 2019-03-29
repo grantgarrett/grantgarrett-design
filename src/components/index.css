@@ -2,33 +2,53 @@
 
 header {
   background: #171c23;
+  height: 72px;
 }
-header h1 a {
+header a {
   font-size: 14px;
   font-weight: 100;
   color: #49515e;
   text-decoration: none;
 }
-header h1 a span {
+header a span {
   font-weight: 500;
 }
-header h1 a:hover {
+header a:hover {
   text-decoration: underline;
 }
-
+header .section-wrapper {
+  padding: 20px 40px;
+}
 body {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+section {
+  padding: 40px;
+}
+.section-wrapper {
+  max-width: 1200px;
+  margin: auto auto;
+  padding: 40px;
 }
 
 section.bio {
   background: #171c23;
 }
+section.bio .section-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  grid-template-columns: 192px auto;
+  display: grid;
+}
 section.bio img {
-  width: 192px;
-  height: 205px;
+  /* width: 192px;
+  height: 205px; */
   border: solid 10px rgba(255, 255, 255, 0.1);
 }
-
+section.bio .bio-text {
+  margin-left: 40px;
+}
 section.bio h1 {
   font-size: 26px;
   color: #f6f9fd;
@@ -37,8 +57,18 @@ section.bio h1 {
 section.bio h1 span {
   font-weight: bold;
 }
-
 section.bio p {
   color: #abb9c9;
   font-size: 16px;
+}
+.bio .contribute {
+  font-size: 14px;
+  grid-column-end: span 2;
+  text-align: center;
+}
+section.inquicker-case-study {
+  background: #fff;
+}
+section.invision-case-study {
+  background: #151d2f;
 }

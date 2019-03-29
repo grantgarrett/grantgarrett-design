@@ -4,18 +4,10 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1>
-        <Link to="/">
-          grantgarrett<span>.design</span>
-        </Link>
-      </h1>
+    <div className="section-wrapper">
+      <Link to="/">
+        grantgarrett<span>.design</span>
+      </Link>
     </div>
   </header>
 )
