@@ -47,7 +47,7 @@ const IndexPage = () => (
             <b>Task:</b> Redesign the core application to satisfy the growing
             needs of our customers.
           </p>
-          <Link to="/invision-case-study/">InQuicker Case Study</Link>
+          <Link to="/inquicker-case-study/">InQuicker Case Study</Link>
         </div>
         <img
           width={714}

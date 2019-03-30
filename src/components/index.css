@@ -2,7 +2,7 @@
 
 header {
   background: #171c23;
-  height: 72px;
+  /* height: 72px; */
 }
 header a {
   font-size: 14px;
@@ -17,7 +17,7 @@ header a:hover {
   text-decoration: underline;
 }
 header .section-wrapper {
-  padding: 20px 40px;
+  padding: 20px 60px;
 }
 body {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
@@ -29,17 +29,19 @@ section {
 .section-wrapper {
   max-width: 1200px;
   margin: auto auto;
-  padding: 40px;
+  padding: 40px 60px;
 }
 
 section.bio {
   background: #171c23;
+  padding: 40px 0;
 }
 section.bio .section-wrapper {
   max-width: 600px;
   margin: 0 auto;
   grid-template-columns: 192px auto;
   display: grid;
+  padding: 0 40px;
 }
 section.bio .bio-pic {
   /* width: 192px;
@@ -66,7 +68,8 @@ section.bio .contribute {
   font-size: 14px;
   grid-column-end: span 2;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
 .contribute img {
   top: 4px;
@@ -80,6 +83,7 @@ section.inquicker {
   margin-bottom: 6px;
 }
 .section-content {
+  padding-top: 40px;
 }
 .inquicker {
   overflow: hidden;
@@ -108,7 +112,9 @@ section.inquicker {
 section.invision {
   background: #151d2f;
 }
-
+.invision .section-wrapper {
+  padding-top: 80px;
+}
 .invision h2 {
   color: #ff3366;
   font-size: 22px;
