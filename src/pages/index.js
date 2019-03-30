@@ -15,7 +15,18 @@ const IndexPage = () => (
     />
     <section className="bio">
       <div className="section-wrapper">
-        <img className="bio-pic" src={require("../images/gg-avatar.png")} />
+        <figure>
+          <img
+            className="bio-pic"
+            src={require("../images/gg-avatar.png")}
+            alt={"Me on a hike near Ama Dablam in the Himalaya, Nepal."}
+          />
+          <figcaption>
+            Me on a hike near{" "}
+            <a href="https://en.wikipedia.org/wiki/Ama_Dablam">Ama Dablam</a> in
+            the Himalaya, Nepal.
+          </figcaption>
+        </figure>
         <div className="bio-text">
           <h1>
             Hi, I’m <span>Grant Garrett</span>, a Product Designer living in
@@ -60,7 +71,7 @@ const IndexPage = () => (
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            width={275}
+            width={270}
             className="logo"
             src={require("../images/invision-logo.png")}
           />
