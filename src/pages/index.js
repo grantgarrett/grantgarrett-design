@@ -15,7 +15,7 @@ const IndexPage = () => (
     />
     <section className="bio">
       <div className="section-wrapper">
-        <img src={require("../images/gg-avatar.png")} />
+        <img className="bio-pic" src={require("../images/gg-avatar.png")} />
         <div className="bio-text">
           <h1>
             Hi, I’m <span>Grant Garrett</span>, a Product Designer living in
@@ -28,17 +28,54 @@ const IndexPage = () => (
             that everyone can (and should) contribute to design.
           </p>
         </div>
-        <p className="contribute">Projects I've Contributed To</p>
+        <p className="contribute">
+          Projects I've Contributed To
+          <img src={require("../images/down-arrow.svg")} />
+        </p>
       </div>
     </section>
-    <section className="inquicker-case-study">
+    <section className="inquicker">
       <div className="section-wrapper">
-        <Link to="/invision-case-study/">InQuicker Case Study</Link>
+        <div className="section-content">
+          <img
+            width={275}
+            className="logo"
+            src={require("../images/inquicker-logo.png")}
+          />
+          <h2>Reinventing the Patient Experience</h2>
+          <p>
+            <b>Task:</b> Redesign the core application to satisfy the growing
+            needs of our customers.
+          </p>
+          <Link to="/invision-case-study/">InQuicker Case Study</Link>
+        </div>
+        <img
+          width={714}
+          className="hero-image"
+          src={require("../images/inquicker-hero.png")}
+        />
       </div>
     </section>
-    <section className="invision-case-study">
+    <section className="invision">
       <div className="section-wrapper">
-        <Link to="/invision-case-study/">InVision Case Study</Link>
+        <div className="section-content">
+          <img
+            width={275}
+            className="logo"
+            src={require("../images/invision-logo.png")}
+          />
+          <h2>Digital Product Design Platform</h2>
+          <p>
+            <b>Task:</b> Redesign the core application to satisfy the growing
+            needs of our customers.
+          </p>
+          <Link to="/invision-case-study/">InVision Case Study</Link>
+        </div>
+        <img
+          width={718}
+          className="hero-image"
+          src={require("../images/inspect-mode-hero.png")}
+        />
       </div>
     </section>
   </Layout>

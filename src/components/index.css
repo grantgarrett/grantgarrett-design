@@ -24,7 +24,7 @@ body {
 }
 
 section {
-  padding: 40px;
+  /* padding: 40px; */
 }
 .section-wrapper {
   max-width: 1200px;
@@ -41,7 +41,7 @@ section.bio .section-wrapper {
   grid-template-columns: 192px auto;
   display: grid;
 }
-section.bio img {
+section.bio .bio-pic {
   /* width: 192px;
   height: 205px; */
   border: solid 10px rgba(255, 255, 255, 0.1);
@@ -51,6 +51,7 @@ section.bio .bio-text {
 }
 section.bio h1 {
   font-size: 26px;
+  line-height: 1.2;
   color: #f6f9fd;
   font-weight: 300;
 }
@@ -61,14 +62,60 @@ section.bio p {
   color: #abb9c9;
   font-size: 16px;
 }
-.bio .contribute {
+section.bio .contribute {
   font-size: 14px;
   grid-column-end: span 2;
   text-align: center;
+  margin-top: 40px;
 }
-section.inquicker-case-study {
-  background: #fff;
+.contribute img {
+  top: 4px;
+  left: 6px;
+  position: relative;
 }
-section.invision-case-study {
+section.inquicker {
+  background: #e5eff6;
+}
+.logo {
+  margin-bottom: 6px;
+}
+.section-content {
+}
+.inquicker {
+  overflow: hidden;
+}
+.inquicker .section-wrapper,
+.invision .section-wrapper {
+  grid-template-columns: 350px 1fr;
+  display: grid;
+}
+.inquicker .section-wrapper {
+  margin-bottom: -140px;
+}
+.inquicker .hero-image,
+.invision .hero-image {
+  justify-self: end;
+}
+.inquicker h2 {
+  color: #ee3124;
+  font-size: 22px;
+  font-weight: 200;
+}
+.inquicker p {
+  font-size: 14px;
+  color: #414042;
+}
+section.invision {
   background: #151d2f;
+}
+
+.invision h2 {
+  color: #ff3366;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.invision p {
+  font-size: 14px;
+  color: #cad5e2;
 }
