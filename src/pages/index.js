@@ -20,11 +20,14 @@ const IndexPage = () => (
             className="bio-pic"
             src={require("../images/me-and-ama.jpg")}
             alt={"Me on a hike near Ama Dablam in the Himalaya, Nepal."}
-            rel="noopener noreferrer"
           />
           <figcaption>
             Me on a hike near{" "}
-            <a href="https://en.wikipedia.org/wiki/Ama_Dablam" target="_blank">
+            <a
+              href="https://en.wikipedia.org/wiki/Ama_Dablam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Ama Dablam
             </a>{" "}
             in the Himalaya, Nepal.
@@ -55,6 +58,7 @@ const IndexPage = () => (
             width={275}
             className="logo"
             src={require("../images/inquicker-logo.png")}
+            alt="inquicker logo"
           />
           <h2>Reinventing the Patient Experience</h2>
           <p>
@@ -70,6 +74,7 @@ const IndexPage = () => (
           width={714}
           className="hero-image"
           src={require("../images/inquicker-hero.png")}
+          alt="inquicker app screenshot"
         />
       </div>
     </section>
@@ -80,6 +85,7 @@ const IndexPage = () => (
             width={270}
             className="logo"
             src={require("../images/invision-logo.png")}
+            alt="invision logo"
           />
           <h2>Digital Product Design Platform</h2>
           <p>
@@ -95,6 +101,7 @@ const IndexPage = () => (
           width={718}
           className="hero-image"
           src={require("../images/inspect-mode-hero.png")}
+          alt="invision inspect mode"
         />
       </div>
     </section>
@@ -104,12 +111,14 @@ const IndexPage = () => (
           width={544}
           className="hero-image"
           src={require("../images/sprintly-hero.jpg")}
+          alt="sprintly app screenshot"
         />
         <div className="section-content">
           <img
             width={275}
             className="logo"
             src={require("../images/sprintly-logo.png")}
+            alt="sprintly logo"
           />
           <h2>Project Management for Software Teams</h2>
         </div>
@@ -122,6 +131,7 @@ const IndexPage = () => (
             width={294}
             className="logo"
             src={require("../images/appfog-logo.png")}
+            alt="appfog logo"
           />
           <h2>
             Platform for creating, scaling, and managing apps in the cloud.
@@ -131,6 +141,7 @@ const IndexPage = () => (
           width={534}
           className="hero-image"
           src={require("../images/appfog-hero.png")}
+          alt="appfog application screenshot"
         />
       </div>
     </section>
