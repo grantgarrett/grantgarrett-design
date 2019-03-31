@@ -98,6 +98,42 @@ const IndexPage = () => (
         />
       </div>
     </section>
+    <section className="sprintly">
+      <div className="section-wrapper">
+        <img
+          width={544}
+          className="hero-image"
+          src={require("../images/sprintly-hero.jpg")}
+        />
+        <div className="section-content">
+          <img
+            width={275}
+            className="logo"
+            src={require("../images/sprintly-logo.png")}
+          />
+          <h2>Project Management for Software Teams</h2>
+        </div>
+      </div>
+    </section>
+    <section className="appfog">
+      <div className="section-wrapper">
+        <div className="section-content">
+          <img
+            width={294}
+            className="logo"
+            src={require("../images/appfog-logo.png")}
+          />
+          <h2>
+            Platform for creating, scaling, and managing apps in the cloud.
+          </h2>
+        </div>
+        <img
+          width={534}
+          className="hero-image"
+          src={require("../images/appfog-hero.png")}
+        />
+      </div>
+    </section>
   </Layout>
 )
 
