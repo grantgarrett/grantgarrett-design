@@ -39,7 +39,7 @@ section.bio {
 section.bio .section-wrapper {
   max-width: 600px;
   margin: 0 auto;
-  grid-template-columns: 192px auto;
+  grid-template-columns: 210px auto;
   display: grid;
   padding: 0 40px;
 }
@@ -96,6 +96,30 @@ section.inquicker {
 .section-content {
   padding-top: 40px;
 }
+a.case-study-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ee3124;
+  border-bottom: 2px solid #ee3124;
+}
+.invision a.case-study-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ff3366;
+  border-bottom: 2px solid #ff3366;
+}
+.arrow-right {
+  margin-bottom: 0px;
+  top: 8px;
+  position: relative;
+  left: 2px;
+  padding-bottom: 3px;
+  transition: 0.3s all ease;
+}
+
+a.case-study-link:hover .arrow-right {
+  left: 5px;
+}
 .inquicker {
   overflow: hidden;
 }
@@ -105,12 +129,19 @@ section.inquicker {
   display: grid;
 }
 .inquicker .section-wrapper {
-  margin-bottom: -140px;
+  padding: 40px 60px 0;
 }
 .inquicker .hero-image,
 .invision .hero-image {
   justify-self: end;
   padding-left: 20px;
+}
+.inquicker .hero-image {
+  margin-bottom: 0px;
+  place-self: end;
+}
+.invision .hero-image {
+  place-self: center;
 }
 .inquicker h2 {
   color: #ee3124;

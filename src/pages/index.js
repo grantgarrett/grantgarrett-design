@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import IconRightArrow from "../images/icons/arrow-right"
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 
 // import avatar from "../images/gg-avatar.png"
@@ -18,13 +17,16 @@ const IndexPage = () => (
         <figure>
           <img
             className="bio-pic"
-            src={require("../images/gg-avatar.png")}
+            src={require("../images/me-and-ama.jpg")}
             alt={"Me on a hike near Ama Dablam in the Himalaya, Nepal."}
+            rel="noopener noreferrer"
           />
           <figcaption>
             Me on a hike near{" "}
-            <a href="https://en.wikipedia.org/wiki/Ama_Dablam">Ama Dablam</a> in
-            the Himalaya, Nepal.
+            <a href="https://en.wikipedia.org/wiki/Ama_Dablam" target="_blank">
+              Ama Dablam
+            </a>{" "}
+            in the Himalaya, Nepal.
           </figcaption>
         </figure>
         <div className="bio-text">
@@ -58,7 +60,10 @@ const IndexPage = () => (
             <b>Task:</b> Redesign the core application to satisfy the growing
             needs of our customers.
           </p>
-          <Link to="/inquicker-case-study/">InQuicker Case Study</Link>
+          <Link to="/inquicker-case-study/" className="case-study-link">
+            InQuicker Case Study
+            <IconRightArrow fill="#ee3124" />
+          </Link>
         </div>
         <img
           width={714}
@@ -80,7 +85,10 @@ const IndexPage = () => (
             <b>Task:</b> Redesign the core application to satisfy the growing
             needs of our customers.
           </p>
-          <Link to="/invision-case-study/">InVision Case Study</Link>
+          <Link to="/invision-case-study/" className="case-study-link">
+            InVision Case Study
+            <IconRightArrow fill="#ff3366" />
+          </Link>
         </div>
         <img
           width={718}

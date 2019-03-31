@@ -13,6 +13,7 @@ const InvisionCS = () => (
           <img
             width={275}
             className="logo"
+            alt="inqucker logo"
             src={require("../images/inquicker-logo.png")}
           />
           <h2>Reinventing the Patient Experience</h2>
@@ -22,11 +23,6 @@ const InvisionCS = () => (
           </p>
           <Link to="/inquicker-case-study/">InQuicker Case Study</Link>
         </div>
-        <img
-          width={714}
-          className="hero-image"
-          src={require("../images/inquicker-hero.png")}
-        />
       </div>
     </section>
   </Layout>
