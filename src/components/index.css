@@ -82,7 +82,7 @@ section.bio .contribute {
   margin-top: 100px;
   margin-bottom: 0;
 }
-.contribute img {
+.contribute .arrow {
   top: 4px;
   left: 6px;
   position: relative;

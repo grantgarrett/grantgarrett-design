@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import IconRightArrow from "../images/icons/arrow-right"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// import avatar from "../images/gg-avatar.png"
+//Icons
+import IconRightArrow from "../images/icons/arrow-right"
+import IconDownArrow from "../images/icons/arrow-down"
 
 const IndexPage = () => (
   <Layout>
@@ -43,7 +44,7 @@ const IndexPage = () => (
         </div>
         <p className="contribute">
           Projects I've Contributed To
-          <img src={require("../images/down-arrow.svg")} />
+          <IconDownArrow className="arrow" />
         </p>
       </div>
     </section>
