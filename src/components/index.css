@@ -164,6 +164,7 @@ a.case-study-link:hover .arrow-right {
 .inquicker .hero-image {
   margin-bottom: 0px;
   place-self: end;
+  filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
 }
 .invision .hero-image {
   place-self: center;
@@ -226,6 +227,7 @@ section.appfog {
   margin-bottom: 0px;
   border-radius: 5px;
   border: solid 1px #c6c6c6;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
   place-self: center;
 }
 .appfog .section-wrapper {
@@ -240,4 +242,5 @@ section.appfog {
 }
 .appfog .hero-image {
   margin-bottom: 0px;
+  filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.2));
 }
