@@ -230,7 +230,7 @@ section.appfog {
 }
 .appfog .section-wrapper {
   padding-bottom: 0px;
-  grid-template-columns: minmax(200px, 400px) minmax(320px, 544px);
+  grid-template-columns: minmax(200px, 360px) minmax(320px, 544px);
   grid-column-gap: 2em;
   display: grid;
   text-align: center;
