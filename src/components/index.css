@@ -60,6 +60,7 @@ section.bio .section-wrapper {
   grid-template-columns: 210px auto;
   display: grid;
   padding: 0 40px;
+  column-gap: 40px;
 }
 section.bio .bio-pic {
   margin-bottom: 5px;
@@ -78,7 +79,6 @@ section.bio .bio-pic {
   color: #abb9c9;
 }
 section.bio .bio-text {
-  margin-left: 40px;
 }
 section.bio h1 {
   font-size: 26px;

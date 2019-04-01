@@ -7,7 +7,13 @@ const Footer = () => (
       <Link to="/">
         grantgarrett<span>.design</span>
       </Link>
-      <a href="twitter.com/grantgarrett">@grantgarrett</a>
+      <a
+        href="http://twitter.com/grantgarrett"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @grantgarrett
+      </a>
     </div>
   </footer>
 )
