@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tilt from "react-tilt"
 
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -98,22 +99,44 @@ const IndexPage = () => (
             <IconRightArrow fill="#ff3366" />
           </Link>
         </div>
-        <img
-          width={718}
-          className="hero-image"
-          src={require("../images/inspect-mode-hero.png")}
-          alt="invision inspect mode"
-        />
+        <Tilt
+          className="Tilt"
+          options={{
+            max: 8,
+            perspective: 1000,
+            reverse: true,
+            speed: 2000,
+            scale: 1,
+          }}
+        >
+          <img
+            width={718}
+            className="hero-image"
+            src={require("../images/inspect-mode-hero.png")}
+            alt="invision inspect mode"
+          />
+        </Tilt>
       </div>
     </section>
     <section className="sprintly">
       <div className="section-wrapper">
-        <img
-          width={544}
-          className="hero-image"
-          src={require("../images/sprintly-hero.jpg")}
-          alt="sprintly app screenshot"
-        />
+        <Tilt
+          className="Tilt"
+          options={{
+            max: 5,
+            perspective: 1000,
+            reverse: true,
+            speed: 2000,
+            scale: 1,
+          }}
+        >
+          <img
+            width={544}
+            className="hero-image"
+            src={require("../images/sprintly-hero.jpg")}
+            alt="sprintly app screenshot"
+          />
+        </Tilt>
         <div className="section-content">
           <img
             width={275}
@@ -138,12 +161,24 @@ const IndexPage = () => (
             Platform for creating, scaling, and managing apps in the cloud.
           </h2>
         </div>
-        <img
-          width={534}
-          className="hero-image"
-          src={require("../images/appfog-hero.png")}
-          alt="appfog application screenshot"
-        />
+        <Tilt
+          className="Tilt"
+          options={{
+            max: 5,
+            perspective: 1000,
+            reverse: true,
+            speed: 2000,
+            scale: 1,
+            axis: "x",
+          }}
+        >
+          <img
+            width={534}
+            className="hero-image"
+            src={require("../images/appfog-hero.png")}
+            alt="appfog application screenshot"
+          />
+        </Tilt>
       </div>
     </section>
   </Layout>
