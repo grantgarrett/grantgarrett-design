@@ -141,7 +141,10 @@ a.case-study-link {
 a.case-study-link:hover .arrow-right {
   left: 5px;
 }
-.inquicker {
+section.inquicker,
+section.invision,
+section.sprintly,
+section.appfog {
   overflow: hidden;
 }
 .inquicker .section-wrapper,
@@ -155,6 +158,7 @@ a.case-study-link:hover .arrow-right {
 }
 .inquicker .section-content {
   padding-top: 20%;
+  padding-bottom: 10%;
 }
 .inquicker .hero-image,
 .invision .hero-image {
