@@ -72,12 +72,32 @@ const IndexPage = () => (
             <IconRightArrow fill="#ee3124" />
           </Link>
         </div>
-        <img
-          width={714}
-          className="hero-image"
-          src={require("../images/inquicker-hero.png")}
-          alt="inquicker app screenshot"
-        />
+        <div className="inquicker-hero-group">
+          <Tilt
+            className="Tilt hero-iphone"
+            options={{
+              max: 8,
+              perspective: 1000,
+              reverse: true,
+              speed: 2000,
+              scale: 1,
+            }}
+          >
+            <img
+              className="hero-image"
+              width={197}
+              src={require("../images/inquicker-iphone-hero.png")}
+              alt="inquicker iphone screenshot"
+            />
+          </Tilt>
+
+          <img
+            width={530}
+            className="hero-image hero-app"
+            src={require("../images/inquicker-app-hero.png")}
+            alt="inquicker app screenshot"
+          />
+        </div>
       </div>
     </section>
     <section className="invision">
