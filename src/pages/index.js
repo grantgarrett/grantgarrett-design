@@ -18,6 +18,7 @@ const IndexPage = () => (
         <figure>
           <img
             className="bio-pic"
+            width={192}
             src={require("../images/gg-avatar.png")}
             alt={"Me on a hike near Ama Dablam in the Himalaya, Nepal."}
           />
