@@ -132,7 +132,7 @@ const IndexPage = () => (
           <img
             width={718}
             className="hero-image"
-            src={require("../images/inspect-mode-hero.png")}
+            src={require("../images/invision-case-study/inspect-mode.png")}
             alt="invision inspect mode"
           />
         </Tilt>

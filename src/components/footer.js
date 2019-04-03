@@ -1,12 +1,12 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => (
   <footer>
     <div className="section-wrapper">
-      <Link to="/">
+      {/* <Link to="/">
         grantgarrett<span>.design</span>
-      </Link>
+      </Link> */}
       <a
         href="http://twitter.com/grantgarrett"
         target="_blank"
