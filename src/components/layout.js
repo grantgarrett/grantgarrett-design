@@ -14,7 +14,7 @@ import Footer from "./footer"
 import "../styles/layout.css"
 import "../styles/index.scss"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pageId, pageTitle }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,13 +26,16 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+      <div className={pageId}>
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          pageTitle={pageTitle}
+        />
         <div>
           <main>{children}</main>
           <Footer />
         </div>
-      </>
+      </div>
     )}
   />
 )

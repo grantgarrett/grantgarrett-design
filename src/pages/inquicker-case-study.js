@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const InvisionCS = () => (
-  <Layout pageId="inquicker">
+  <Layout pageId="inquicker-case-study" pageTitle="InQuicker Case Study">
     <SEO title="Case Study: InQuicker" />
     <h1>InQuicker Case Study</h1>
     <section className="inquicker">
