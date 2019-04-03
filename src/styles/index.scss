@@ -134,20 +134,25 @@ a.case-study-link:after {
   content: "";
   position: absolute;
   display: block;
-  border-bottom: 1px solid $color-inquicker-red;
+  border-bottom: 1px solid rgba(238, 49, 36, 0.01);
   width: 0;
   left: 0;
-  transition: 0.3s ease;
+  transition: width 0.4s ease, 0.8s border-color ease;
 }
 a.case-study-link:hover:after {
   width: 100%;
+  border-bottom: 1px solid rgba(238, 49, 36, 1);
 }
 .invision a.case-study-link {
   color: $color-invision-pink;
+  &:after {
+    border-bottom: 1px solid rgba(255, 51, 102, 0.01);
+  }
+  &:hover:after {
+    border-bottom: 1px solid rgba(255, 51, 102, 1);
+  }
 }
-.invision a.case-study-link:after {
-  border-bottom: 1px solid $color-invision-pink;
-}
+
 .arrow-right {
   margin-bottom: 0px;
   top: 8px;
