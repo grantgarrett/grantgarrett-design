@@ -3,8 +3,102 @@
     background-color: $color-invision-pink;
     color: #fff;
   }
-
-  body {
+  body & {
     background: #f9f9f9;
+  }
+  section {
+    padding: 100px 0;
+  }
+  .case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .g1-4 {
+    grid-column: 1/4;
+  }
+  .g2-5 {
+    grid-column: 2/5;
+  }
+  .g2-8 {
+    grid-column: 2/8;
+  }
+  .g3-7 {
+    grid-column: 3/7;
+  }
+  .g4-9 {
+    grid-column: 4/9;
+  }
+  .g5-8 {
+    grid-column: 5/8;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    color: #414042;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #414042;
+    margin-bottom: 0.2em;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #414042;
+  }
+  .image-slide {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #c4c4c4;
+    img {
+      border: solid 5px #ececec;
+      &.no-border {
+        border: none;
+      }
+    }
+  }
+  .intro {
+    .logo {
+      width: 85%;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 22px;
+      color: $color-invision-pink;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 14px;
+      color: #414042;
+    }
+    .hero-image {
+      @include screenshot-dropshadow;
+      margin-bottom: 0px;
+    }
+  }
+  .white {
+    background: #fff;
+  }
+  .dark {
+    background: #171c23;
+    h2 {
+      color: #f6f9fd;
+    }
+    h4 {
+      color: #f6f9fd;
+    }
+    p {
+      color: #cad5e2;
+    }
   }
 }
