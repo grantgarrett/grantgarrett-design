@@ -139,7 +139,8 @@
 .end-of-cs {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
-
+  background: #171c23;
+  padding: 0;
   .shim1 {
     background-color: #292f3e;
     grid-column: 1/2;
