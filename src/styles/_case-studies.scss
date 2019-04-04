@@ -126,11 +126,59 @@
         color: #cd0a0a;
       }
     }
+    h3,
     h4 {
       color: #f6f9fd;
     }
-    p {
+    p,
+    a {
       color: #cad5e2;
+    }
+  }
+}
+.end-of-cs {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
+
+  .shim1 {
+    background-color: #292f3e;
+    grid-column: 1/2;
+  }
+  .shim2 {
+    background-color: #e5eff6;
+    grid-column: 3/4;
+  }
+  .case-study-grid {
+    padding: 0;
+  }
+  .back-home {
+    background-color: #292f3e;
+    border-radius: 0 5px 5px 0;
+    padding: 40px;
+  }
+  .go-to-inquicker {
+    background-color: #e5eff6;
+    border-radius: 5px 0 0 5px;
+    display: grid;
+    grid-template-columns: minmax(270px, 1fr) minmax(310px, 1.4fr);
+    grid-column-gap: 1em;
+    h2 {
+      color: $color-inquicker-red;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    .iq-copy {
+      padding: 40px 0 40px 40px;
+    }
+    .logo {
+      margin-bottom: 3px;
+      width: 85%;
+    }
+    .hero {
+      align-self: end;
+    }
+    .hero-image {
+      margin-bottom: -5px;
     }
   }
 }
