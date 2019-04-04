@@ -474,7 +474,7 @@ const InvisionCS = () => (
             Go Back Home
           </Link>
         </div>
-        <div class="go-to-inquicker g4-9">
+        <div className="go-to-inquicker g4-9">
           <div className="iq-copy">
             <img
               className="logo"
