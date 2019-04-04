@@ -119,26 +119,26 @@
     border-radius: 3px;
     @include screenshot-dropshadow;
   }
-  .white {
-    background: #fff;
+}
+.white {
+  background: #fff;
+}
+.dark {
+  background: #171c23;
+  h2 {
+    color: #f6f9fd;
+    &.cancel-that {
+      text-decoration-line: line-through;
+      color: #cd0a0a;
+    }
   }
-  .dark {
-    background: #171c23;
-    h2 {
-      color: #f6f9fd;
-      &.cancel-that {
-        text-decoration-line: line-through;
-        color: #cd0a0a;
-      }
-    }
-    h3,
-    h4 {
-      color: #f6f9fd;
-    }
-    p,
-    a {
-      color: #cad5e2;
-    }
+  h3,
+  h4 {
+    color: #f6f9fd;
+  }
+  p,
+  a {
+    color: #cad5e2;
   }
 }
 
@@ -164,6 +164,10 @@
     border-radius: 0 5px 5px 0;
     padding: 40px;
   }
+  p {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
   .go-to-inquicker {
     background-color: #e5eff6;
     border-radius: 5px 0 0 5px;
@@ -184,9 +188,36 @@
     }
     .hero {
       align-self: end;
+      padding-top: 10px;
     }
     .hero-image {
       margin-bottom: -5px;
+    }
+  }
+  .go-to-invision {
+    background-color: #e5eff6;
+    border-radius: 5px 0 0 5px;
+    display: grid;
+    grid-template-columns: minmax(270px, 1fr) minmax(310px, 1.4fr);
+    grid-column-gap: 1em;
+    h2 {
+      color: $color-invision-pink;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    .iv-copy {
+      padding: 40px 0 40px 40px;
+    }
+    .logo {
+      margin-bottom: 3px;
+      width: 85%;
+    }
+    .hero {
+      align-self: center;
+    }
+    .hero-image {
+      margin-bottom: 0;
+      border-radius: 3px;
     }
   }
 }

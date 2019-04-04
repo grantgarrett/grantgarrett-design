@@ -5,7 +5,12 @@
 body {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
-
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 header {
   background: #171c23;
   a {
@@ -85,6 +90,7 @@ section.bio {
   }
   figcaption a {
     color: #abb9c9;
+    text-decoration: underline;
   }
   h1 {
     font-size: 26px;

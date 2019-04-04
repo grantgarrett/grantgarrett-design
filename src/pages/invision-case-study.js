@@ -456,8 +456,8 @@ const InvisionCS = () => (
         <div class="back-home dark g1-4">
           <h3>Thanks for reading!</h3>
           <p>
-            If you’d like to read more of my thoughts on design or my approach
-            and process check out my other case studies.
+            If you’d like to read more about my thoughts on design or my
+            approach and process check out my other case studies.
           </p>
           <h4>Please Feel Free to Say Hi</h4>
           <p>
