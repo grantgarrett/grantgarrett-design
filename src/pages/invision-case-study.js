@@ -47,7 +47,7 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div class="column1 g2-5">
+        <div className="column1 g2-5">
           <h2>
             <b>Why</b> - Understanding the Goal
           </h2>
@@ -77,7 +77,7 @@ const InvisionCS = () => (
             designs and specs.
           </p>
         </div>
-        <div class="column2 g5-8">
+        <div className="column2 g5-8">
           <h2>
             <b>Who</b> - Define the Audience
           </h2>
@@ -109,7 +109,7 @@ const InvisionCS = () => (
     </section>
     <section className="white">
       <div className="case-study-grid">
-        <div class="column1 g2-5">
+        <div className="column1 g2-5">
           <h2>What & How - Taking a Step Back</h2>
           <p>
             Before diving into designing a new mode I decided to take stock of
@@ -118,7 +118,7 @@ const InvisionCS = () => (
             already had.
           </p>
         </div>
-        <div class="column2 g5-9">
+        <div className="column2 g5-9">
           <h4>Do we really need another mode?</h4>
           <p>
             There are currently four modes: Preview, Build, Comment, and
@@ -150,7 +150,7 @@ const InvisionCS = () => (
     </section>
     <section>
       <div className="case-study-grid">
-        <div class="column1 g2-5">
+        <div className="column1 g2-5">
           <h2>Explore & Define Current Modes</h2>
           <p>
             Working from the bottom up I’m trying to distill each mode into its
@@ -165,7 +165,7 @@ const InvisionCS = () => (
             happen however.
           </p>
         </div>
-        <div class="column2 g5-8">
+        <div className="column2 g5-8">
           <div className="image-slide">
             <img
               className="border"
@@ -179,7 +179,7 @@ const InvisionCS = () => (
     </section>
     <section className="white">
       <div className="case-study-grid">
-        <div class="column1 g3-7">
+        <div className="column1 g3-7">
           <h2>Audit current state of sketches and annotations</h2>
           <p>
             Here I am auditing the current state of the sketch and annotation
@@ -187,7 +187,7 @@ const InvisionCS = () => (
             new document inspection tools?
           </p>
         </div>
-        <div class="column2 g2-8">
+        <div className="column2 g2-8">
           <div className="image-slide">
             <img
               className=""
@@ -201,7 +201,7 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div class="column1 g3-7">
+        <div className="column1 g3-7">
           <h2>How would a redesigned Comment Mode flow?</h2>
 
           <h4>
@@ -231,7 +231,7 @@ const InvisionCS = () => (
     </section>
     <section>
       <div className="case-study-grid">
-        <div class="column1 g2-4">
+        <div className="column1 g2-4">
           <h2>Storyboarding</h2>
           <p>
             These series of storyboards are early versions of tying comments
@@ -245,7 +245,7 @@ const InvisionCS = () => (
             Inspect and Layers panel could work within the mode.
           </p>
         </div>
-        <div class="column2 g4-9">
+        <div className="column2 g4-9">
           <div className="image-slide">
             <img
               className="border"
@@ -259,7 +259,7 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div class="column1 g3-8">
+        <div className="column1 g3-8">
           <h2 className="cancel-that">Redesigning Comment Mode</h2>
           <h2>A Stand Alone Inspect Mode</h2>
           <h4>Why redesigning Comment Mode wasn’t the move.</h4>
@@ -284,7 +284,7 @@ const InvisionCS = () => (
     </section>
     <section>
       <div className="case-study-grid">
-        <div class="column1 g2-6">
+        <div className="column1 g2-6">
           <h2>Thumbnail Wireframing Layout Options</h2>
           <p>
             How do we want this new mode to be laid out? We knew a few panels
@@ -297,7 +297,7 @@ const InvisionCS = () => (
             wanted the new mode to be structured.
           </p>
         </div>
-        <div class="column2 g1-9">
+        <div className="column2 g1-9">
           <div className="image-slide">
             <img
               className="border"
@@ -311,7 +311,7 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div class="column1 g2-7">
+        <div className="column1 g2-7">
           <h2>Inspect Toolset</h2>
           <h4>Inspect tab?</h4>
           <p>
@@ -341,7 +341,7 @@ const InvisionCS = () => (
     </section>
     <section className="white">
       <div className="case-study-grid">
-        <div class="column1 g2-5">
+        <div className="column1 g2-5">
           <h2>Inspection Tools</h2>
           <p>
             These series of screens are simple wireframes designed to try and
@@ -349,7 +349,7 @@ const InvisionCS = () => (
             themselves interact with the design.
           </p>
         </div>
-        <div class="column2 g2-8">
+        <div className="column2 g2-8">
           <div className="image-slide">
             <img
               className=""
@@ -363,7 +363,7 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div class="column1 g2-7">
+        <div className="column1 g2-7">
           <h2>Designs</h2>
           <h4>Iteration, Iteration, Iteration</h4>
           <p>
@@ -405,7 +405,7 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div class="column1 g3-7">
+        <div className="column1 g3-7">
           <h2>Final Design</h2>
           <h4>It all comes together</h4>
           <p>
@@ -453,7 +453,7 @@ const InvisionCS = () => (
     <section className="end-of-cs">
       <div className="shim1" />
       <div className="case-study-grid">
-        <div class="back-home dark g1-4">
+        <div className="back-home dark g1-4">
           <h3>Thanks for reading!</h3>
           <p>
             If you’d like to read more about my thoughts on design or my

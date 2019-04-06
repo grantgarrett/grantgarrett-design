@@ -11,6 +11,9 @@ a {
     text-decoration: underline;
   }
 }
+img {
+  margin: 0;
+}
 header {
   background: #171c23;
   a {
@@ -32,10 +35,11 @@ header {
   }
   h1 {
     text-align: center;
-    font-size: 16px;
+    line-height: 28px;
+    font-size: 18px;
     letter-spacing: -0.02em;
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 300;
   }
 }
 footer {
