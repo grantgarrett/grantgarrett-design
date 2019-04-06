@@ -41,6 +41,9 @@
 .g4-9 {
   grid-column: 4/9;
 }
+.g5-7 {
+  grid-column: 5/7;
+}
 .g5-8 {
   grid-column: 5/8;
 }
@@ -50,10 +53,10 @@
 .g6-9 {
   grid-column: 6/9;
 }
-
-section {
-  padding: 90px 0;
+.g7-9 {
+  grid-column: 7/9;
 }
+
 h2 {
   font-weight: bold;
   font-size: 20px;
@@ -105,8 +108,14 @@ img {
     color: #f6f9fd;
   }
   p,
-  a {
+  a,
+  li {
     color: #cad5e2;
+  }
+  .image-slide {
+    img {
+      border-radius: 5px;
+    }
   }
 }
 
@@ -122,6 +131,9 @@ img {
       color: $color-inquicker-red;
     }
   }
+  section {
+    padding: 90px 0;
+  }
   .inquicker {
     padding: 0px;
   }
@@ -132,30 +144,50 @@ img {
   .video {
     width: 100%;
   }
-  .iterations {
-    position: relative;
-    img {
-      position: absolute;
-      width: 80%;
-      margin-bottom: 0;
+  .fixsize {
+    width: 130%;
+    margin-left: -15%;
+  }
+  .final-iq {
+    grid-template-columns: 5em 1fr 16px 3fr 5em;
+    grid-column-gap: 0em;
+    .hero-iphone {
+      grid-column: 2/4;
+      grid-row: row 1;
+      align-self: end;
+      margin-bottom: 1.5em;
+      z-index: 2;
     }
-    .it2 {
-      top: 2em;
-      left: 2em;
-    }
-    .it3 {
-      top: 4em;
-      left: 4em;
-    }
-    .it4 {
-      top: 6em;
-      left: 6em;
-    }
-    .it5 {
-      top: 8em;
-      left: 8em;
+    .hero-app {
+      grid-column: 3/5;
+      grid-row: row 1;
+      align-self: end;
     }
   }
+  //   .iterations {
+  //     position: relative;
+  //     img {
+  //       position: absolute;
+  //       width: 80%;
+  //       margin-bottom: 0;
+  //     }
+  //     .it2 {
+  //       top: 2em;
+  //       left: 2em;
+  //     }
+  //     .it3 {
+  //       top: 4em;
+  //       left: 4em;
+  //     }
+  //     .it4 {
+  //       top: 6em;
+  //       left: 6em;
+  //     }
+  //     .it5 {
+  //       top: 8em;
+  //       left: 8em;
+  //     }
+  //   }
 }
 
 //                  INVISION
@@ -169,6 +201,9 @@ img {
     a {
       color: #fff;
     }
+  }
+  section {
+    padding: 90px 0;
   }
   .hero-image {
     border-radius: 3px;
@@ -206,7 +241,7 @@ img {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
   background: #171c23;
-  padding: 0;
+  padding: 40px 0;
   .shim1 {
     background-color: #292f3e;
     grid-column: 1/2;
@@ -226,6 +261,9 @@ img {
   p {
     font-size: 12px;
     line-height: 1.5em;
+  }
+  .hero {
+    padding-right: 40px;
   }
   .go-to-inquicker {
     background-color: #e5eff6;
@@ -248,8 +286,6 @@ img {
     .hero {
       align-self: end;
       padding-top: 10px;
-    }
-    .hero-image {
       margin-bottom: -5px;
     }
   }
@@ -276,7 +312,6 @@ img {
     }
     .hero-image {
       margin-bottom: 0;
-      border-radius: 3px;
     }
   }
 }

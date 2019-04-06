@@ -17,7 +17,7 @@ const InvisionCS = () => (
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            width={275}
+            // width={275}
             className="logo"
             alt="inqucker logo"
             src={require("../images/inquicker-logo.png")}
@@ -40,15 +40,15 @@ const InvisionCS = () => (
             }}
           >
             <img
-              className="hero-image"
-              width={197}
+              className=""
+              // width={197}
               src={require("../images/inquicker-iphone-hero.png")}
               alt="inquicker iphone screenshot"
             />
           </Tilt>
 
           <img
-            width={530}
+            // width={530}
             className="hero-image hero-app"
             src={require("../images/inquicker-app-hero.png")}
             alt="inquicker app screenshot"
@@ -58,7 +58,7 @@ const InvisionCS = () => (
     </section>
     <section>
       <div className="case-study-grid">
-        <div className="g2-5">
+        <div className="g1-5">
           <h2>Current State of the App</h2>
           <p>
             InQuicker’s patient self scheduling application was at a state where
@@ -254,7 +254,7 @@ const InvisionCS = () => (
       </div>
     </section>
 
-    <section>
+    <section className="dark">
       <div className="case-study-grid">
         <div className="g2-5">
           <h2>Design Debt</h2>
@@ -278,7 +278,7 @@ const InvisionCS = () => (
         <div className="g5-8">
           <div className="image-slide">
             <img
-              className="border"
+              className=""
               src={require("../images/inquicker-case-study/debt1.png")}
               alt="design debt"
             />
@@ -383,7 +383,7 @@ const InvisionCS = () => (
     <section className="white">
       <div className="case-study-grid">
         <div className="g2-6">
-          <h2>Prototyping to help define state transitions</h2>
+          <h2>Prototyping to define state transitions</h2>
           <p>
             When it comes to designing a series of micro-interactions it becomes
             paramount to fully understand not only the many different states a
@@ -412,7 +412,7 @@ const InvisionCS = () => (
     </section>
     <section className="white">
       <div className="case-study-grid">
-        <div className="g2-7">
+        <div className="g1-5">
           <h2>Seeing (and touching) Is Believing</h2>
           <p>
             Most of the time verbally explaining how something works or visually
@@ -434,22 +434,71 @@ const InvisionCS = () => (
             </b>
           </p>
         </div>
-        <div className="g1-5">
-          <video className="video" autoPlay loop>
+        <div className="g5-7">
+          <video className="video fixsize" autoPlay loop>
             <source
               src={require("../images/inquicker-case-study/directions.mp4")}
               type="video/mp4"
             />
           </video>
         </div>
-        <div className="g5-9">
-          <video className="video" autoPlay loop>
+        <div className="g7-9">
+          <video className="video fixsize" autoPlay loop>
             <source
               src={require("../images/inquicker-case-study/scroll-size-header.mp4")}
               type="video/mp4"
             />
           </video>
         </div>
+      </div>
+    </section>
+    <section className="dark">
+      <div className="case-study-grid">
+        <div className="g2-6">
+          <h2>2.Ohhh!</h2>
+          <h4>Final Designs</h4>
+          <p>
+            By the time time the design was complete we already knew it was
+            going to succeed. Our customers who joined along during the design
+            process were already on board. Their insight and help left little
+            doubt that the rest of our customers would have any issues with the
+            redesign.
+          </p>
+        </div>
+      </div>
+      <div className="case-study-grid final-iq">
+        <Tilt
+          className="Tilt hero-iphone"
+          options={{
+            max: 8,
+            perspective: 1000,
+            reverse: true,
+            speed: 2000,
+            scale: 1,
+          }}
+        >
+          <img
+            className=" "
+            src={require("../images/inquicker-iphone-hero.png")}
+            alt="inquicker iphone screenshot"
+          />
+        </Tilt>
+        <Tilt
+          className="Tilt hero-app"
+          options={{
+            max: 8,
+            perspective: 1000,
+            reverse: true,
+            speed: 2000,
+            scale: 1,
+          }}
+        >
+          <img
+            className=" hero-image"
+            src={require("../images/inquicker-app-hero.png")}
+            alt="inquicker app screenshot"
+          />
+        </Tilt>
       </div>
     </section>
 

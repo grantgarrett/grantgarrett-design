@@ -493,7 +493,7 @@ const InvisionCS = () => (
           </div>
           <div className="hero">
             <img
-              className="hero-image"
+              className=""
               src={require("../images/inquicker-hero.png")}
               alt="inquicker app"
             />
