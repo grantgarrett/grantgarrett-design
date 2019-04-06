@@ -354,7 +354,7 @@ const InvisionCS = () => (
 
     <section>
       <div className="case-study-grid">
-        <div className="g2-6">
+        <div className="g2-5">
           <h2>Details Matter</h2>
           <p>A prototype is worth a thousand images.</p>
           <p>
@@ -368,7 +368,7 @@ const InvisionCS = () => (
             design over having the user needing to scroll.
           </p>
         </div>
-        <div className="g6-9">
+        <div className="g5-8">
           <div className="image-slide">
             <img
               className="border"
@@ -382,7 +382,7 @@ const InvisionCS = () => (
 
     <section className="white">
       <div className="case-study-grid">
-        <div className="g2-6">
+        <div className="g1-5">
           <h2>Prototyping to define state transitions</h2>
           <p>
             When it comes to designing a series of micro-interactions it becomes
@@ -400,7 +400,7 @@ const InvisionCS = () => (
             bottom of the screen.
           </p>
         </div>
-        <div className="g6-9">
+        <div className="g5-8">
           <video className="video" autoPlay loop>
             <source
               src={require("../images/inquicker-case-study/mobile-provider-map-search-short.mp4")}

@@ -49,7 +49,7 @@ const IndexPage = () => (
         </div>
         <p className="contribute">
           Projects I've Contributed To
-          <IconDownArrow className="arrow" />
+          <IconDownArrow className="arrow" fill="#6E7884" />
         </p>
       </div>
     </section>
@@ -84,7 +84,7 @@ const IndexPage = () => (
             }}
           >
             <img
-              className="hero-image"
+              className=""
               width={197}
               src={require("../images/inquicker-iphone-hero.png")}
               alt="inquicker iphone screenshot"
@@ -181,24 +181,13 @@ const IndexPage = () => (
             Platform for creating, scaling, and managing apps in the cloud.
           </h2>
         </div>
-        <Tilt
-          className="Tilt"
-          options={{
-            max: 5,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-            axis: "x",
-          }}
-        >
-          <img
-            width={534}
-            className="hero-image"
-            src={require("../images/appfog-hero.png")}
-            alt="appfog application screenshot"
-          />
-        </Tilt>
+
+        <img
+          width={534}
+          className="hero-image"
+          src={require("../images/appfog-hero.png")}
+          alt="appfog application screenshot"
+        />
       </div>
     </section>
   </Layout>
