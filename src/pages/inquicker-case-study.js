@@ -401,7 +401,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g6-9">
-          <video className="video" autoPlay>
+          <video className="video" autoPlay loop>
             <source
               src={require("../images/inquicker-case-study/mobile-provider-map-search-short.mp4")}
               type="video/mp4"
@@ -435,7 +435,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g1-5">
-          <video className="video">
+          <video className="video" autoPlay loop>
             <source
               src={require("../images/inquicker-case-study/directions.mp4")}
               type="video/mp4"
@@ -443,7 +443,7 @@ const InvisionCS = () => (
           </video>
         </div>
         <div className="g5-9">
-          <video className="video">
+          <video className="video" autoPlay loop>
             <source
               src={require("../images/inquicker-case-study/scroll-size-header.mp4")}
               type="video/mp4"
