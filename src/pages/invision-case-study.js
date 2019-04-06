@@ -24,7 +24,7 @@ const InvisionCS = () => (
           <h2>Case Study: Inspect Mode</h2>
           <p>
             <b>Task:</b> Design a mode that helps close the gap between the end
-            of the design process and where development.
+            of the design process and the beginning of development.
           </p>
         </div>
         <Tilt

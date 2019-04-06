@@ -13,7 +13,7 @@ const InvisionCS = () => (
     pageTitle="InQuicker Case Study: InQuicker 2.0 "
   >
     <SEO title="Case Study: InQuicker" />
-    <section className="inquicker">
+    <section className="inquicker intro">
       <div className="section-wrapper">
         <div className="section-content">
           <img

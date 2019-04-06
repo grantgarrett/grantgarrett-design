@@ -111,8 +111,8 @@ const IndexPage = () => (
           />
           <h2>Digital Product Design Platform</h2>
           <p>
-            <b>Task:</b> Redesign the core application to satisfy the growing
-            needs of our customers.
+            <b>Task:</b> Design a mode that helps close the gap between the end
+            of the design process and the beginning of development.
           </p>
           <Link to="/invision-case-study/" className="case-study-link">
             InVision Case Study
