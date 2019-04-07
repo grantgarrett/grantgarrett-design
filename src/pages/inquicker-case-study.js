@@ -41,14 +41,12 @@ const InvisionCS = () => (
           >
             <img
               className=""
-              // width={197}
               src={require("../images/inquicker-iphone-hero.png")}
               alt="inquicker iphone screenshot"
             />
           </Tilt>
 
           <img
-            // width={530}
             className="hero-image hero-app"
             src={require("../images/inquicker-app-hero.png")}
             alt="inquicker app screenshot"

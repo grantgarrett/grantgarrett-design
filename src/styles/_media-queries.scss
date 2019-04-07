@@ -1,4 +1,19 @@
 @media only screen and (max-width: 667px) {
+  header {
+    .section-wrapper {
+      padding: 20px 20px;
+      display: block;
+      a {
+        font-size: 12px;
+      }
+      h1 {
+        text-align: center;
+        margin: 13px 0 0px 0;
+      }
+    }
+  }
+
+  //                  HOME
   .bio {
     figure {
       text-align: center;
@@ -35,5 +50,55 @@
   }
   .appfog .section-wrapper {
     padding-bottom: 0;
+  }
+
+  //                  CASE STUDIES
+  .case-study-grid {
+    // grid-template-columns: 1fr;
+    display: block;
+    .back-home {
+      padding: 40px;
+      border-radius: 0px;
+    }
+    .go-to-invision {
+      display: block;
+      padding: 40px;
+      border-radius: 0;
+      .iv-copy {
+        padding: 0;
+      }
+    }
+    .hero {
+      margin: 20px 0 0 0;
+      padding: 0;
+    }
+    .go-to-inquicker {
+      display: block;
+      border-radius: 0;
+      .hero {
+        padding: 0 20px;
+        margin-top: 0;
+      }
+      .iq-copy {
+        padding: 40px;
+      }
+    }
+  }
+  .inquicker-case-study,
+  .invision-case-study {
+    .iteration {
+      margin: 20px 0;
+    }
+    .end-of-cs {
+      padding: 0;
+    }
+    .final-iq {
+      display: grid;
+      padding: 0;
+      grid-template-columns: 1em 1fr 16px 3fr 1em;
+    }
+    .final-image-iv {
+      margin: 0 -2em;
+    }
   }
 }

@@ -2,7 +2,7 @@
 @import "variables";
 @import "home";
 @import "case-studies";
-@import "media-queries";
+// media quieries at end
 
 body {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
@@ -62,3 +62,4 @@ footer {
     padding: 20px 60px;
   }
 }
+@import "media-queries";

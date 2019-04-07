@@ -430,7 +430,7 @@ const InvisionCS = () => (
             Instead of two tabs they now became one scrolling column.
           </p>
         </div>
-        <div className="image-slide g1-9">
+        <div className="image-slide g1-9 final-image-iv">
           <Tilt
             className="Tilt"
             options={{
