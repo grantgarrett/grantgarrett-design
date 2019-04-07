@@ -1,14 +1,14 @@
 @media only screen and (max-width: 667px) {
   header {
     .section-wrapper {
-      padding: 20px 20px;
+      padding: 10px 20px 20px;
       display: block;
       a {
         font-size: 12px;
       }
       h1 {
         text-align: center;
-        margin: 13px 0 0px 0;
+        margin: 25px 0 10px 0;
       }
     }
   }
@@ -56,6 +56,9 @@
   .case-study-grid {
     // grid-template-columns: 1fr;
     display: block;
+    // overflow: hidden;
+
+    //        BOTTOM OF CS LINKS
     .back-home {
       padding: 40px;
       border-radius: 0px;
@@ -86,6 +89,16 @@
   }
   .inquicker-case-study,
   .invision-case-study {
+    section {
+      padding: 60px 0;
+    }
+    .fixsize {
+      width: 100%;
+      margin: 0;
+    }
+    .inquicker-hero-group {
+      margin: 0 -1em;
+    }
     .iteration {
       margin: 20px 0;
     }
