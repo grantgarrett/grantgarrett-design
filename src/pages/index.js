@@ -64,8 +64,8 @@ const IndexPage = () => (
           />
           <h2>Reinventing the Patient Experience</h2>
           <p>
-            <b>Task:</b> Redesign the core application to satisfy the growing
-            needs of our customers.
+            <b>Case Study:</b> Redesign the core application to satisfy the
+            growing needs of our customers.
           </p>
           <Link to="/inquicker-case-study/" className="case-study-link">
             InQuicker Case Study
@@ -111,8 +111,8 @@ const IndexPage = () => (
           />
           <h2>Digital Product Design Platform</h2>
           <p>
-            <b>Task:</b> Design a mode that helps close the gap between the end
-            of the design process and the beginning of development.
+            <b>Case Study:</b> Design a mode that helps close the gap between
+            the end of the design process and the beginning of development.
           </p>
           <Link to="/invision-case-study/" className="case-study-link">
             InVision Case Study

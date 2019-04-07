@@ -17,12 +17,11 @@ const InvisionCS = () => (
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            // width={275}
             className="logo"
             alt="inqucker logo"
             src={require("../images/inquicker-logo.png")}
           />
-          <h2>Reinventing the Patient Experience</h2>
+          <h2>Case Study: Patient Application 2.0</h2>
           <p>
             <b>Task:</b> Redesign the core application to satisfy the growing
             needs of our customers.
@@ -533,8 +532,8 @@ const InvisionCS = () => (
             />
             <h2>Digital Product Design Platform</h2>
             <p>
-              <b>Task:</b> Redesign the core application to satisfy the growing
-              needs of our customers.
+              <b>Case Study:</b> Redesign the core application to satisfy the
+              growing needs of our customers.
             </p>
             <Link to="/invision-case-study/" className="case-study-link">
               InVision Case Study
@@ -543,7 +542,6 @@ const InvisionCS = () => (
           </div>
           <div className="hero">
             <img
-              width={718}
               className="hero-image"
               src={require("../images/invision-case-study/inspect-mode.png")}
               alt="invision inspect mode"

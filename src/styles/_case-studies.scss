@@ -147,6 +147,9 @@ img {
   }
   .inquicker {
     padding: 0px;
+    .section-wrapper {
+      padding: 40px;
+    }
   }
   .hero-image {
     @include screenshot-shadow-white;
@@ -175,30 +178,6 @@ img {
       align-self: end;
     }
   }
-  //   .iterations {
-  //     position: relative;
-  //     img {
-  //       position: absolute;
-  //       width: 80%;
-  //       margin-bottom: 0;
-  //     }
-  //     .it2 {
-  //       top: 2em;
-  //       left: 2em;
-  //     }
-  //     .it3 {
-  //       top: 4em;
-  //       left: 4em;
-  //     }
-  //     .it4 {
-  //       top: 6em;
-  //       left: 6em;
-  //     }
-  //     .it5 {
-  //       top: 8em;
-  //       left: 8em;
-  //     }
-  //   }
 }
 
 //                  INVISION
