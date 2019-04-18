@@ -520,7 +520,7 @@ const InvisionCS = () => (
           </p>
           <Link to="/" className="home-link">
             <IconLeftArrow />
-            Go Back Home
+            Portfolio Home
           </Link>
         </div>
         <div className="go-to-invision invision g4-9">
