@@ -465,7 +465,7 @@ const InvisionCS = () => (
             <a href="https://twitter.com/grantgarrett">@grantgarrett</a>
             <br />
             Email:{" "}
-            <a href="mailo:grant@grantgarrett.com?subject=Hi from your design site">
+            <a href="mailto:grant@grantgarrett.com?subject=Hi from your design site">
               grant@grantgarrett.com
             </a>
           </p>
