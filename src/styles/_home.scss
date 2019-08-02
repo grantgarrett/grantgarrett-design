@@ -70,6 +70,19 @@
   margin-bottom: 6px;
 }
 
+a.case-study-link-box {
+  &:hover {
+    text-decoration: none;
+  }
+  font-size: 16px;
+  text-decoration: none;
+  color: $color-inquicker-red;
+  position: relative;
+  border: solid 1px $color-inquicker-red;
+  border-radius: 3px;
+  padding: 10px 10px 8px;
+  display: inline-block;
+}
 a.case-study-link,
 a.home-link {
   &:hover {
@@ -99,6 +112,10 @@ a.home-link:hover:after {
   width: 100%;
   border-bottom: 1px solid rgba(238, 49, 36, 1);
 }
+.invision a.case-study-link-box {
+  color: $color-invision-pink;
+  border: solid 1px $color-invision-pink;
+}
 .invision a.case-study-link {
   color: $color-invision-pink;
   &:after {
@@ -123,7 +140,8 @@ a.home-link {
   padding-bottom: 3px;
   transition: 0.5s transform ease;
 }
-a.case-study-link:hover .arrow-right {
+a.case-study-link:hover .arrow-right,
+a.case-study-link-box:hover .arrow-right {
   transform: translateX(3px);
 }
 .arrow-left {

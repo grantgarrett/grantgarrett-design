@@ -67,7 +67,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Redesign the core application to satisfy the
             growing needs of our customers.
           </p>
-          <Link to="/inquicker-case-study/" className="case-study-link">
+          <Link to="/inquicker-case-study/" className="case-study-link-box">
             InQuicker Case Study
             <IconRightArrow fill="#ee3124" />
           </Link>
@@ -114,7 +114,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Design a mode that helps close the gap between
             the end of the design process and the beginning of development.
           </p>
-          <Link to="/invision-case-study/" className="case-study-link">
+          <Link to="/invision-case-study/" className="case-study-link-box">
             InVision Case Study
             <IconRightArrow fill="#ff3366" />
           </Link>
