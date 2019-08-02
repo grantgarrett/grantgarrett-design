@@ -14,6 +14,14 @@ const Footer = () => (
       >
         @grantgarrett
       </a>
+
+      <a
+        href="http://www.grantgarrett.com"
+        target="_self"
+        // rel="noopener noreferrer"
+      >
+        grantgarrett.com
+      </a>
     </div>
   </footer>
 )

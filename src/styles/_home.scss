@@ -48,7 +48,7 @@
     line-height: 1.4;
   }
   .contribute {
-    font-size: 14px;
+    font-size: 20px;
     grid-column-end: span 2;
     text-align: center;
     margin-top: 100px;
@@ -56,9 +56,10 @@
     color: #6e7884;
   }
   .contribute .arrow {
-    height: 12px;
+    height: 26px;
+    width: 14px;
+    margin-left: 10px;
     vertical-align: middle;
-    margin-left: 4px;
   }
 }
 
