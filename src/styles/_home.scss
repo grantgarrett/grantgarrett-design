@@ -9,9 +9,9 @@
   padding: 80px 0 40px 0;
 
   .section-wrapper {
-    max-width: 600px;
+    max-width: 660px;
     margin: 0 auto;
-    grid-template-columns: 210px auto;
+    grid-template-columns: 190px auto;
     display: grid;
     padding: 0 40px;
     column-gap: 40px;
@@ -48,7 +48,7 @@
     line-height: 1.4;
   }
   .contribute {
-    font-size: 20px;
+    font-size: 18px;
     grid-column-end: span 2;
     text-align: center;
     margin-top: 100px;
@@ -236,7 +236,23 @@ section.appfog {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
-
+//                        Sightbox SECTION
+.sightbox {
+  background: #f9fafb;
+  .section-wrapper {
+    grid-template-columns: minmax(400px, 700px) minmax(200px, 290px);
+    grid-column-gap: 3em;
+    display: grid;
+    padding-bottom: 0;
+  }
+  h2 {
+    color: #0ec8ea;
+  }
+  .hero-image {
+    // margin-bottom: -5px;
+    // @include screenshot-shadow-white;
+  }
+}
 //                  SPRINTLY SECTION
 .sprintly {
   background: #dee5ea;
@@ -257,10 +273,12 @@ section.appfog {
     place-self: center;
   }
 }
+.sightbox .section-content,
 .sprintly .section-content,
 .appfog .section-content {
   place-self: center;
 }
+.sightbox h2,
 .sprintly h2,
 .appfog h2 {
   font-size: 20px;

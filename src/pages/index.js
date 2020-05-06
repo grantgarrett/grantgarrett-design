@@ -53,6 +53,25 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
+    <section className="sightbox">
+      <div className="section-wrapper">
+        <img
+          // width={544}
+          className="hero-image"
+          src={require("../images/sightbox-hero.png")}
+          alt="sightbox app screenshot"
+        />
+        <div className="section-content">
+          <img
+            width={275}
+            className="logo"
+            src={require("../images/sightbox-logo.png")}
+            alt="sightbox logo"
+          />
+          <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
+        </div>
+      </div>
+    </section>
     <section className="inquicker">
       <div className="section-wrapper">
         <div className="section-content">
