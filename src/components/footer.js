@@ -22,6 +22,14 @@ const Footer = () => (
       >
         grantgarrett.com
       </a>
+      <a
+        href="mailto:grant@grantgarrett.com?subject=Hi, from your porftolio site"
+        className="email"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        grant@<span>grantgarrett.com</span>
+      </a>
     </div>
   </footer>
 )

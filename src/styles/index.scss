@@ -27,10 +27,20 @@ header {
   a span {
     font-weight: 500;
   }
+  .email {
+    text-align: right;
+    span {
+      font-weight: 500;
+    }
+  }
   a:hover {
     text-decoration: underline;
   }
+
   .section-wrapper {
+    &.header-wrapper {
+      grid-template-columns: 1fr auto;
+    }
     padding: 20px 60px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -41,6 +51,7 @@ header {
     font-size: 18px;
     letter-spacing: -0.02em;
     margin-bottom: 0;
+    padding-bottom: 16px;
     font-weight: 300;
   }
 }
@@ -52,6 +63,7 @@ footer {
     color: #757e8d;
     text-decoration: none;
     margin-right: 20px;
+    display: inline-block;
   }
   a span {
     font-weight: 500;

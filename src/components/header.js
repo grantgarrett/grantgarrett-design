@@ -4,14 +4,20 @@ import React from "react"
 
 const Header = ({ siteTitle, pageTitle }) => (
   <header>
-    <div className="section-wrapper">
-      <div>
-        <Link to="/">
-          grantgarrett<span>.design</span>
-        </Link>
-      </div>
-      {pageTitle.length > 0 ? <h1>{pageTitle}</h1> : null}
+    <div className="header-wrapper section-wrapper">
+      <Link to="/">
+        grantgarrett<span>.design</span>
+      </Link>
+      <a
+        href="mailto:grant@grantgarrett.com?subject=Hi, from your porftolio site"
+        className="email"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        grant@<span>grantgarrett.com</span>
+      </a>
     </div>
+    {pageTitle.length > 0 ? <h1>{pageTitle}</h1> : null}
   </header>
 )
 

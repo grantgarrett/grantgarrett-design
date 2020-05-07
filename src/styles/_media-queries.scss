@@ -1,6 +1,10 @@
 @media only screen and (max-width: 667px) {
   header {
     .section-wrapper {
+      &.header-wrapper {
+        grid-template-columns: 1fr auto;
+        display: grid;
+      }
       padding: 10px 20px 20px;
       display: block;
       a {
@@ -10,6 +14,11 @@
         text-align: center;
         margin: 25px 0 10px 0;
       }
+    }
+  }
+  footer {
+    a {
+      font-size: 12px;
     }
   }
 
@@ -51,6 +60,7 @@
     }
   }
   .sightbox .section-wrapper,
+  .inquicker .section-wrapper,
   .appfog .section-wrapper {
     padding-bottom: 0;
   }
