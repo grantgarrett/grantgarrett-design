@@ -149,8 +149,8 @@ const InvisionCS = () => (
           <h4>When & Where?</h4>
           <p>
             The patients might be at home or on the go. They have no specific
-            time restraints, bu the quicker they can flow through to appointment
-            registration the better.
+            time restraints, but the quicker they can flow through to
+            appointment registration the better.
           </p>
         </div>
       </div>
