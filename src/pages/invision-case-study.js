@@ -172,7 +172,7 @@ const InvisionCS = () => (
               src={require("../images/invision-case-study/modes-explore.png")}
               alt="explore modes"
             />
-            *Actual documents used during design process
+            {/* *Actual documents used during design process */}
           </div>
         </div>
       </div>
@@ -194,7 +194,7 @@ const InvisionCS = () => (
               src={require("../images/invision-case-study/sketches-audit.png")}
               alt="explore modes"
             />
-            *Actual documents used during design process
+            {/* *Actual documents used during design process */}
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@ const InvisionCS = () => (
               src={require("../images/invision-case-study/storyboarding.png")}
               alt="storyboarding"
             />
-            *Actual documents used during design process
+            {/* *Actual documents used during design process */}
           </div>
         </div>
       </div>
@@ -304,7 +304,7 @@ const InvisionCS = () => (
               src={require("../images/invision-case-study/wireframing.png")}
               alt="wireframing"
             />
-            *Actual documents used during design process
+            {/* *Actual documents used during design process */}
           </div>
         </div>
       </div>
@@ -356,7 +356,7 @@ const InvisionCS = () => (
               src={require("../images/invision-case-study/tools-storyboarding.png")}
               alt="inspectin tools"
             />
-            *Actual documents used during design process
+            {/* *Actual documents used during design process */}
           </div>
         </div>
       </div>

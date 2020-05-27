@@ -452,7 +452,7 @@ const InvisionCS = () => (
     <section className="dark">
       <div className="case-study-grid">
         <div className="g2-6">
-          <h2>2.Ohhh!</h2>
+          <h2>2 Point Ohhh!</h2>
           <h4>Final Designs</h4>
           <p>
             By the time time the design was complete we already knew it was
