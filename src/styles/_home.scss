@@ -113,6 +113,11 @@ a.home-link:hover:after {
   width: 100%;
   border-bottom: 1px solid rgba(238, 49, 36, 1);
 }
+
+.sightbox a.case-study-link-box {
+  color: $color-sightbox-blue;
+  border: solid 1px $color-sightbox-blue;
+}
 .invision a.case-study-link-box {
   color: $color-invision-pink;
   border: solid 1px $color-invision-pink;

@@ -69,6 +69,13 @@ const IndexPage = () => (
             alt="sightbox logo"
           />
           <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
+          <p>
+            <b>Case Study:</b> Design a process to automate the renewal of memberships.
+          </p>
+          <Link to="/sightbox-case-study/" className="case-study-link-box">
+            Sightbox Case Study
+            <IconRightArrow fill="#0EC8EA" />
+          </Link>
         </div>
       </div>
     </section>

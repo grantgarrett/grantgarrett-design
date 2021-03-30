@@ -122,6 +122,48 @@ img {
   }
 }
 
+//                  Sightbox
+.sightbox-case-study {
+  body & {
+    background: #f9f9f9;
+  }
+  header {
+    background-color: $color-sightbox-blue;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  section {
+    padding: 90px 0;
+  }
+  .intro {
+    .logo {
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-bottom: 0.5em;
+    }
+  }
+  .sightbox {
+    padding: 0px;
+    .section-wrapper {
+      padding: 40px;
+    }
+  }
+  .hero-image {
+    @include screenshot-shadow-white;
+    border-radius: 5px;
+  }
+  .video {
+    width: 100%;
+  }
+  .fixsize {
+    width: 130%;
+    margin-left: -15%;
+  }
+}
+
 //                  INQUICKER
 .inquicker-case-study {
   body & {
