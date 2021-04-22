@@ -29,35 +29,16 @@ const InvisionCS = () => (
         </div>
         <div className="sightbox-hero-group">
           <img
-            // width={544}
+            // width={740}
             className="hero-image"
-            src={require("../images/sightbox-hero.png")}
-            alt="sightbox app screenshot"
+            src={require("../images/sightbox-case-study/renewal-dashboard.png")}
+            alt="sightbox renewal dashboard screenshot"
           />
 
         </div>
       </div>
     </section>
-    <section>
-      <div className="case-study-grid">
-        <div className="g1-5">
-          <h2>
-            <b>section</b>asdf
-          </h2>
-          <h4>asdfasdf</h4>
-          <p>
-            The expansion of features to our core app will help fulfill our
-            customers needs as well as our own goal to expand into larger
-            markets.
-          </p>
-        </div>
-        <div className="g5-9">
-          <div className="image-slide">
 
-          </div>
-        </div>
-      </div>
-    </section>
     <section className="dark">
       <div className="case-study-grid">
         <div className="column1 g2-5">
@@ -92,7 +73,7 @@ const InvisionCS = () => (
     <section className="white">
       <div className="case-study-grid">
         <div className="g2-6">
-          <h2>Current Flow = Very simple</h2>
+          <h2>Auditing the current manual process flow</h2>
           <p>
             The current user flow worked and has been a proven design. How do we
             add new features without breaking what has worked for years?
@@ -101,17 +82,39 @@ const InvisionCS = () => (
         <div className="g1-9">
           <img
             className="border"
-            src={require("../images/inquicker-case-study/wireframes1.png")}
-            alt="wireframing"
+            src={require("../images/sightbox-case-study/manual-renewal-process-flow-audit.png")}
+            alt="manual renewal process flow audit"
           />
         </div>
       </div>
     </section>
+    <section className="dark">
+      <div className="case-study-grid">
+        <div className="g2-5">
+          <h2>Design Debt</h2>
+          <p>
+            A redesign gives the opportunity to go back and find the areas of
+            the previous design that didn’t hold up over time. The app’s
+            expanding needs sometimes led to areas simply being outgrown or
+            bloated. Now was the time to address this debt.
+          </p>
 
+          <p>
+            An obvious element that needed an update was the Insurance filter.
+            It had ballooned to an unusable size. The first step in improving
+            the experience was to break it down into a two step process:
+          </p>
+          <ol>
+            <li>Choose Insurance Provider</li>
+            <li>Choose Plan.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
     <section>
       <div className="case-study-grid">
         <div className="g1-4">
-          <h2>Mo Pages Mo Problems?</h2>
+          <h2>Member States</h2>
           <p>
             An updated design created more screens but was still able to
             maintain a relatively simple and similar user flow.
@@ -121,13 +124,55 @@ const InvisionCS = () => (
         <div className="g4-9">
           <img
             className="border"
-            src={require("../images/inquicker-case-study/wireframes2.png")}
+            src={require("../images/sightbox-case-study/member-renewal-states-v1.png")}
             alt="wireframing"
           />
         </div>
       </div>
     </section>
+    <section className="dark">
+      <div className="case-study-grid">
+        <div className="g3-7">
+          <h2>State Machines</h2>
+          <p>
+            A redesign gives the opportunity to go back and find the areas of
+            the previous design that didn’t hold up over time. The app’s
+            expanding needs sometimes led to areas simply being outgrown or
+            bloated. Now was the time to address this debt.
+          </p>
 
+          <p>
+            An obvious element that needed an update was the Insurance filter.
+            It had ballooned to an unusable size. The first step in improving
+            the experience was to break it down into a two step process:
+          </p>
+          <ol>
+            <li>Choose Insurance Provider</li>
+            <li>Choose Plan.</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div className="case-study-grid">
+        <div className="g2-7">
+          <h2>Member States: V2</h2>
+          <p>
+            An updated design created more screens but was still able to
+            maintain a relatively simple and similar user flow.
+          </p>
+
+        </div>
+        <div className="g1-9">
+          <img
+            className="border"
+            src={require("../images/sightbox-case-study/member-renewal-states-v2.png")}
+            alt="wireframing"
+          />
+        </div>
+      </div>
+    </section>
 
 
     <section className="dark">
@@ -193,18 +238,54 @@ const InvisionCS = () => (
     <section className="white">
       <div className="case-study-grid">
         <div className="g3-7">
-          <h2>Different Paths</h2>
+          <h2>Wireframe Iterations</h2>
           <p>
             Users don’t always take the same path. The new maps view required us
             to think about the different way locations can be searched for.
           </p>
         </div>
-        <div className="g2-8">
+        <div className="g1-5">
           <div className="image-slide">
             <img
-              className="border"
-              src={require("../images/inquicker-case-study/gps-paths.png")}
-              alt="pagination"
+              className="hero-image"
+              src={require("../images/sightbox-case-study/wireframes01.png")}
+              alt="sightbox app screenshot"
+            />
+          </div>
+        </div>
+        <div className="g2-6">
+          <div className="image-slide">
+            <img
+              className="hero-image wireframe-overlap"
+              src={require("../images/sightbox-case-study/wireframes02.png")}
+              alt="sightbox app screenshot"
+            />
+          </div>
+        </div>
+        <div className="g3-7">
+          <div className="image-slide wireframe-overlap">
+            <img
+              className="hero-image"
+              src={require("../images/sightbox-case-study/wireframes03.png")}
+              alt="sightbox app screenshot"
+            />
+          </div>
+        </div>
+        <div className="g4-8">
+          <div className="image-slide wireframe-overlap">
+            <img
+              className="hero-image"
+              src={require("../images/sightbox-case-study/wireframes04.png")}
+              alt="sightbox app screenshot"
+            />
+          </div>
+        </div>
+        <div className="g5-9">
+          <div className="image-slide wireframe-overlap">
+            <img
+              className="hero-image"
+              src={require("../images/sightbox-case-study/wireframes05.png")}
+              alt="sightbox app screenshot"
             />
           </div>
         </div>
@@ -228,39 +309,18 @@ const InvisionCS = () => (
           </p>
         </div>
       </div>
-      <div className="case-study-grid final-iq">
-        <Tilt
-          className="Tilt hero-iphone"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
+      <div className="case-study-grid final-sightbox">
+        <div className="g1-9">
+
+
           <img
-            className=" "
-            src={require("../images/inquicker-iphone-hero.png")}
-            alt="inquicker iphone screenshot"
+            // width={740}
+            className="hero-image"
+            src={require("../images/sightbox-case-study/renewal-dashboard.png")}
+            alt="sightbox renewal dashboard screenshot"
           />
-        </Tilt>
-        <Tilt
-          className="Tilt hero-app"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
-          <img
-            className=" hero-image"
-            src={require("../images/inquicker-app-hero.png")}
-            alt="inquicker app screenshot"
-          />
-        </Tilt>
+        </div>
+
       </div>
     </section>
 

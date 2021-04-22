@@ -41,6 +41,9 @@
 .g3-8 {
   grid-column: 3/8;
 }
+.g4-8 {
+  grid-column: 4/8;
+}
 .g4-9 {
   grid-column: 4/9;
 }
@@ -142,7 +145,14 @@ img {
       margin-bottom: 30px;
     }
     h2 {
-      margin-bottom: 0.5em;
+      // margin-bottom: 0.5em;
+      font-size: 36px;
+    }
+    .section-wrapper {
+      grid-template-columns: minmax(300px, 400px) minmax(400px, 700px);
+      grid-column-gap: 2em;
+      display: grid;
+      padding-bottom: 0;
     }
   }
   .sightbox {
@@ -153,14 +163,11 @@ img {
   }
   .hero-image {
     @include screenshot-shadow-white;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #e0e1e3;
   }
-  .video {
-    width: 100%;
-  }
-  .fixsize {
-    width: 130%;
-    margin-left: -15%;
+  .wireframe-overlap {
+    margin-top: -40%;
   }
 }
 
