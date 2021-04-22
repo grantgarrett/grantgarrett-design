@@ -6,33 +6,33 @@
 
 .bio {
   background: #171c23;
-  padding: 80px 0 40px 0;
+  padding: 110px 0 30px 0;
 
   .section-wrapper {
-    max-width: 660px;
+    // max-width: 660px;
     margin: 0 auto;
-    grid-template-columns: 190px auto;
+    // grid-template-columns: 190px auto;
     display: grid;
     padding: 0 40px;
-    column-gap: 40px;
+    // column-gap: 40px;
   }
-  .bio-pic {
-    margin-bottom: 5px;
-    border: solid 10px rgba(255, 255, 255, 0.1);
-  }
-  figure:hover figcaption {
-    opacity: 1;
-  }
-  figcaption {
-    color: #abb9c9;
-    font-size: 12px;
-    opacity: 0;
-    transition: opacity 2s;
-  }
-  figcaption a {
-    color: #abb9c9;
-    text-decoration: underline;
-  }
+  // .bio-pic {
+  //   margin-bottom: 5px;
+  //   border: solid 10px rgba(255, 255, 255, 0.1);
+  // }
+  // figure:hover figcaption {
+  //   opacity: 1;
+  // }
+  // figcaption {
+  //   color: #abb9c9;
+  //   font-size: 12px;
+  //   opacity: 0;
+  //   transition: opacity 2s;
+  // }
+  // figcaption a {
+  //   color: #abb9c9;
+  //   text-decoration: underline;
+  // }
   h1 {
     font-size: 26px;
     line-height: 1.2;
@@ -49,11 +49,11 @@
   }
   .contribute {
     font-size: 18px;
-    grid-column-end: span 2;
+    grid-column-end: span 8;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10em;
     margin-bottom: 0;
-    color: #6e7884;
+    color: #c7d5e7;
   }
   .contribute .arrow {
     height: 26px;

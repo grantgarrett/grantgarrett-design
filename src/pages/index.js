@@ -16,30 +16,12 @@ const IndexPage = () => (
     />
     <section className="bio">
       <div className="section-wrapper">
-        <figure>
-          <img
-            className="bio-pic"
-            width={192}
-            src={require("../images/gg-avatar.png")}
-            alt={"Me on a hike near Ama Dablam in the Himalaya, Nepal."}
-          />
-          <figcaption>
-            Me on a hike near{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Ama_Dablam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ama Dablam
-            </a>{" "}
-            in the Himalaya, Nepal.
-          </figcaption>
-        </figure>
-        <div className="bio-text">
+        <div className="g2-4">
           <h1>
-            Hi, I’m <span>Grant Garrett</span>, a Product Designer living in
-            Portland, Oregon.
+            Hi, I’m <span>Grant Garrett</span>, a Product Designer living in Portland, Oregon.
           </h1>
+        </div>
+        <div className="g5-7">
           <p>
             My focus is creating simple, user centered designs that are based on
             research, data, and a strong understanding of the users goals and
@@ -48,8 +30,8 @@ const IndexPage = () => (
           </p>
         </div>
         <p className="contribute">
-          Projects I've Contributed To
-          <IconDownArrow className="arrow" fill="#6E7884" />
+          Experience
+          <IconDownArrow className="arrow" fill="#C7D5E7" />
         </p>
       </div>
     </section>
@@ -209,7 +191,7 @@ const IndexPage = () => (
         />
       </div>
     </section>
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage
