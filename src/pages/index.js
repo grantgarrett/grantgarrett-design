@@ -40,7 +40,7 @@ const IndexPage = () => (
         <img
           // width={544}
           className="hero-image"
-          src={require("../images/sightbox-hero.png")}
+          src={require("../images/sightbox-member-profile.png")}
           alt="sightbox app screenshot"
         />
         <div className="section-content">

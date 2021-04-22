@@ -85,6 +85,7 @@ a.case-study-link-box {
   border-radius: 30px;
   padding: 10px 14px 8px;
   display: inline-block;
+  white-space: nowrap;
 }
 a.case-study-link,
 a.home-link {
@@ -251,9 +252,18 @@ section.appfog {
     grid-column-gap: 3em;
     display: grid;
     padding-bottom: 0;
+    overflow: hidden;
   }
   h2 {
     color: #0ec8ea;
+  }
+  .hero-image {
+    @include screenshot-shadow-white;
+    border-radius: 8px;
+    margin-bottom: -58px;
+  }
+  .section-wrapper {
+    padding-bottom: 16px;
   }
 }
 //                  SPRINTLY SECTION
