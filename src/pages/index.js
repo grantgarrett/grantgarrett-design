@@ -16,7 +16,7 @@ const IndexPage = () => (
     />
     <section className="bio">
       <div className="section-wrapper">
-        <div className="g2-4">
+        <div className="g3-5">
           <h1>
             Hi, I’m <span>Grant Garrett</span>, a Product Designer living in Portland, Oregon.
           </h1>
