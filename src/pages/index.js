@@ -30,7 +30,7 @@ const IndexPage = () => (
           </p>
         </div>
         <p className="contribute">
-          Experience
+          Experience & Contributions
           <IconDownArrow className="arrow" fill="#C7D5E7" />
         </p>
       </div>
