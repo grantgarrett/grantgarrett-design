@@ -9,7 +9,7 @@ import IconRightArrow from "../images/icons/arrow-right"
 import IconDownArrow from "../images/icons/arrow-down"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageId="home">
     <SEO
       title="Grant Garrett Design"
       keywords={[`Product Designer`, `Grant Garrett`, `Design`]}

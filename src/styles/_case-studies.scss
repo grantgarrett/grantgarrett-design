@@ -124,156 +124,19 @@ img {
     }
   }
 }
-
-//                  Sightbox
+// Sightbox Case Study
 .sightbox-case-study {
-  body & {
-    background: #f9f9f9;
-  }
-  header {
-    background-color: $color-sightbox-blue;
-    color: #fff;
-    a {
-      color: #fff;
-    }
-  }
-  section {
-    padding: 90px 0;
-  }
-  .intro {
-    .logo {
-      margin-bottom: 30px;
-    }
-    h2 {
-      // margin-bottom: 0.5em;
-      font-size: 36px;
-    }
-    .section-wrapper {
-      grid-template-columns: minmax(300px, 400px) minmax(400px, 700px);
-      grid-column-gap: 2em;
-      display: grid;
-      padding-bottom: 0;
-    }
-  }
-  .sightbox {
-    padding: 0px;
-    .section-wrapper {
-      padding: 40px;
-    }
-  }
-  .hero-image {
-    @include screenshot-shadow-white;
-    border-radius: 8px;
-    border: 1px solid #e0e1e3;
-  }
-  .wireframe-overlap {
-    margin-top: -40%;
-  }
+  @import "sightbox-case-study";
 }
 
-//                  INQUICKER
+//InQuicker Case Study
 .inquicker-case-study {
-  body & {
-    background: #f9f9f9;
-  }
-  header {
-    background-color: #fff;
-    color: $color-inquicker-red;
-    a {
-      color: $color-inquicker-red;
-    }
-  }
-  section {
-    padding: 90px 0;
-  }
-  .intro {
-    .logo {
-      margin-bottom: 30px;
-    }
-    h2 {
-      margin-bottom: 0.5em;
-    }
-  }
-  .inquicker {
-    padding: 0px;
-    .section-wrapper {
-      padding: 40px;
-    }
-  }
-  .hero-image {
-    @include screenshot-shadow-white;
-    border-radius: 5px;
-  }
-  .video {
-    width: 100%;
-  }
-  .fixsize {
-    width: 130%;
-    margin-left: -15%;
-  }
-  .final-iq {
-    grid-template-columns: 5em 1fr 16px 3fr 5em;
-    grid-column-gap: 0em;
-    .hero-iphone {
-      grid-column: 2/4;
-      grid-row: row 1;
-      align-self: end;
-      margin-bottom: 1.5em;
-      z-index: 2;
-    }
-    .hero-app {
-      grid-column: 3/5;
-      grid-row: row 1;
-      align-self: end;
-    }
-  }
+  @import "inquicker-case-study";
 }
 
-//                  INVISION
+// InVision Case Study
 .invision-case-study {
-  body & {
-    background: #f9f9f9;
-  }
-  header {
-    background-color: $color-invision-pink;
-    color: #fff;
-    a {
-      color: #fff;
-    }
-  }
-  section {
-    padding: 90px 0;
-  }
-  .hero-image {
-    border-radius: 3px;
-    @include screenshot-dropshadow;
-  }
-  .iteration {
-    border-radius: 3px;
-    margin: 40px 0;
-    @include screenshot-dropshadow;
-  }
-  .intro {
-    .logo {
-      width: 85%;
-      margin-bottom: 30px;
-    }
-    h2 {
-      font-weight: 300;
-      font-size: 22px;
-      color: $color-invision-pink;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 14px;
-      color: #414042;
-    }
-    .hero-image {
-      @include screenshot-dropshadow;
-      margin-bottom: 0px;
-      border-radius: 3px;
-    }
-  }
+  @import "invision-case-study";
 }
 
 // LINKS AT END OF CASE STUDY

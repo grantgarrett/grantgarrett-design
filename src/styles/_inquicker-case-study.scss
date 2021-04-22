@@ -1,0 +1,62 @@
+//                  INQUICKER
+// .inquicker-case-study {
+body & {
+  background: #f9f9f9;
+}
+header {
+  background-color: #fff;
+  color: $color-inquicker-red;
+  a {
+    color: $color-inquicker-red;
+  }
+}
+section {
+  padding: 90px 0;
+}
+.section-wrapper {
+  max-width: 1200px;
+  margin: auto auto;
+  padding: 40px 60px;
+}
+
+.intro {
+  .logo {
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+}
+.inquicker {
+  padding: 0px;
+  .section-wrapper {
+    padding: 40px;
+  }
+}
+.hero-image {
+  @include screenshot-shadow-white;
+  border-radius: 5px;
+}
+.video {
+  width: 100%;
+}
+.fixsize {
+  width: 130%;
+  margin-left: -15%;
+}
+.final-iq {
+  grid-template-columns: 5em 1fr 16px 3fr 5em;
+  grid-column-gap: 0em;
+  .hero-iphone {
+    grid-column: 2/4;
+    grid-row: row 1;
+    align-self: end;
+    margin-bottom: 1.5em;
+    z-index: 2;
+  }
+  .hero-app {
+    grid-column: 3/5;
+    grid-row: row 1;
+    align-self: end;
+  }
+}
