@@ -20,14 +20,19 @@ const IndexPage = () => (
           <h1>
             Hi, I’m <span>Grant Garrett</span>, a Product Designer living in Portland, Oregon.
           </h1>
+          <h2>This is my portfolio.</h2>
         </div>
         <div className="g5-7">
           <p>
             My focus is creating simple, user centered designs that are based on
-            research, data, and a strong understanding of the users goals and
-            motivations. I believe that great design is inherently inclusive and
-            that everyone can (and should) contribute to design.
+            research, data, and a strong understanding of a user's goals and
+            motivations. I love to blend user centered design thinking with holistic systems thinking perspectives.
+            </p>
+          <p>
+            I believe that great design is inherently inclusive and
+            that everyone can meaningfully contribute to design.
           </p>
+          <p>I also love Figma and design systems.</p>
         </div>
         <p className="contribute">
           Experience & Contributions
