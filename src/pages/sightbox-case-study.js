@@ -27,9 +27,8 @@ const InvisionCS = () => (
             <b>Task:</b> Design a process to automate the renewal of memberships.
           </p>
         </div>
-        <div className="sightbox-hero-group1">
+        <div className="intro-hero">
           <img
-            // width={740}
             className="hero-image"
             src={require("../images/sightbox-case-study/renewal-dashboard.png")}
             alt="sightbox renewal dashboard screenshot"
@@ -270,7 +269,7 @@ const InvisionCS = () => (
           </ul>
         </div>
 
-        <div className="g4-9">
+        <div className="final-screenshot g4-9">
           <img
             className="hero-image"
             src={require("../images/sightbox-case-study/renewal-dashboard.png")}
