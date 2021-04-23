@@ -27,7 +27,7 @@ const InvisionCS = () => (
             <b>Task:</b> Design a process to automate the renewal of memberships.
           </p>
         </div>
-        <div className="sightbox-hero-group">
+        <div className="sightbox-hero-group1">
           <img
             // width={740}
             className="hero-image"
@@ -41,30 +41,20 @@ const InvisionCS = () => (
 
     <section className="dark">
       <div className="case-study-grid">
+        <div className="column1 g2-8"><h2>
+          Automate the process of renewing a member.
+          </h2></div>
         <div className="column1 g2-5">
-          <h2>
-            <b>Why</b> - Understanding the Goal
-          </h2>
-          <h4>Why is this product redesign important?</h4>
           <p>
-            The expansion of features to our core app will help fulfill our
-            customers needs as well as our own goal to expand into larger
-            markets.
+            My role at Sightbox was lead designer for our internal CRM which was named IRIS. IRIS handled member data (payments, shipping, prescription info, scheduling). One thing it didn’t handle was the renewal of a membership once the prescription expired at the end of the year. It had no notion or idea how long a membership lasted or what to do when a prescription was expiring - so our support team was handling the entire process <strong>manually</strong>.
           </p>
         </div>
         <div className="column2 g5-8">
-          <h2>
-            <b>Who</b> - Defining the Audience
-          </h2>
-          <h4>Who will be using this?</h4>
+
           <p>
-            Our customers are hospitals and larger health systems. The actual
-            users of the app will be our customer’s patients. They are, in
-            general, men and women who prefer to use the internet to schedule
-            appointments rather than traditional phone calls. The age range is
-            fairly broad - from 18 to 45. Desktop as well as mobile devices are
-            used, at a rough 50/50 split.
+            Before I could think about starting on designing an automated system, I knew that I needed to do some quality research on the current process. What actions and decisions was the support team having to make along the way? What data were they using to make those decisions? What data could help them that they didn’t already have?
           </p>
+
 
         </div>
       </div>
@@ -72,11 +62,10 @@ const InvisionCS = () => (
 
     <section className="white">
       <div className="case-study-grid">
-        <div className="g2-6">
+        <div className="g2-8">
           <h2>Auditing the current manual process flow</h2>
           <p>
-            The current user flow worked and has been a proven design. How do we
-            add new features without breaking what has worked for years?
+            I started off by auditing the process flow from the support agents point of view. I sat down with the Renewals team and observed them going through their process. I documented all their steps. What criteria they were looking at, what decisions were made and when. What other tools they were using to fill in the gaps. What steps were manual, what were already automated.
           </p>
         </div>
         <div className="g1-9">
@@ -90,77 +79,57 @@ const InvisionCS = () => (
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div className="g2-5">
-          <h2>Design Debt</h2>
+        <div className="g2-8">
+          <h2>So what did I learn from the audit?</h2>
           <p>
-            A redesign gives the opportunity to go back and find the areas of
-            the previous design that didn’t hold up over time. The app’s
-            expanding needs sometimes led to areas simply being outgrown or
-            bloated. Now was the time to address this debt.
+            There were a lot of steps, but overall it was mostly a linear flow; which was great, we can work with that. The hardest part to automating this would be around <strong>determining member eligibility</strong>. There weren’t clean rules and policies in place which led to a lot of subjective decisions being made with data that was hard to get.
           </p>
-
-          <p>
-            An obvious element that needed an update was the Insurance filter.
-            It had ballooned to an unusable size. The first step in improving
-            the experience was to break it down into a two step process:
-          </p>
-          <ol>
-            <li>Choose Insurance Provider</li>
-            <li>Choose Plan.</li>
-          </ol>
         </div>
       </div>
     </section>
-    <section>
+    <section className="white">
       <div className="case-study-grid">
         <div className="g1-4">
-          <h2>Member States</h2>
+          <h2>Figuring Out the Eligibility System</h2>
           <p>
-            An updated design created more screens but was still able to
-            maintain a relatively simple and similar user flow.
+            To get a better idea of all the variables a support agent needed to consider when determining if a member was eligible for a renewal, I mocked up various scenarios from a membership timeline point of view.
           </p>
-
+          <p>
+            It quickly showed how easily out-of-sync various timelines could get and how taking a snapshot of a members timeline near the end of the year wasn’t an accurate representation of their status or eligibility. So again, how were we going to automate this complexity? Part of the reason the data was hard to digest was because IRIS had no notion of member states or status.
+          </p>
         </div>
         <div className="g4-9">
           <img
             className="border"
-            src={require("../images/sightbox-case-study/member-renewal-states-v1.png")}
-            alt="wireframing"
+            src={require("../images/sightbox-case-study/membership-timelines.png")}
+            alt="possible membership timelines"
           />
         </div>
       </div>
     </section>
     <section className="dark">
       <div className="case-study-grid">
-        <div className="g3-7">
-          <h2>State Machines</h2>
-          <p>
-            A redesign gives the opportunity to go back and find the areas of
-            the previous design that didn’t hold up over time. The app’s
-            expanding needs sometimes led to areas simply being outgrown or
-            bloated. Now was the time to address this debt.
-          </p>
-
-          <p>
-            An obvious element that needed an update was the Insurance filter.
-            It had ballooned to an unusable size. The first step in improving
-            the experience was to break it down into a two step process:
-          </p>
-          <ol>
-            <li>Choose Insurance Provider</li>
-            <li>Choose Plan.</li>
-          </ol>
+        <div className="g1-5">
+          <img
+            className="border"
+            src={require("../images/sightbox-case-study/member-renewal-states-v1.png")}
+            alt="wireframing"
+          />
         </div>
-
+        <div className="g5-9">
+          <h2>Desiging A System</h2>
+          <p>
+            A system isn’t great at being subjective. It needs clear sets of data and a solid ruleset to do its job. IRIS didn’t have those things and would need them to automate. Using the more simplified flow steps from the process audit, I started diagramming out possible member state flows. How can we tag and track members through their membership based on key decision or action points?
+          </p>
+        </div>
       </div>
     </section>
     <section>
       <div className="case-study-grid">
-        <div className="g2-7">
-          <h2>Member States: V2</h2>
+        <div className="g2-8">
+          <h2>Member States</h2>
           <p>
-            An updated design created more screens but was still able to
-            maintain a relatively simple and similar user flow.
+            I really wanted to learn more here, to dig deeper. I did a lot of external research and looked at how other systems handled state. I learned about <strong>Finite State Machines</strong> and how they are designed to simulate sequential logic, so I designed one for our system. The FSM here looks complex but logically it ended up being a much more clean and simple way to handle what we needed. Perfect for the system automation we were going for.
           </p>
 
         </div>
@@ -171,77 +140,67 @@ const InvisionCS = () => (
             alt="wireframing"
           />
         </div>
+        <div className="g2-8">
+          <p>
+            I consulted engineering about possible technical limitations or problems and found out they had been trying to do something like this for a while. They were completely on board and were excited at building proper state management into IRIS. This would help not only this automated Renewals project, but the system as a whole.
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <section className="dark">
+      <div className="case-study-grid">
+        <div className="g3-7">
+          <h2>The Plan</h2>
+          <p>
+            So I had a basic strategy:
+          </p>
+          <ol>
+            <li>Leverage these states that would provide clear data for the system to use against a ruleset.</li>
+            <li>Customer Support was going to work with the business on clarifying and simplifying the criteria for eligibility. </li>
+            <li>Pull the entire Renewal process into IRIS. No more 3rd party tools; no more copy and pasting.</li>
+          </ol>
+
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div className="case-study-grid">
+        <div className="g3-7">
+          <h2>First Steps</h2>
+          <p>
+            We had the end goal, but how were we going to make smaller steps to get there? Proper state management wasn’t something that could be budgeted right away, so we knew manual decision making was still going to be needed at least for a little bit. What pragmatic steps would be most beneficial right now?
+          </p>
+        </div>
+
       </div>
     </section>
 
 
     <section className="dark">
       <div className="case-study-grid">
+        <div className="g2-8">
+          <h2>Iterating</h2>
+        </div>
         <div className="g2-5">
-          <h2>Design Debt</h2>
           <p>
-            A redesign gives the opportunity to go back and find the areas of
-            the previous design that didn’t hold up over time. The app’s
-            expanding needs sometimes led to areas simply being outgrown or
-            bloated. Now was the time to address this debt.
+            Through lots of rough wireframes and feedback sessions on user flow, I decided on a dashboard style approach. I listed members with their relevant data needed for processing. All the info an agent needed to make a decision was right there, front and center, with buttons tied to the major actions needed to process a member through the flow.
           </p>
-
-          <p>
-            An obvious element that needed an update was the Insurance filter.
-            It had ballooned to an unusable size. The first step in improving
-            the experience was to break it down into a two step process:
-          </p>
-          <ol>
-            <li>Choose Insurance Provider</li>
-            <li>Choose Plan.</li>
-          </ol>
         </div>
         <div className="g5-8">
-          <div className="image-slide">
-            <img
-              className=""
-              src={require("../images/inquicker-case-study/debt1.png")}
-              alt="design debt"
-            />
-          </div>
+          <p>
+            Keeping Automation in mind as the end goal, what can we start now that can help us later? The engineering team and I decided to start an ‘algorithm’ with the data we had, however incomplete or messy it was. We can show what the system is suggesting, but still have the support agent be the one calling the shots. This way we can start to grade the system suggestions vs the reality of what the agents did. This ‘algorithm’ is something we can slowly develop and tweak over time and hopefully it would become super solid as we introduce cleaner data into the system down the road.
+          </p>
         </div>
       </div>
     </section>
 
     <section>
-      <div className="case-study-grid">
-        <div className="g2-5">
-          <h2>Details Defined</h2>
-          <p>
-            Seemingly simple elements can become quite complex quickly. Clearly
-            defining how these UI elements work in any state or scenario is
-            immensely important.
-          </p>
-
-          <p>
-            Here I am defining how the pagination should work across our search
-            results pages.
-          </p>
-        </div>
-        <div className="g5-9">
-          <div className="image-slide">
-            <img
-              className="border"
-              src={require("../images/inquicker-case-study/pagination.png")}
-              alt="pagination"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section className="white">
-      <div className="case-study-grid">
-        <div className="g3-7">
-          <h2>Wireframe Iterations</h2>
-          <p>
-            Users don’t always take the same path. The new maps view required us
-            to think about the different way locations can be searched for.
+      <div className="case-study-grid wireframe-section">
+        <div className="g2-8">
+          <p className="first-paragraph">
+            Through more in depth conversations with our Member Portal team around automated messaging, we found out we could move away from all the previous ‘steps’ we were using and start to base the members status on where they were at in the messaging flow. Which emails have the users received, which have they responded to, ect. With this new approach to a users status/state we only needed a couple views. I also introduced the notion of letting Support use Filters to help them narrow down on more specific users that may be in more unique situations.
           </p>
         </div>
         <div className="g1-5">
@@ -289,38 +248,35 @@ const InvisionCS = () => (
             />
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-
-    <section className="dark">
-      <div className="case-study-grid">
-        <div className="g2-6">
-          <h2>2 Point Ohhh!</h2>
-          <h4>Final Designs</h4>
-          <p>
-            By the time time the design was complete we already knew it was
-            going to succeed. Our customers who joined along during the design
-            process were already on board. Their insight and help left little
-            doubt that the rest of our customers would have any issues with the
-            redesign.
+        <div className="g2-8">
+          <p className="last-paragraph">
+            Through more and more feedback sessions and prototyping with Support and Engineering, I found we could continue to simplify the dashboard. We had a simple dashboard that used filters to drive what area of renewals you needed to see. The member messaging turned into a major status indicator. Everyone was really happy with this initial design - it was simple to use yet powerful in all the functionality it provided.
           </p>
         </div>
       </div>
-      <div className="case-study-grid final-sightbox">
-        <div className="g1-9">
+    </section>
 
+    <section className="dark">
+      <div className="case-study-grid">
+        <div className="g1-4">
+          <h2>Design Phase 1 Complete</h2>
+          <h4>Results after launch?</h4>
+          <ul>
+            <li>IRIS was capturing all the data, nothing lost to 3rd party apps anymore, Support was able to ditch many of the 3rd party tools they needed</li>
+            <li>Time spent by support agents on Renewals was cut by nearly in half</li>
+            <li>Every Sightbox member was able to be given the proper time to be evaluated for eligibility, no more skipped or lost members at the end of their year</li>
+            <li>Overall, we drastically simplified the Renewal process, a Support Agent could be onboarded in a day, where previously it was weeks</li>
+            <li>And finally, we had a solid plan and roadmap moving forward towards a fully automated renewals system</li>
+          </ul>
+        </div>
 
+        <div className="g4-9">
           <img
-            // width={740}
             className="hero-image"
             src={require("../images/sightbox-case-study/renewal-dashboard.png")}
             alt="sightbox renewal dashboard screenshot"
           />
         </div>
-
       </div>
     </section>
 
