@@ -1,0 +1,45 @@
+//                  INVISION
+// .invision-case-study {
+body & {
+  background: #f9f9f9;
+}
+header {
+  background-color: $color-invision-pink;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+section {
+  padding: 90px 0;
+}
+.hero-image {
+  border-radius: 3px;
+  @include screenshot-dropshadow;
+}
+.iteration {
+  border-radius: 3px;
+  margin: 40px 0;
+  @include screenshot-dropshadow;
+}
+.intro {
+  .logo {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 22px;
+    color: $color-invision-pink;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 14px;
+    color: #414042;
+  }
+  .hero-image {
+    @include screenshot-dropshadow;
+    margin-bottom: 0px;
+    border-radius: 3px;
+  }
+}

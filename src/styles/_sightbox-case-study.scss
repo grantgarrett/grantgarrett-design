@@ -1,0 +1,55 @@
+// Sightbox
+// .sightbox-case-study
+body & {
+  background: #f9f9f9;
+}
+section {
+  padding: 90px 0;
+}
+.section-wrapper {
+  padding: 40px;
+}
+.sightbox {
+  padding: 0px;
+}
+
+header {
+  background-color: $color-sightbox-blue;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.intro {
+  overflow: hidden;
+  .logo {
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+    font-size: 24px;
+  }
+  .section-wrapper {
+    grid-template-columns: minmax(300px, 400px) minmax(400px, 700px);
+    grid-column-gap: 2em;
+    display: grid;
+    // padding-bottom: 0;
+    // overflow: hidden;
+  }
+}
+.hero-image {
+  @include screenshot-shadow-white;
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
+.wireframe-section {
+  .first-paragraph {
+    margin-bottom: 60px;
+  }
+  .last-paragraph {
+    margin-top: 60px;
+  }
+}
+.wireframe-overlap {
+  margin-top: -40%;
+}

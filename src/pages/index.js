@@ -9,7 +9,7 @@ import IconRightArrow from "../images/icons/arrow-right"
 import IconDownArrow from "../images/icons/arrow-down"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageId="home">
     <SEO
       title="Grant Garrett Design"
       keywords={[`Product Designer`, `Grant Garrett`, `Design`]}
@@ -51,6 +51,13 @@ const IndexPage = () => (
             alt="sightbox logo"
           />
           <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
+          <p>
+            <b>Case Study:</b> Design a process to automate the renewal of memberships.
+          </p>
+          <Link to="/sightbox-case-study/" className="case-study-link-home-button">
+            Sightbox Case Study
+            <IconRightArrow />
+          </Link>
         </div>
       </div>
     </section>
@@ -68,7 +75,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Redesign the core application to satisfy the
             growing needs of our customers.
           </p>
-          <Link to="/inquicker-case-study/" className="case-study-link-box">
+          <Link to="/inquicker-case-study/" className="case-study-link-home-button">
             InQuicker Case Study
             <IconRightArrow fill="#ee3124" />
           </Link>
@@ -115,7 +122,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Design a mode that helps close the gap between
             the end of the design process and the beginning of development.
           </p>
-          <Link to="/invision-case-study/" className="case-study-link-box">
+          <Link to="/invision-case-study/" className="case-study-link-home-button">
             InVision Case Study
             <IconRightArrow fill="#ff3366" />
           </Link>

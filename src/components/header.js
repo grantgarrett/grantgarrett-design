@@ -17,7 +17,7 @@ const Header = ({ siteTitle, pageTitle }) => (
         grant@<span>grantgarrett.com</span>
       </a>
     </div>
-    {pageTitle.length > 0 ? <h1>{pageTitle}</h1> : null}
+    {pageTitle.length > 0 ? <h1 className="page-header">{pageTitle}</h1> : null}
   </header>
 )
 
