@@ -54,9 +54,9 @@ const IndexPage = () => (
           <p>
             <b>Case Study:</b> Design a process to automate the renewal of memberships.
           </p>
-          <Link to="/sightbox-case-study/" className="case-study-link-box">
+          <Link to="/sightbox-case-study/" className="case-study-link-home-button">
             Sightbox Case Study
-            <IconRightArrow fill="#0EC8EA" />
+            <IconRightArrow />
           </Link>
         </div>
       </div>
@@ -75,7 +75,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Redesign the core application to satisfy the
             growing needs of our customers.
           </p>
-          <Link to="/inquicker-case-study/" className="case-study-link-box">
+          <Link to="/inquicker-case-study/" className="case-study-link-home-button">
             InQuicker Case Study
             <IconRightArrow fill="#ee3124" />
           </Link>
@@ -122,7 +122,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Design a mode that helps close the gap between
             the end of the design process and the beginning of development.
           </p>
-          <Link to="/invision-case-study/" className="case-study-link-box">
+          <Link to="/invision-case-study/" className="case-study-link-home-button">
             InVision Case Study
             <IconRightArrow fill="#ff3366" />
           </Link>

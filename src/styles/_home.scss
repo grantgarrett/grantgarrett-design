@@ -18,23 +18,7 @@
     grid-column-gap: 20px;
     // column-gap: 40px;
   }
-  // .bio-pic {
-  //   margin-bottom: 5px;
-  //   border: solid 10px rgba(255, 255, 255, 0.1);
-  // }
-  // figure:hover figcaption {
-  //   opacity: 1;
-  // }
-  // figcaption {
-  //   color: #abb9c9;
-  //   font-size: 12px;
-  //   opacity: 0;
-  //   transition: opacity 2s;
-  // }
-  // figcaption a {
-  //   color: #abb9c9;
-  //   text-decoration: underline;
-  // }
+
   h1 {
     font-size: 26px;
     line-height: 1.2;
@@ -73,20 +57,76 @@
   margin-bottom: 6px;
 }
 
-a.case-study-link-box {
+// Case Study Buttons on home
+a.case-study-link-home-button {
   &:hover {
     text-decoration: none;
   }
   font-size: 16px;
   text-decoration: none;
-  color: $color-inquicker-red;
+  color: #000;
   position: relative;
-  border: solid 1px $color-inquicker-red;
+  border: solid 1px #000;
   border-radius: 30px;
   padding: 10px 14px 8px;
   display: inline-block;
   white-space: nowrap;
+  transition: 0.7s;
+  .arrow-right {
+    fill: #000;
+  }
 }
+.sightbox a.case-study-link-home-button {
+  color: $color-sightbox-blue;
+  border: solid 1px $color-sightbox-blue;
+  &:hover {
+    background-color: $color-sightbox-blue;
+    color: #fff;
+    .arrow-right {
+      fill: #fff;
+    }
+  }
+  .arrow-right {
+    fill: $color-sightbox-blue;
+  }
+}
+.inquicker a.case-study-link-home-button {
+  color: $color-inquicker-red;
+  border: solid 1px $color-inquicker-red;
+  &:hover {
+    background-color: $color-inquicker-red;
+    color: #fff;
+    .arrow-right {
+      fill: #fff;
+    }
+  }
+  .arrow-right {
+    fill: $color-inquicker-red;
+  }
+}
+.invision a.case-study-link-home-button {
+  color: $color-invision-pink;
+  border: solid 1px $color-invision-pink;
+  &:hover {
+    background-color: $color-invision-pink;
+    color: #fff;
+    .arrow-right {
+      fill: #fff;
+    }
+  }
+  .arrow-right {
+    fill: $color-invision-pink;
+  }
+}
+.arrow-right {
+  vertical-align: middle;
+  padding-bottom: 3px;
+  transition: 0.5s transform ease;
+  //default fill
+  fill: #000;
+}
+// end of case study home buttons
+
 a.case-study-link,
 a.home-link {
   &:hover {
@@ -116,15 +156,6 @@ a.home-link:hover:after {
   width: 100%;
   border-bottom: 1px solid rgba(238, 49, 36, 1);
 }
-
-.sightbox a.case-study-link-box {
-  color: $color-sightbox-blue;
-  border: solid 1px $color-sightbox-blue;
-}
-.invision a.case-study-link-box {
-  color: $color-invision-pink;
-  border: solid 1px $color-invision-pink;
-}
 .invision a.case-study-link {
   color: $color-invision-pink;
   &:after {
@@ -143,14 +174,8 @@ a.home-link {
     border-bottom: 1px solid rgba(202, 213, 226, 1);
   }
 }
-
-.arrow-right {
-  vertical-align: middle;
-  padding-bottom: 3px;
-  transition: 0.5s transform ease;
-}
 a.case-study-link:hover .arrow-right,
-a.case-study-link-box:hover .arrow-right {
+a.case-study-link-home-button:hover .arrow-right {
   transform: translateX(3px);
 }
 .arrow-left {
@@ -175,6 +200,28 @@ section.appfog {
   display: grid;
 }
 
+//                        Sightbox SECTION
+.sightbox {
+  background: #f9fafb;
+  .section-wrapper {
+    grid-template-columns: minmax(400px, 700px) minmax(200px, 290px);
+    grid-column-gap: 3em;
+    display: grid;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  h2 {
+    color: $color-sightbox-blue;
+  }
+  .hero-image {
+    @include screenshot-shadow-white;
+    border-radius: 8px;
+    margin-bottom: -58px;
+  }
+  .section-wrapper {
+    padding-bottom: 16px;
+  }
+}
 //                   INQUICKER SECTION
 .inquicker {
   background: #e5eff6;
@@ -242,28 +289,6 @@ section.appfog {
     place-self: center;
     border-radius: 3px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-  }
-}
-//                        Sightbox SECTION
-.sightbox {
-  background: #f9fafb;
-  .section-wrapper {
-    grid-template-columns: minmax(400px, 700px) minmax(200px, 290px);
-    grid-column-gap: 3em;
-    display: grid;
-    padding-bottom: 0;
-    overflow: hidden;
-  }
-  h2 {
-    color: #0ec8ea;
-  }
-  .hero-image {
-    @include screenshot-shadow-white;
-    border-radius: 8px;
-    margin-bottom: -58px;
-  }
-  .section-wrapper {
-    padding-bottom: 16px;
   }
 }
 //                  SPRINTLY SECTION
