@@ -1,18 +1,23 @@
 @media only screen and (max-width: 667px) {
   header {
+    padding: 20px;
     .section-wrapper {
       &.header-wrapper {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 1fr;
         display: grid;
+        padding: 0px;
+        // margin-bottom: 20px;
       }
       padding: 20px 20px 20px;
       display: block;
       a {
         font-size: 12px;
       }
-      h1 {
+      h1.page-header {
         text-align: center;
         margin: 25px 0 10px 0;
+        padding-bottom: 0;
+        grid-column: 1/3;
       }
     }
   }

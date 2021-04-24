@@ -210,11 +210,18 @@ section.appfog {
 .sightbox {
   background: #f9fafb;
   .section-wrapper {
-    grid-template-columns: minmax(400px, 700px) minmax(200px, 290px);
-    grid-column-gap: 3em;
+    grid-template-columns: minmax(290px, 1fr) minmax(270px, 600px);
+    grid-template-columns: minmax(220px, 300px) minmax(350px, 1fr);
+    grid-column-gap: 4em;
     display: grid;
     padding-bottom: 0;
     overflow: hidden;
+    .logo {
+      width: 80%;
+    }
+    .hero-image {
+      align-self: center;
+    }
   }
   h2 {
     color: $color-sightbox-blue;
@@ -233,10 +240,11 @@ section.appfog {
   background: #e5eff6;
   .section-wrapper {
     padding: 40px 60px 0;
+    grid-template-columns: minmax(220px, 300px) minmax(350px, 1fr);
   }
   .section-content {
-    padding-top: 20%;
-    padding-bottom: 10%;
+    align-self: center;
+    padding-bottom: 40px;
   }
   h2 {
     color: $color-inquicker-red;

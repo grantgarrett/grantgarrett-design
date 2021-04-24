@@ -125,7 +125,10 @@ img {
   p,
   a,
   li {
-    color: #cad5e2;
+    color: #dae2eb;
+  }
+  strong {
+    color: #fff;
   }
   .image-slide {
     img {
@@ -154,6 +157,7 @@ img {
   grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
   background: #171c23;
   padding: 40px 0;
+  overflow: hidden;
   .shim1 {
     background-color: #292f3e;
     grid-column: 1/2;

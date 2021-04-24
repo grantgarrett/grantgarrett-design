@@ -42,12 +42,6 @@ const IndexPage = () => (
     </section>
     <section className="sightbox">
       <div className="section-wrapper">
-        <img
-          // width={544}
-          className="hero-image"
-          src={require("../images/sightbox-member-profile.png")}
-          alt="sightbox app screenshot"
-        />
         <div className="section-content">
           <img
             width={275}
@@ -64,6 +58,11 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
+        <img
+          className="hero-image"
+          src={require("../images/sightbox-member-profile.png")}
+          alt="sightbox app screenshot"
+        />
       </div>
     </section>
     <section className="inquicker">
