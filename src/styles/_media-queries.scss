@@ -37,7 +37,7 @@
       display: block;
     }
   }
-  .sightbox .section-content {
+  .sprinklr .sightbox .section-content {
     margin-bottom: 1.45rem;
   }
   .inquicker {
@@ -53,6 +53,8 @@
   .invision .section-content {
     margin-bottom: 1.45rem;
   }
+
+  .sprinklr,
   .sightbox,
   .invision,
   .sprintly,
@@ -72,13 +74,37 @@
       grid-row: 1;
     }
   }
+  .sprinklr .section-wrapper,
   .sightbox .section-wrapper,
   .inquicker .section-wrapper,
   .appfog .section-wrapper {
     padding-bottom: 0;
   }
 
+  //sprinklr homepage fixes
+  .home .sprinklr {
+    .section-wrapper {
+      overflow: hidden;
+    }
+    .hero-image {
+      padding-top: 0;
+      margin-bottom: -20px;
+    }
+  }
+
   //                  CASE STUDIES
+
+  //Sprinklr
+  .sprinklr.intro {
+    .section-wrapper {
+      grid-template-columns: 1fr;
+      grid-row-gap: 0em;
+      margin-bottom: -30px;
+    }
+    .hero-image {
+      padding: 0;
+    }
+  }
 
   //Sightbox
   .sightbox.intro {

@@ -50,7 +50,7 @@ const IndexPage = () => (
           />
           <h2>Unified Customer Experience Platform</h2>
           <p>
-            <b>Case Study:</b> Establishing guidelines and new patterns and components for our design system Hyperspace.
+            <b>Project:</b> Establishing guidelines and new patterns/components and updating, maintaining, and governing our design system Hyperspace.
           </p>
           <Link to="/sprinklr-case-study/" className="case-study-link-home-button">
             Sprinklr Design System

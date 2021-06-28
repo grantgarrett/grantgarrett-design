@@ -24,7 +24,10 @@ const InvisionCS = () => (
           />
           <h2>Hyperspace Design System</h2>
           <p>
-            <b>Task:</b> Establishing guidelines and new patterns and components for our design system Hyperspace.
+            <b>Project:</b> Establishing guidelines and new patterns/components and updating, maintaining, and governing our design system.
+          </p>
+          <p>
+            <b>Role:</b> Lead Designer for Modern Care product on Sprinklr Platform and point of contact for the Hyperspace Design System.
           </p>
         </div>
         <img
