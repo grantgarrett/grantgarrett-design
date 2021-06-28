@@ -20,6 +20,10 @@ header {
     color: #fff;
   }
 }
+.case-study-grid {
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+}
 .intro {
   overflow: hidden;
   .logo {
@@ -42,24 +46,11 @@ header {
   // border-radius: 8px;
   // margin-bottom: 0px;
 }
-.wireframe-section {
-  .first-paragraph {
-    margin-bottom: 60px;
-  }
-  .last-paragraph {
-    margin-top: 60px;
-  }
-}
-.wireframe-overlap {
-  margin-top: -40%;
-}
-.final-screenshot {
-  align-self: center;
-  margin: 0 -30px 0 -30px;
-  img {
-    border-radius: 4px;
-  }
+img.border {
+  border: none;
+  border-radius: 8px;
 }
 .video {
   width: 100%;
+  border-radius: 8px;
 }
