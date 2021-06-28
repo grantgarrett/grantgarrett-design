@@ -61,18 +61,55 @@ const InvisionCS = () => (
 
     <section className="white">
       <div className="case-study-grid">
-        <div className="g2-8">
-          <h2>Auditing the current manual process flow</h2>
+        <div className="g2-6">
+          <h2>Adaptable Components</h2>
           <p>
-            I started off by auditing the process flow from the support agents point of view. I sat down with the Renewals team and observed them going through their process. I documented all their steps. What criteria they were looking at, what decisions were made and when. What other tools they were using to fill in the gaps. What steps were manual, what were already automated.
+            Not only did did we need responsive components that could adjust with variable card quantities, we also needed to quickly and easily swap the contents and branding. Here is an example of a responsive Stories component where we can swap the content and branding from Nike to Samsung.
           </p>
         </div>
         <div className="g1-9">
-          <img
-            className="border"
-            src={require("../images/sightbox-case-study/manual-renewal-process-flow-audit.png")}
-            alt="manual renewal process flow audit"
-          />
+          <video className="video" autoPlay loop muted>
+            <source
+              src={require("../images/sprinklr-case-study/brand-content-swapper.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section className="white">
+      <div className="case-study-grid">
+        <div className="g1-3">
+          <h2>Responsive Charts and Graphs</h2>
+          <p>
+            We needed fixed height graphing wigets that were fully responsive. Notice how the content area automatically adjusts its height when the header text wraps.
+          </p>
+        </div>
+        <div className="g3-9">
+          <video className="video" autoPlay loop muted>
+            <source
+              src={require("../images/sprinklr-case-study/responsive-chart-component.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section className="white">
+      <div className="case-study-grid">
+        <div className="g1-3">
+          <h2>Complex Variants</h2>
+          <p>
+            Not only did did we need responsive components that could adjust with variable card quantities, we also needed to quickly and easily swap the contents and branding.
+          </p>
+        </div>
+        <div className="g3-8">
+          <video className="video" autoPlay loop muted>
+            <source
+              src={require("../images/sprinklr-case-study/variants.mp4")}
+              type="video/mp4"
+            />
+          </video>
         </div>
       </div>
     </section>
