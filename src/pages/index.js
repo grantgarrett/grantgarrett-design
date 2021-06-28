@@ -27,7 +27,7 @@ const IndexPage = () => (
             My focus is creating simple, user centered designs that are based on
             research, data, and a strong understanding of a user's goals and
             motivations. I love to blend user centered design thinking with holistic systems thinking perspectives.
-            </p>
+          </p>
           <p>
             I believe that great design is inherently inclusive and
             that everyone can meaningfully contribute to design.
@@ -40,11 +40,34 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
+    <section className="sprinklr">
+      <div className="section-wrapper">
+        <div className="section-content">
+          <img
+            className="logo"
+            src={require("../images/sprinklr-logo.svg")}
+            alt="sprinklr logo"
+          />
+          <h2>Unified Customer Experience Platform</h2>
+          <p>
+            <b>Case Study:</b> Establishing guidelines and new patterns and components for our design system Hyperspace.
+          </p>
+          <Link to="/sprinklr-case-study/" className="case-study-link-home-button">
+            Sprinklr Design System
+            <IconRightArrow />
+          </Link>
+        </div>
+        <img
+          className="hero-image"
+          src={require("../images/sprinklr-hero.png")}
+          alt="sprinklr screenshots"
+        />
+      </div>
+    </section>
     <section className="sightbox">
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            width={275}
             className="logo"
             src={require("../images/sightbox-logo.png")}
             alt="sightbox logo"
@@ -69,7 +92,6 @@ const IndexPage = () => (
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            width={275}
             className="logo"
             src={require("../images/inquicker-logo.png")}
             alt="inquicker logo"
@@ -116,7 +138,6 @@ const IndexPage = () => (
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            width={270}
             className="logo"
             src={require("../images/invision-logo.png")}
             alt="invision logo"
@@ -150,7 +171,7 @@ const IndexPage = () => (
         </Tilt>
       </div>
     </section>
-    <section className="sprintly">
+    {/* <section className="sprintly">
       <div className="section-wrapper">
         <Tilt
           className="Tilt"
@@ -201,7 +222,7 @@ const IndexPage = () => (
           alt="appfog application screenshot"
         />
       </div>
-    </section>
+    </section> */}
   </Layout >
 )
 

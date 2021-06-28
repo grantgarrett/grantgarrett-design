@@ -55,7 +55,7 @@
   }
 }
 
-.inquicker .section-content .logo,
+.sprinklr .inquicker .section-content .logo,
 .invision .section-content .logo {
   width: 80%;
 }
@@ -80,6 +80,20 @@ a.case-study-link-home-button {
   transition: 0.7s;
   .arrow-right {
     fill: #000;
+  }
+}
+.sprinklr a.case-study-link-home-button {
+  color: #fff;
+  border-color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    .arrow-right {
+      fill: #000;
+    }
+  }
+  .arrow-right {
+    fill: #fff;
   }
 }
 .sightbox a.case-study-link-home-button {
@@ -206,6 +220,38 @@ section.appfog {
   display: grid;
 }
 
+//                        Sprinklr SECTION
+.sprinklr {
+  background: #000;
+  .section-wrapper {
+    grid-template-columns: minmax(280px, 420px) minmax(470px, 1fr);
+    grid-column-gap: 4em;
+    display: grid;
+    align-items: center;
+    padding: 0 60px;
+    overflow: hidden;
+    .logo {
+      width: 60%;
+    }
+    .hero-image {
+      align-self: end;
+    }
+  }
+  h2 {
+    color: #fff;
+  }
+  p {
+    font-size: 14px;
+    color: #dae2eb;
+  }
+  .hero-image {
+    align-self: end;
+    padding-top: 30px;
+  }
+  .section-content {
+    margin: 40px 0;
+  }
+}
 //                        Sightbox SECTION
 .sightbox {
   background: #f9fafb;
@@ -217,7 +263,7 @@ section.appfog {
     padding-bottom: 0;
     overflow: hidden;
     .logo {
-      width: 80%;
+      width: 60%;
     }
     .hero-image {
       align-self: center;
@@ -241,6 +287,9 @@ section.appfog {
   .section-wrapper {
     padding: 40px 60px 0;
     grid-template-columns: minmax(220px, 300px) minmax(350px, 1fr);
+    .logo {
+      width: 60%;
+    }
   }
   .section-content {
     align-self: center;
@@ -283,10 +332,13 @@ section.appfog {
 .invision {
   background: #151d2f;
   .section-wrapper {
-    padding: 90px 60px;
+    padding: 60px;
   }
   .section-content {
-    place-self: normal;
+    place-self: center;
+    .logo {
+      width: 60%;
+    }
   }
   h2 {
     color: $color-invision-pink;
@@ -325,11 +377,13 @@ section.appfog {
     place-self: center;
   }
 }
+.sprinklr .section-content,
 .sightbox .section-content,
 .sprintly .section-content,
 .appfog .section-content {
   place-self: center;
 }
+.sprinklr h2,
 .sightbox h2,
 .sprintly h2,
 .appfog h2 {

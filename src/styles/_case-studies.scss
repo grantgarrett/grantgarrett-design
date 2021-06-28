@@ -136,6 +136,10 @@ img {
     }
   }
 }
+// sprinklr Case Study
+.sprinklr-case-study {
+  @import "sprinklr-case-study";
+}
 // Sightbox Case Study
 .sightbox-case-study {
   @import "sightbox-case-study";
@@ -192,6 +196,7 @@ img {
       color: $color-inquicker-red;
       font-size: 16px;
       font-weight: 300;
+      margin-bottom: 2em;
     }
     .iq-copy {
       padding: 40px 0 40px 40px;
