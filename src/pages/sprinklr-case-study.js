@@ -164,7 +164,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g1-9">
-          <video className="video" autoPlay loop muted>
+          <video className="video" autoPlay controls loop muted>
             <source
               src={require("../images/sprinklr-case-study/brand-content-swapper.mp4")}
               type="video/mp4"
@@ -182,7 +182,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g3-9">
-          <video className="video" autoPlay loop muted>
+          <video className="video" autoPlay controls loop muted>
             <source
               src={require("../images/sprinklr-case-study/responsive-chart-component.mp4")}
               type="video/mp4"
@@ -200,7 +200,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g3-8">
-          <video className="video" autoPlay loop muted>
+          <video className="video" autoPlay controls loop muted>
             <source
               src={require("../images/sprinklr-case-study/variants.mp4")}
               type="video/mp4"
