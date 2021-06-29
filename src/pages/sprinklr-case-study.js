@@ -39,20 +39,76 @@ const InvisionCS = () => (
 
       </div>
     </section>
+
     <section className="white">
       <div className="case-study-grid">
-        <div className="g1-4">
-          <h2>Hyperspace Design System</h2>
+        <div className="g2-7">
+          <h2>
+            Creating Sprinklr's Design System Guidelines & Standards
+          </h2>
+        </div>
+        <div className="g2-4">
+
           <p>
-            The foundational structure of our design system, Hyperspace, is made up of Base, Atomic, and Molecular components.
+            I lead in the creation of our Design System Guidelines and Standards documentation. It covers everything from designer onboarding, Figma best practices, file structure and organization, to design foundations such as typography, spacing, and component creation.
           </p>
           <p>
-            There is also the <strong>Design Guidelines</strong> and <strong>Application Shell</strong> templates files I lead design and creation of.
+            Here are some examples from the <strong>Design Guidelines</strong> document.
+          </p>
+        </div>
+        <div className="g4-8">
+          <h3>Naming Conventions and Layers</h3>
+          <img
+            className="border"
+            src={require("../images/sprinklr-case-study/best-practices1.png")}
+            alt="hyperspace design system best practices"
+          />
+        </div>
+        <div className="g1-5">
+          <h3>How to use Tokens</h3>
+          <img
+            className="border"
+            src={require("../images/sprinklr-case-study/best-practices2.png")}
+            alt="hyperspace design system best practices"
+          />
+        </div>
+        <div className="g5-9">
+          <h3>Component Structure & Documentation</h3>
+          <img
+            className="border"
+            src={require("../images/sprinklr-case-study/best-practices3.png")}
+            alt="hyperspace design system best practices"
+          />
+        </div>
+        <div className="g2-8">
+          <h3>Elemental Spacing and Grid System Guidelines</h3>
+          <img
+            className="border"
+            src={require("../images/sprinklr-case-study/spacing1.png")}
+            alt="hyperspace design system best practices"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <section className="dark">
+      <div className="case-study-grid">
+        <div className="g1-4">
+          <h2>Hyperspace Design System Cleanup</h2>
+          <p>
+            Now that we had some agreed upon standards to guide us, a small team and I were ready to start updating and organizing Hyperspace. The foundational files of our design system <em>Hyperspace</em>, is made up of Base, Atomic, and Molecular components.
+          </p>
+          <p>
+            Part of the cleanup process included an extensive audit of all the existing components. The team and I did health checks on all the compontents, checking to see how well they stood up against our new standards. We creating notes (stickies) as well as status indicators on the table of contents pages to help us in our ongoing work.
+          </p>
+          <p>
+            Also included in this foundational project are the <strong>Design Guidelines</strong> and <strong>Application Shell</strong> templates files I lead design and creation of.
           </p>
         </div>
         <div className="g4-9">
           <img
-            className="border hyperspace-files"
+            className="border"
             src={require("../images/sprinklr-case-study/hyperspace.png")}
             alt="hyperspace design system"
           />
@@ -83,53 +139,8 @@ const InvisionCS = () => (
         </div>
       </div>
     </section>
-    <section className="dark">
-      <div className="case-study-grid">
-        <div className="g2-7">
-          <h2>
-            Design Guidelines & Standards
-          </h2>
-        </div>
-        <div className="g2-4">
 
-          <p>
-            I lead in the creation of our Design System Guidelines and Standards documentation. It covers everything from designer onboarding, Figma best practices, file structure and organization, to design foundations such as typography, spacing, and component creation.
-          </p>
-          <p>
-            Here are some examples of the living documents.
-          </p>
-        </div>
-        <div className="g4-8">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/best-practices1.png")}
-            alt="hyperspace design system best practices"
-          />
-        </div>
-        <div className="g1-5">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/best-practices2.png")}
-            alt="hyperspace design system best practices"
-          />
-        </div>
-        <div className="g5-9">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/best-practices3.png")}
-            alt="hyperspace design system best practices"
-          />
-        </div>
-        <div className="g2-8">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/spacing1.png")}
-            alt="hyperspace design system best practices"
-          />
-        </div>
 
-      </div>
-    </section>
     <section className="white">
       <div className="case-study-grid">
         <div className="g2-8">
@@ -166,7 +177,7 @@ const InvisionCS = () => (
         <div className="g2-6">
           <h2>Adaptable Components (in Figma)</h2>
           <p>
-            Not only did did we need responsive components that could adjust with variable card quantities, we also needed to quickly and easily swap the contents and branding. Here is an example of a responsive Stories component where we can swap the content and branding from Nike to Samsung.
+            Not only did did we need responsive components that could adjust with variable card quantities, we also needed to quickly and easily swap the contents and branding. Here is an example of a responsive Stories component I created showcasing how we can swap the content and branding from Nike to Samsung using a plugin.
           </p>
         </div>
         <div className="g1-9">
@@ -184,7 +195,7 @@ const InvisionCS = () => (
         <div className="g1-3">
           <h2>Responsive Charts and Graphs (in Figma)</h2>
           <p>
-            We needed fixed height graphing wigets that were fully responsive. Notice how the content area automatically adjusts its height when the header text wraps.
+            The team needed fixed height graphing wigets that were fully responsive. Here is an example of a flexible and responsive bar chart I created. Notice how the content area automatically adjusts its height when the header text wraps and how the bar chart percentages stay consistent.
           </p>
         </div>
         <div className="g3-9">
@@ -202,7 +213,7 @@ const InvisionCS = () => (
         <div className="g1-3">
           <h2>Complex Variants</h2>
           <p>
-            Our input components were lacking in options, so I made an all-in-one solution.
+            Many of our most commonly used components were severly lacking in flexibility. Here is an example of me expanding on the capabilities of our simple input component.
           </p>
         </div>
         <div className="g3-8">
