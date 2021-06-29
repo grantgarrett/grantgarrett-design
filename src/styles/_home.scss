@@ -233,9 +233,6 @@ section.appfog {
     .logo {
       width: 60%;
     }
-    .hero-image {
-      align-self: end;
-    }
   }
   h2 {
     color: #fff;
@@ -246,7 +243,7 @@ section.appfog {
   }
   .hero-image {
     align-self: end;
-    padding-top: 30px;
+    padding-top: 6em;
   }
   .section-content {
     margin: 40px 0;
@@ -256,8 +253,7 @@ section.appfog {
 .sightbox {
   background: #f9fafb;
   .section-wrapper {
-    grid-template-columns: minmax(290px, 1fr) minmax(270px, 600px);
-    grid-template-columns: minmax(220px, 300px) minmax(350px, 1fr);
+    grid-template-columns: minmax(220px, 340px) minmax(350px, 1fr);
     grid-column-gap: 4em;
     display: grid;
     padding-bottom: 0;
