@@ -8,6 +8,7 @@ import Tilt from "react-tilt"
 import IconRightArrow from "../images/icons/arrow-right"
 import IconDownArrow from "../images/icons/arrow-down"
 
+
 const IndexPage = () => (
   <Layout pageId="home">
     <SEO
