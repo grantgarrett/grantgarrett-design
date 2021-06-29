@@ -9,9 +9,9 @@ const Footer = () => (
         <li>
           <div className="footer-logo">
             <GLogo />
-            <Link to="/">
+            {/* <Link to="/">
               <div className="site-text">grantgarrett<span>.design</span></div>
-            </Link>
+            </Link> */}
           </div>
 
         </li>
