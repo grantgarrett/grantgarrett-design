@@ -207,7 +207,14 @@ header button.email-copy-button {
     }
   }
 }
-
+footer button.email-copy-button {
+  &:hover {
+    text-decoration: none;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
 //tooltip styling
 .tooltip {
   opacity: 1 !important;
