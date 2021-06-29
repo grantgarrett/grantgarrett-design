@@ -12,6 +12,9 @@ header {
   a {
     color: $color-inquicker-red;
   }
+  &:hover .header-logo .g-logo {
+    fill: $color-inquicker-red;
+  }
 }
 section {
   padding: 90px 0;

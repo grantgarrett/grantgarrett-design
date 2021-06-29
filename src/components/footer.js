@@ -35,10 +35,11 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href="mailto:grant@grantgarrett.com?subject=Hi, from your portfolio site"
+            // href="#"
             className="email"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
+            onClick={() => { navigator.clipboard.writeText("grant@grantgarrett.com") }}
           >
             email <span>grant@grantgarrett.com</span>
           </a>

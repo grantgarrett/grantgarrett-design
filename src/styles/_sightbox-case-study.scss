@@ -6,9 +6,9 @@ body & {
 section {
   padding: 90px 0;
 }
-.section-wrapper {
-  padding: 40px;
-}
+// .section-wrapper {
+//   padding: 40px;
+// }
 .sightbox {
   padding: 0px;
 }
@@ -17,7 +17,7 @@ header {
   background-color: $color-sightbox-blue;
   color: #fff;
   .header-logo .g-logo {
-    fill: #fff;
+    fill: rgba(255, 255, 255, 0.85);
   }
   a {
     color: #fff;

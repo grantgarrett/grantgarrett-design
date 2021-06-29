@@ -43,9 +43,15 @@ header {
       align-items: center;
     }
   }
-  &:hover .header-logo .site-text {
-    opacity: 1;
+  &:hover .header-logo {
+    .g-logo {
+      fill: rgba(255, 255, 255, 1);
+    }
+    .site-text {
+      opacity: 1;
+    }
   }
+
   .header-logo {
     grid-column: 1;
     //logo and text lockup
@@ -53,8 +59,9 @@ header {
     align-items: center;
 
     .g-logo {
-      fill: #757e8d;
+      fill: rgba(255, 255, 255, 0.6);
       margin-right: 8px;
+      transition: fill 0.8s ease-in-out;
     }
 
     .site-text {
@@ -106,17 +113,30 @@ header {
 footer {
   background: #171c23;
   color: #757e8d;
+  &:hover .footer-logo .g-logo {
+    fill: #fff;
+  }
   ul {
     list-style: none;
     margin: 0;
     li {
       margin-bottom: 8px;
+      a:hover {
+        text-decoration: none;
+        span {
+          text-decoration: underline;
+        }
+      }
+      a.email:hover span {
+        cursor: pointer;
+      }
     }
   }
   .footer-logo {
     .g-logo {
       fill: #757e8d;
       margin-right: 8px;
+      transition: fill 0.4s ease;
     }
     a {
       padding: 0;
