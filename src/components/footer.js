@@ -1,5 +1,5 @@
 // import { Link } from "gatsby"
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import GLogo from "../images/icons/g-logo"
 //https://www.npmjs.com/package/react-tooltip
 import ReactTooltip from "react-tooltip"
@@ -45,7 +45,7 @@ const Footer = () => {
               className="email-copy-button"
               onClick={() => { setEmailTooltipText("Copied!"); navigator.clipboard.writeText("grant@grantgarrett.com") }}
               data-tip={emailTooltipText}
-              data-for="emailContent"
+              data-for="emailTooltipFooter"
             >
               email <span>grant@grantgarrett.com</span>
             </button>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         </ul>
       </div>
-      <ReactTooltip id="emailContent" className='tooltip' effect="solid" getContent={() => emailTooltipText} afterShow={() => setEmailTooltipText("Click to copy")} />
+      <ReactTooltip id="emailTooltipFooter" className='tooltip' effect="solid" getContent={() => emailTooltipText} afterShow={() => setEmailTooltipText("Click to copy")} />
     </footer>
   )
 }
