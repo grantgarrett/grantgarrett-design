@@ -26,6 +26,9 @@ const InvisionCS = () => (
           <p>
             <b>Task:</b> Design a process to automate the renewal of memberships.
           </p>
+          <p>
+            <b>Role:</b> Product Design lead for Sightbox's internal CRM, IRIS.
+          </p>
         </div>
         <div className="intro-hero">
           <img
@@ -42,7 +45,7 @@ const InvisionCS = () => (
       <div className="case-study-grid">
         <div className="column1 g2-8"><h2>
           Automate the process of renewing a member.
-          </h2></div>
+        </h2></div>
         <div className="column1 g2-5">
           <p>
             My role at Sightbox was lead designer for our internal CRM which was named IRIS. IRIS handled member data (payments, shipping, prescription info, scheduling). One thing it didn’t handle was the renewal of a membership once the prescription expired at the end of the year. It had no notion or idea how long a membership lasted or what to do when a prescription was expiring - so our support team was handling the entire process <strong>manually</strong>.

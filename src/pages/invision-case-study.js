@@ -26,6 +26,9 @@ const InvisionCS = () => (
             <b>Task:</b> Design a mode that helps close the gap between the end
             of the design process and the beginning of development.
           </p>
+          <p>
+            <b>Role:</b> Product Design lead for Inspect Mode
+          </p>
         </div>
         <Tilt
           className="Tilt g4-9"

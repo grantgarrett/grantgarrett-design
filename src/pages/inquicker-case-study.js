@@ -26,6 +26,9 @@ const InvisionCS = () => (
             <b>Task:</b> Redesign the core application to satisfy the growing
             needs of our customers.
           </p>
+          <p>
+            <b>Role:</b> Solo cross-functional product designer owning everything design at InQuicker.
+          </p>
         </div>
         <div className="inquicker-hero-group">
           <Tilt
