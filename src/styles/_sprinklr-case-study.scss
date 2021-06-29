@@ -44,6 +44,9 @@ header {
     overflow: hidden;
   }
 }
+img.border.hyperspace-files {
+  border: solid 5px #ececec;
+}
 .hero-image {
   // @include screenshot-shadow-white;
   // border-radius: 8px;

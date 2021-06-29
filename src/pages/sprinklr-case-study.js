@@ -24,7 +24,7 @@ const InvisionCS = () => (
           />
           <h2>Hyperspace Design System</h2>
           <p>
-            <b>Project:</b> Establishing guidelines and new patterns/components and updating, maintaining, and governing our design system.
+            <b>Project:</b> Establishing design guidelines and new patterns and components while updating, maintaining, and governing our design system, <em>Hyperspace</em>.
           </p>
           <p>
             <b>Role:</b> Lead Designer for Modern Care product on Sprinklr Platform and point of contact for the Hyperspace Design System.
@@ -52,12 +52,13 @@ const InvisionCS = () => (
         </div>
         <div className="g4-9">
           <img
-            className="border"
+            className="border hyperspace-files"
             src={require("../images/sprinklr-case-study/hyperspace.png")}
             alt="hyperspace design system"
           />
         </div>
         <div className="g2-5">
+          <h3>Base Components</h3>
           <img
             className="border"
             src={require("../images/sprinklr-case-study/base-components.png")}
@@ -65,6 +66,7 @@ const InvisionCS = () => (
           />
         </div>
         <div className="g5-8">
+          <h3>Atomic Components</h3>
           <img
             className="border"
             src={require("../images/sprinklr-case-study/atomic-components.png")}
@@ -72,6 +74,7 @@ const InvisionCS = () => (
           />
         </div>
         <div className="g2-8">
+          <h3>Molecular Components</h3>
           <img
             className="border"
             src={require("../images/sprinklr-case-study/molecular-components.png")}
