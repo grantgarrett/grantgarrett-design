@@ -26,21 +26,21 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href="mailto:grant@grantgarrett.com?subject=Hi, from your porftolio site"
+            href="http://www.grantgarrett.com"
+            target="_self"
+          // rel="noopener noreferrer"
+          >
+            personal url <span>grantgarrett.com</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:grant@grantgarrett.com?subject=Hi, from your portfolio site"
             className="email"
             target="_blank"
             rel="noopener noreferrer"
           >
             email <span>grant@grantgarrett.com</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="http://www.grantgarrett.com"
-            target="_self"
-          // rel="noopener noreferrer"
-          >
-            personal site <span>grantgarrett.com</span>
           </a>
         </li>
       </ul>

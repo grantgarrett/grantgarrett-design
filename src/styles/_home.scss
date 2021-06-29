@@ -32,7 +32,7 @@
     font-size: 20px;
     line-height: 1.2;
     color: #f6f9fd;
-    font-weight: 500;
+    font-weight: 200;
   }
   p {
     color: #94a2b4;
@@ -293,8 +293,6 @@ section.appfog {
   }
   h2 {
     color: $color-inquicker-red;
-    font-size: 22px;
-    font-weight: 200;
   }
   p {
     font-size: 14px;
@@ -338,8 +336,6 @@ section.appfog {
   }
   h2 {
     color: $color-invision-pink;
-    font-size: 22px;
-    font-weight: 200;
   }
 
   p {
@@ -379,12 +375,16 @@ section.appfog {
 .appfog .section-content {
   place-self: center;
 }
-.sprinklr h2,
-.sightbox h2,
-.sprintly h2,
-.appfog h2 {
-  font-size: 20px;
-  font-weight: 200;
+.sprinklr,
+.sightbox,
+.inquicker,
+.invision,
+.sprintly,
+.appfog {
+  h2 {
+    font-size: 22px;
+    font-weight: 300;
+  }
 }
 
 //                        APPFOG SECTION
