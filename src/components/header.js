@@ -20,7 +20,7 @@ const Header = ({ siteTitle, pageTitle }) => (
 
       <div className="header-email">
         <a
-          href="mailto:grant@grantgarrett.com?subject=Hi, from your porftolio site"
+          href="mailto:grant@grantgarrett.com?subject=Hi, from your portfolio site"
           className="email"
           target="_blank"
           rel="noopener noreferrer"
