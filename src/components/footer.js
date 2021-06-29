@@ -4,23 +4,12 @@ import React from "react"
 const Footer = () => (
   <footer>
     <div className="section-wrapper">
-      {/* <Link to="/">
-        grantgarrett<span>.design</span>
-      </Link> */}
       <a
         href="http://twitter.com/grantgarrett"
         target="_blank"
         rel="noopener noreferrer"
       >
-        @grantgarrett
-      </a>
-
-      <a
-        href="http://www.grantgarrett.com"
-        target="_self"
-        // rel="noopener noreferrer"
-      >
-        grantgarrett.com
+        twitter <span>@grantgarrett</span>
       </a>
       <a
         href="mailto:grant@grantgarrett.com?subject=Hi, from your porftolio site"
@@ -28,8 +17,16 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        grant@<span>grantgarrett.com</span>
+        email <span>grant@grantgarrett.com</span>
       </a>
+      <a
+        href="http://www.grantgarrett.com"
+        target="_self"
+      // rel="noopener noreferrer"
+      >
+        personal site <span>grantgarrett.com</span>
+      </a>
+
     </div>
   </footer>
 )
