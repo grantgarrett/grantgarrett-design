@@ -36,7 +36,7 @@ const IndexPage = () => (
           <p>I also love Figma and design systems.</p>
         </div>
         <p className="contribute">
-          Experience & Contributions
+          Projects & Contributions
           <IconDownArrow className="arrow" fill="#C7D5E7" />
         </p>
       </div>

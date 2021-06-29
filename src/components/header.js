@@ -8,8 +8,8 @@ const Header = ({ siteTitle, pageTitle }) => (
   <header>
     <div className="header-wrapper section-wrapper">
       <div className="header-logo">
+        <GLogo />
         <Link to="/">
-          <GLogo />
           <div className="site-text">grantgarrett<span>.design</span></div>
         </Link>
       </div>
