@@ -6,6 +6,9 @@ body & {
 header {
   background-color: $color-invision-pink;
   color: #fff;
+  .header-logo .g-logo {
+    fill: #fff;
+  }
   a {
     color: #fff;
   }

@@ -6,6 +6,9 @@ body & {
 header {
   background-color: #fff;
   color: $color-inquicker-red;
+  .header-logo .g-logo {
+    fill: $color-inquicker-red;
+  }
   a {
     color: $color-inquicker-red;
   }

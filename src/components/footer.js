@@ -1,9 +1,16 @@
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
+import GLogo from "../images/icons/g-logo"
 
 const Footer = () => (
   <footer>
     <div className="section-wrapper">
+      <div className="footer-logo">
+        <Link to="/">
+          <GLogo />
+          <div className="site-text">grantgarrett<span>.design</span></div>
+        </Link>
+      </div>
       <a
         href="http://twitter.com/grantgarrett"
         target="_blank"

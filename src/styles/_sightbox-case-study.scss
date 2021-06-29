@@ -16,6 +16,9 @@ section {
 header {
   background-color: $color-sightbox-blue;
   color: #fff;
+  .header-logo .g-logo {
+    fill: #fff;
+  }
   a {
     color: #fff;
   }
