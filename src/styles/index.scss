@@ -127,7 +127,12 @@ footer {
           text-decoration: underline;
         }
       }
-      a.email:hover span {
+      button.email-copy-button {
+        border: none;
+        background-color: none;
+        background: none;
+      }
+      .email-copy-button:hover {
         cursor: pointer;
       }
     }
@@ -149,16 +154,19 @@ footer {
       opacity: 1;
     }
   }
-  a {
+  a,
+  button {
     font-size: 13px;
     font-weight: 300;
     color: #757e8d;
     text-decoration: none;
   }
+  .email-copy-button span,
   a span {
     font-weight: 500;
     color: #b6bfcf;
   }
+  .email-copy-button:hover span,
   a:hover {
     text-decoration: underline;
   }
@@ -166,5 +174,11 @@ footer {
     padding: 80px 60px;
     text-align: center;
   }
+}
+.tooltip {
+  opacity: 1 !important;
+}
+.__react_component_tooltip {
+  border-radius: 22px !important;
 }
 @import "media-queries";
