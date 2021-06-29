@@ -24,6 +24,9 @@ header {
       align-items: center;
     }
   }
+  &:hover .header-logo .site-text {
+    opacity: 1;
+  }
   .header-logo {
     grid-column: 1;
     //logo and text lockup
@@ -38,9 +41,6 @@ header {
     .site-text {
       opacity: 0;
       transition: opacity 0.8s ease-in-out;
-    }
-    &:hover .site-text {
-      opacity: 1;
     }
   }
   .header-title {
