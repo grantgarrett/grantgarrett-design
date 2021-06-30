@@ -33,17 +33,12 @@ const Footer = () => (
             personal url <span>grantgarrett.com</span>
           </a>
         </li>
-        <li>
-          <a
-            // href="#"
-            className="email"
-            target="_self"
-            rel="noopener noreferrer"
-            onClick={() => { navigator.clipboard.writeText("grant@grantgarrett.com") }}
-          >
-            email <span>grant@grantgarrett.com</span>
-          </a>
-        </li>
+        <button
+          className="email-copy-button"
+          onClick={() => { navigator.clipboard.writeText("grant@grantgarrett.com") }}
+        >
+          email <span>grant@grantgarrett.com</span>
+        </button>
       </ul>
     </div>
   </footer>

@@ -167,4 +167,54 @@ footer {
     text-align: center;
   }
 }
+//email copy button
+button.email-copy-button {
+  border: none;
+  background-color: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 300;
+  color: #757e8d;
+  text-decoration: none;
+  footer & {
+    color: #757e8d;
+  }
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  span {
+    font-weight: 500;
+    color: #b6bfcf;
+  }
+}
+header button.email-copy-button {
+  .sprinklr-case-study &,
+  .sightbox-case-study &,
+  .invision-case-study & {
+    color: #fff;
+  }
+  .inquicker-case-study & {
+    color: $color-inquicker-red;
+  }
+  span {
+    .sprinklr-case-study &,
+    .sightbox-case-study &,
+    .inquicker-case-study &,
+    .invision-case-study & {
+      color: #fff;
+    }
+    .inquicker-case-study & {
+      color: $color-inquicker-red;
+    }
+  }
+}
+footer button.email-copy-button {
+  &:hover {
+    text-decoration: none;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
 @import "media-queries";

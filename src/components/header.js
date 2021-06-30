@@ -19,14 +19,12 @@ const Header = ({ siteTitle, pageTitle }) => (
       </div>
 
       <div className="header-email">
-        <a
-          href="mailto:grant@grantgarrett.com?subject=Hi, from your portfolio site"
-          className="email"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          className="email-copy-button"
+          onClick={() => { navigator.clipboard.writeText("grant@grantgarrett.com") }}
         >
           grant@<span>grantgarrett.com</span>
-        </a>
+        </button>
       </div>
 
     </div>
