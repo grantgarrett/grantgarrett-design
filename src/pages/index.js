@@ -3,10 +3,18 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tilt from "react-tilt"
+import { StaticImage } from "gatsby-plugin-image"
 
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconDownArrow from "../images/icons/arrow-down"
+
+//Images
+import sprinklr_logo from "../images/sprinklr-logo.svg"
+import sprinklr_hero from "../images/sprinklr-hero.png"
+import inquicker_app_hero from "../images/inquicker-app-hero.png"
+import invision_inspect_mode from "../images/invision-case-study/inspect-mode.png"
+
 
 
 const IndexPage = () => (
@@ -44,11 +52,7 @@ const IndexPage = () => (
     <section className="sprinklr">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
-            className="logo"
-            src={require("../images/sprinklr-logo.svg")}
-            alt="sprinklr logo"
-          />
+          <img src={sprinklr_logo} className="logo" alt="sprinklr logo" />
           <h2>Unified Customer Experience Platform</h2>
           <p>
             <b>Project:</b> Creating design guidelines and new patterns and components while updating, maintaining, and governing our design system called Hyperspace.
@@ -58,19 +62,16 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <img
-          className="hero-image"
-          src={require("../images/sprinklr-hero.png")}
-          alt="sprinklr screenshots"
-        />
+        <img src={sprinklr_hero} className="hero-image" alt="sprinklr screenshots" />
+
       </div>
     </section>
     <section className="sightbox">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
-            src={require("../images/sightbox-logo.png")}
+            src="../images/sightbox-logo.png"
             alt="sightbox logo"
           />
           <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
@@ -82,19 +83,20 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <img
+        <StaticImage
           className="hero-image"
-          src={require("../images/sightbox-member-profile.png")}
+          src={("../images/sightbox-member-profile.png")}
           alt="sightbox app screenshot"
+          quality="100"
         />
       </div>
     </section>
     <section className="inquicker">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
-            src={require("../images/inquicker-logo.png")}
+            src={"../images/inquicker-logo.png"}
             alt="inquicker logo"
           />
           <h2>Reinventing the Patient Experience</h2>
@@ -118,10 +120,10 @@ const IndexPage = () => (
               scale: 1,
             }}
           >
-            <img
+            <StaticImage
               className=""
               width={197}
-              src={require("../images/inquicker-iphone-hero.png")}
+              src="../images/inquicker-iphone-hero.png"
               alt="inquicker iphone screenshot"
             />
           </Tilt>
@@ -129,7 +131,7 @@ const IndexPage = () => (
           <img
             width={530}
             className="hero-image hero-app"
-            src={require("../images/inquicker-app-hero.png")}
+            src={inquicker_app_hero}
             alt="inquicker app screenshot"
           />
         </div>
@@ -138,9 +140,9 @@ const IndexPage = () => (
     <section className="invision">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
-            src={require("../images/invision-logo.png")}
+            src={("../images/invision-logo.png")}
             alt="invision logo"
           />
           <h2>Digital Product Design Platform</h2>
@@ -166,7 +168,7 @@ const IndexPage = () => (
           <img
             width={718}
             className="hero-image"
-            src={require("../images/invision-case-study/inspect-mode.png")}
+            src={invision_inspect_mode}
             alt="invision inspect mode"
           />
         </Tilt>
