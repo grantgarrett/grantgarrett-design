@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Tilt from "react-tilt"
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -12,7 +12,7 @@ const InvisionCS = () => (
     pageId="inquicker-case-study"
     pageTitle="InQuicker Case Study: InQuicker 2.0 "
   >
-    <SEO title="Case Study: InQuicker" />
+    <Seo title="Case Study: InQuicker" />
     <section className="inquicker intro">
       <div className="section-wrapper">
         <div className="section-content">
@@ -43,14 +43,14 @@ const InvisionCS = () => (
           >
             <img
               className=""
-              src={require("../images/inquicker-iphone-hero.png")}
+              src="/inquicker-iphone-hero.png"
               alt="inquicker iphone screenshot"
             />
           </Tilt>
 
           <img
             className="hero-image hero-app"
-            src={require("../images/inquicker-app-hero.png")}
+            src="/inquicker-app-hero.png"
             alt="inquicker app screenshot"
           />
         </div>

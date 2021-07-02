@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Tilt from "react-tilt"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -19,7 +19,7 @@ import invision_inspect_mode from "../images/invision-case-study/inspect-mode.pn
 
 const IndexPage = () => (
   <Layout pageId="home">
-    <SEO
+    <Seo
       title="Grant Garrett Design"
       keywords={[`Product Designer`, `Grant Garrett`, `Design`]}
     />

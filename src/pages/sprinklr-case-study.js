@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 // import Tilt from "react-tilt"
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -12,7 +12,7 @@ const InvisionCS = () => (
     pageId="sprinklr-case-study"
     pageTitle="Sprinklr Case Study: Hyperspace Design System"
   >
-    <SEO title="Sprinklr Case Study: Hyperspace Design System" />
+    <Seo title="Sprinklr Case Study: Hyperspace Design System" />
     <section className="sprinklr intro">
       <div className="section-wrapper">
         <div className="section-content">

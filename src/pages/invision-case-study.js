@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Tilt from "react-tilt"
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -12,7 +12,7 @@ const InvisionCS = () => (
     pageId="invision-case-study"
     pageTitle="InVision Case Study: Inspect Mode"
   >
-    <SEO title="Case Study: InVision Inspect Mode" />
+    <Seo title="Case Study: InVision Inspect Mode" />
     <section className="intro">
       <div className="case-study-grid">
         <div className="g1-4">
