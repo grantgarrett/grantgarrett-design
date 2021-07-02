@@ -217,9 +217,24 @@ footer button.email-copy-button {
 }
 //tooltip styling
 .tooltip {
-  opacity: 1 !important;
-}
-.__react_component_tooltip {
-  border-radius: 22px !important;
+  // opacity: 1 !important;
+  border-radius: 22px;
+  color: #e1e1e1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px 12px;
+  font-size: 13px;
+  &.show {
+    opacity: 1 !important;
+  }
+  &.place-bottom {
+    margin-top: 4px !important;
+  }
+  &.place-top {
+    margin-top: 0px !important;
+  }
+  &::after {
+    //hide caret
+    display: none;
+  }
 }
 @import "media-queries";

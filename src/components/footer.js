@@ -1,13 +1,13 @@
 // import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import GLogo from "../images/icons/g-logo"
-//https://www.npmjs.com/package/react-tooltip
-import ReactTooltip from "react-tooltip"
-
-
+import Tippy from '@tippyjs/react';
 
 const Footer = () => {
-  const [emailTooltipText, setEmailTooltipText] = useState("Click to copy");
+  const [emailTooltipText, setEmailTooltipText] = useState("Click to copy my email");
+  // tooltip stuff
+  const ref = useRef();
+  // const [source, target] = useSingleton();
 
   return (
     <footer>
@@ -35,7 +35,6 @@ const Footer = () => {
             <a
               href="http://www.grantgarrett.com"
               target="_self"
-            // rel="noopener noreferrer"
             >
               personal url <span>grantgarrett.com</span>
             </a>
@@ -43,9 +42,8 @@ const Footer = () => {
           <li>
             <button
               className="email-copy-button"
-              onClick={() => { setEmailTooltipText("Copied!"); navigator.clipboard.writeText("grant@grantgarrett.com") }}
-              data-tip={emailTooltipText}
-              data-for="emailTooltipFooter"
+              onClick={() => { setEmailTooltipText("Copied! Email me!"); navigator.clipboard.writeText("grant@grantgarrett.com") }}
+              ref={ref}
             >
               email <span>grant@grantgarrett.com</span>
             </button>
@@ -53,7 +51,16 @@ const Footer = () => {
 
         </ul>
       </div>
-      <ReactTooltip id="emailTooltipFooter" className='tooltip' effect="solid" getContent={() => emailTooltipText} afterShow={() => setEmailTooltipText("Click to copy")} />
+      <Tippy
+        content={emailTooltipText}
+        className="tooltip"
+        placement="top"
+        reference={ref}
+        hideOnClick={false}
+        offset={[0, 4]}
+        animation={false}
+        onHidden={() => setEmailTooltipText("Click to copy my email")}
+      />
     </footer>
   )
 }

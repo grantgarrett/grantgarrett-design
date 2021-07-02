@@ -16,18 +16,25 @@ header {
 section {
   padding: 90px 0;
 }
+.hero-image-container {
+  @include screenshot-shadow-white;
+  border-radius: 8px;
+}
+.hero-image-in-container {
+  border-radius: 8px;
+}
 .hero-image {
-  border-radius: 3px;
+  border-radius: 8px;
   @include screenshot-dropshadow;
 }
 .iteration {
-  border-radius: 3px;
+  border-radius: 8px;
   margin: 40px 0;
   @include screenshot-dropshadow;
 }
 .intro {
   .logo {
-    width: 85%;
+    max-width: 260px;
     margin-bottom: 30px;
   }
   h2 {
@@ -43,6 +50,6 @@ section {
   .hero-image {
     @include screenshot-dropshadow;
     margin-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 5px;
   }
 }

@@ -1,17 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Tilt from "react-tilt"
+import Seo from "../components/seo"
+import Tilt from 'react-parallax-tilt';
+import { StaticImage } from "gatsby-plugin-image"
 
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconDownArrow from "../images/icons/arrow-down"
 
+//Images
+import sprinklr_logo from "../images/sprinklr-logo.svg"
+// import inquicker_app_hero from "../images/inquicker-app-hero.png"
+
+
 
 const IndexPage = () => (
   <Layout pageId="home">
-    <SEO
+    <Seo
       title="Grant Garrett Design"
       keywords={[`Product Designer`, `Grant Garrett`, `Design`]}
     />
@@ -44,11 +50,7 @@ const IndexPage = () => (
     <section className="sprinklr">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
-            className="logo"
-            src={require("../images/sprinklr-logo.svg")}
-            alt="sprinklr logo"
-          />
+          <img src={sprinklr_logo} className="logo" alt="sprinklr logo" />
           <h2>Unified Customer Experience Platform</h2>
           <p>
             <b>Project:</b> Creating design guidelines and new patterns and components while updating, maintaining, and governing our design system called Hyperspace.
@@ -58,20 +60,27 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <img
-          className="hero-image"
-          src={require("../images/sprinklr-hero.png")}
-          alt="sprinklr screenshots"
-        />
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
+          <StaticImage
+            src={"../images/sprinklr-hero.png"}
+            className="hero-image"
+            imgClassName="hero-image"
+            alt="sprinklr screenshots" quality="100"
+            placeholder="none"
+            loading="eager"
+          />
+        </Tilt>
       </div>
     </section>
     <section className="sightbox">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
-            src={require("../images/sightbox-logo.png")}
+            src="../images/sightbox-logo.png"
             alt="sightbox logo"
+            placeholder="tracedSVG"
+            loading="eager"
           />
           <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
           <p>
@@ -82,20 +91,27 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <img
-          className="hero-image"
-          src={require("../images/sightbox-member-profile.png")}
-          alt="sightbox app screenshot"
-        />
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+          <StaticImage
+            src={("../images/sightbox-member-profile.png")}
+            className="hero-image"
+            imgClassName="hero-image"
+            alt="sightbox app screenshot"
+            quality="100"
+            placeholder="blurred"
+          />
+        </Tilt>
       </div>
     </section>
     <section className="inquicker">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
-            src={require("../images/inquicker-logo.png")}
+            // imgClassName="logo"
+            src={"../images/inquicker-logo.png"}
             alt="inquicker logo"
+            placeholder="tracedSVG"
           />
           <h2>Reinventing the Patient Experience</h2>
           <p>
@@ -108,40 +124,35 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="inquicker-hero-group">
-          <Tilt
-            className="Tilt hero-iphone"
-            options={{
-              max: 8,
-              perspective: 1000,
-              reverse: true,
-              speed: 2000,
-              scale: 1,
-            }}
-          >
-            <img
+          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={6} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+            <StaticImage
+              src="../images/inquicker-iphone-hero.png"
               className=""
-              width={197}
-              src={require("../images/inquicker-iphone-hero.png")}
               alt="inquicker iphone screenshot"
+              placeholder="tracedSVG"
             />
           </Tilt>
-
-          <img
-            width={530}
-            className="hero-image hero-app"
-            src={require("../images/inquicker-app-hero.png")}
-            alt="inquicker app screenshot"
-          />
+          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+            <StaticImage
+              src="../images/inquicker-app-hero.png"
+              className="hero-image hero-app"
+              imgClassName="hero-image"
+              alt="inquicker app screenshot"
+              quality="100"
+              placeholder="blurred"
+            />
+          </Tilt>
         </div>
       </div>
     </section>
     <section className="invision">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
-            src={require("../images/invision-logo.png")}
+            src={("../images/invision-logo.png")}
             alt="invision logo"
+            placeholder="tracedSVG"
           />
           <h2>Digital Product Design Platform</h2>
           <p>
@@ -153,21 +164,14 @@ const IndexPage = () => (
             <IconRightArrow fill="#ff3366" />
           </Link>
         </div>
-        <Tilt
-          className="Tilt"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
-          <img
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.02} glareMaxOpacity={0.1} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+          <StaticImage
+            src="../images/invision-case-study/inspect-mode.png"
             width={718}
-            className="hero-image"
-            src={require("../images/invision-case-study/inspect-mode.png")}
+            // className="hero-image"
+            imgClassName="hero-image"
             alt="invision inspect mode"
+            quality="100"
           />
         </Tilt>
       </div>

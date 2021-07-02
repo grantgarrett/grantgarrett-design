@@ -30,18 +30,24 @@ header {
 .intro {
   overflow: hidden;
   .logo {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
   h2 {
     margin-bottom: 0.5em;
     font-size: 24px;
   }
   .section-wrapper {
-    grid-template-columns: minmax(300px, 400px) minmax(400px, 700px);
+    grid-template-columns: minmax(300px, 400px) minmax(430px, 700px);
     grid-column-gap: 2em;
     display: grid;
     padding-bottom: 0;
     overflow: hidden;
+  }
+  .hero-image-container {
+    align-self: end;
+  }
+  .hero-image {
+    padding-top: 40px;
   }
 }
 img.border.hyperspace-files {

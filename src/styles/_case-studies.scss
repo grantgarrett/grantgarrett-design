@@ -197,7 +197,7 @@ img {
     background-color: #e5eff6;
     border-radius: 5px 0 0 5px;
     display: grid;
-    grid-template-columns: minmax(270px, 1fr) minmax(310px, 1.4fr);
+    grid-template-columns: minmax(270px, 1fr) minmax(420px, 1fr);
     grid-column-gap: 1em;
 
     h2 {
@@ -219,7 +219,7 @@ img {
     .hero {
       align-self: end;
       padding-top: 10px;
-      margin-bottom: -5px;
+      // margin-bottom: -5px;
     }
   }
   .go-to-invision {

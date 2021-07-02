@@ -27,7 +27,7 @@ section {
 
 .intro {
   .logo {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
   h2 {
     margin-bottom: 0.5em;
@@ -39,9 +39,16 @@ section {
     padding: 40px;
   }
 }
+.hero-image-container {
+  @include screenshot-shadow-white;
+  border-radius: 8px;
+}
+.hero-image-in-container {
+  border-radius: 8px;
+}
 .hero-image {
   @include screenshot-shadow-white;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .video {
   width: 100%;

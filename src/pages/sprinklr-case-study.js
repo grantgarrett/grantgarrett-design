@@ -1,25 +1,35 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-// import Tilt from "react-tilt"
+import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
+import Tilt from 'react-parallax-tilt';
+
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconLeftArrow from "../images/icons/arrow-left"
+
+//Images
+import sprinklr_logo from "../images/sprinklr-logo.svg"
+//Videos
+import adaptableComponents from "../images/sprinklr-case-study/brand-content-swapper.mp4"
+import responsiveChart from "../images/sprinklr-case-study/responsive-chart-component.mp4"
+import complexVariants from "../images/sprinklr-case-study/variants.mp4"
+
+
 
 const InvisionCS = () => (
   <Layout
     pageId="sprinklr-case-study"
     pageTitle="Sprinklr Case Study: Hyperspace Design System"
   >
-    <SEO title="Sprinklr Case Study: Hyperspace Design System" />
+    <Seo title="Sprinklr Case Study: Hyperspace Design System" />
     <section className="sprinklr intro">
       <div className="section-wrapper">
         <div className="section-content">
           <img
-            // width={275}
             className="logo"
-            src={require("../images/sprinklr-logo.svg")}
+            src={sprinklr_logo}
             alt="sprinklr logo"
           />
           <h2>Hyperspace Design System</h2>
@@ -30,11 +40,17 @@ const InvisionCS = () => (
             <b>Role:</b> Lead Designer for Modern Care product on Sprinklr Platform and point of contact for the Hyperspace Design System.
           </p>
         </div>
-        <img
-          className="hero-image"
-          src={require("../images/sprinklr-hero.png")}
-          alt="sprinklr screenshots"
-        />
+        <Tilt className="hero-image-container hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.03} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+          <StaticImage
+            src="../images/sprinklr-hero.png"
+            className="hero-image"
+            imgClassName="hero-image"
+            alt="sprinklr screenshots"
+            loading="eager"
+            placeholder="none"
+            backgroundColor="transparent"
+          />
+        </Tilt>
 
 
       </div>
@@ -58,33 +74,33 @@ const InvisionCS = () => (
         </div>
         <div className="g4-8">
           <h3>Naming Conventions and Layers</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/best-practices1.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/best-practices1.png"
             alt="hyperspace design system best practices"
           />
         </div>
         <div className="g1-5">
           <h3>How to use Tokens</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/best-practices2.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/best-practices2.png"
             alt="hyperspace design system best practices"
           />
         </div>
         <div className="g5-9">
           <h3>Component Structure & Documentation</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/best-practices3.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/best-practices3.png"
             alt="hyperspace design system best practices"
           />
         </div>
         <div className="g2-8">
           <h3>Elemental Spacing and Grid System Guidelines</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/spacing1.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/spacing1.png"
             alt="hyperspace design system best practices"
           />
         </div>
@@ -107,33 +123,33 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g4-9">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/hyperspace.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/hyperspace.png"
             alt="hyperspace design system"
           />
         </div>
         <div className="g2-5">
           <h3>Base Components</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/base-components.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/base-components.png"
             alt="hyperspace design system"
           />
         </div>
         <div className="g5-8">
           <h3>Atomic Components</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/atomic-components.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/atomic-components.png"
             alt="hyperspace design system"
           />
         </div>
         <div className="g2-8">
           <h3>Molecular Components</h3>
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/molecular-components.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/molecular-components.png"
             alt="hyperspace design system"
           />
         </div>
@@ -157,16 +173,16 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g4-8">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/page-layout1.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/page-layout1.png"
             alt="hyperspace design system"
           />
         </div>
         <div className="g1-9">
-          <img
-            className="border"
-            src={require("../images/sprinklr-case-study/application-shell-components.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sprinklr-case-study/application-shell-components.png"
             alt="hyperspace design system"
           />
         </div>
@@ -183,7 +199,7 @@ const InvisionCS = () => (
         <div className="g1-9">
           <video className="video" autoPlay playsInline loop muted>
             <source
-              src={require("../images/sprinklr-case-study/brand-content-swapper.mp4")}
+              src={adaptableComponents}
               type="video/mp4"
             />
           </video>
@@ -201,7 +217,7 @@ const InvisionCS = () => (
         <div className="g3-9">
           <video className="video" autoPlay playsInline loop muted>
             <source
-              src={require("../images/sprinklr-case-study/responsive-chart-component.mp4")}
+              src={responsiveChart}
               type="video/mp4"
             />
           </video>
@@ -219,7 +235,7 @@ const InvisionCS = () => (
         <div className="g3-8">
           <video className="video" autoPlay playsInline loop muted>
             <source
-              src={require("../images/sprinklr-case-study/variants.mp4")}
+              src={complexVariants}
               type="video/mp4"
             />
           </video>
@@ -262,10 +278,11 @@ const InvisionCS = () => (
         </div>
         <div className="go-to-invision invision g4-9">
           <div className="iv-copy">
-            <img
+            <StaticImage
               className="logo"
-              src={require("../images/invision-logo.png")}
+              src="../images/invision-logo.png"
               alt="invision logo"
+              placeholder="tracedSVG"
             />
             <h2>Digital Product Design Platform</h2>
             <p>
@@ -278,11 +295,13 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <img
-              className="hero-image"
-              src={require("../images/invision-case-study/inspect-mode.png")}
-              alt="invision inspect mode"
-            />
+            <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+              <StaticImage
+                imgClassName="hero-image"
+                src="../images/invision-case-study/inspect-mode.png"
+                alt="invision inspect mode"
+              />
+            </Tilt>
           </div>
         </div>
       </div>

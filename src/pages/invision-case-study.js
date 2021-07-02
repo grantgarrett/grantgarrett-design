@@ -1,25 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Tilt from "react-tilt"
+import Seo from "../components/seo"
+import Tilt from 'react-parallax-tilt';
+import { StaticImage } from "gatsby-plugin-image"
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconLeftArrow from "../images/icons/arrow-left"
+//Images
+// import sprinklr_logo from "../images/sprinklr-logo.svg"
 
 const InvisionCS = () => (
   <Layout
     pageId="invision-case-study"
     pageTitle="InVision Case Study: Inspect Mode"
   >
-    <SEO title="Case Study: InVision Inspect Mode" />
+    <Seo title="Case Study: InVision Inspect Mode" />
     <section className="intro">
       <div className="case-study-grid">
         <div className="g1-4">
-          <img
+          <StaticImage
+            // imgClassName="logo"
             className="logo"
-            src={require("../images/invision-logo.png")}
+            src="../images/invision-logo.png"
             alt="invision logo"
+            loading="eager"
           />
           <h2>Case Study: Inspect Mode</h2>
           <p>
@@ -30,20 +35,13 @@ const InvisionCS = () => (
             <b>Role:</b> Product Design lead for Inspect Mode
           </p>
         </div>
-        <Tilt
-          className="Tilt g4-9"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
-          <img
-            className="hero-image"
-            src={require("../images/invision-case-study/inspect-mode.png")}
+        <Tilt className="g4-9" glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={3} scale={1.01} glareMaxOpacity={0.1} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+          <StaticImage
+            className="hero-image-container"
+            imgClassName="hero-image-in-container"
+            src="../images/invision-case-study/inspect-mode.png"
             alt="invision inspect mode"
+            loading="eager"
           />
         </Tilt>
       </div>
@@ -170,9 +168,9 @@ const InvisionCS = () => (
         </div>
         <div className="column2 g5-8">
           <div className="image-slide">
-            <img
-              className="border"
-              src={require("../images/invision-case-study/modes-explore.png")}
+            <StaticImage
+              imgClassName="border"
+              src="../images/invision-case-study/modes-explore.png"
               alt="explore modes"
             />
             {/* *Actual documents used during design process */}
@@ -192,9 +190,9 @@ const InvisionCS = () => (
         </div>
         <div className="column2 g2-8">
           <div className="image-slide">
-            <img
+            <StaticImage
               className=""
-              src={require("../images/invision-case-study/sketches-audit.png")}
+              src="../images/invision-case-study/sketches-audit.png"
               alt="explore modes"
             />
             {/* *Actual documents used during design process */}
@@ -250,9 +248,9 @@ const InvisionCS = () => (
         </div>
         <div className="column2 g4-9">
           <div className="image-slide">
-            <img
-              className="border"
-              src={require("../images/invision-case-study/storyboarding.png")}
+            <StaticImage
+              imgClassName="border"
+              src="../images/invision-case-study/storyboarding.png"
               alt="storyboarding"
             />
             {/* *Actual documents used during design process */}
@@ -302,9 +300,9 @@ const InvisionCS = () => (
         </div>
         <div className="column2 g1-9">
           <div className="image-slide">
-            <img
-              className="border"
-              src={require("../images/invision-case-study/wireframing.png")}
+            <StaticImage
+              imgClassName="border"
+              src="../images/invision-case-study/wireframing.png"
               alt="wireframing"
             />
             {/* *Actual documents used during design process */}
@@ -354,10 +352,10 @@ const InvisionCS = () => (
         </div>
         <div className="column2 g2-8">
           <div className="image-slide">
-            <img
+            <StaticImage
               className=""
-              src={require("../images/invision-case-study/tools-storyboarding.png")}
-              alt="inspectin tools"
+              src="../images/invision-case-study/tools-storyboarding.png"
+              alt="inspection tools"
             />
             {/* *Actual documents used during design process */}
           </div>
@@ -382,25 +380,29 @@ const InvisionCS = () => (
             zooming, document header, rulers).
           </p>
         </div>
-        <div className="image-slide g2-8">
-          <img
+        <div className="g2-8">
+          <StaticImage
             className="iteration"
-            src={require("../images/invision-case-study/iteration1.png")}
+            imgClassName="hero-image-in-container"
+            src="../images/invision-case-study/iteration1.png"
             alt="inspect iteration"
           />
-          <img
+          <StaticImage
             className="iteration"
-            src={require("../images/invision-case-study/iteration2.png")}
+            imgClassName="hero-image-in-container"
+            src="../images/invision-case-study/iteration2.png"
             alt="inspect iteration"
           />
-          <img
+          <StaticImage
             className="iteration"
-            src={require("../images/invision-case-study/iteration3.png")}
+            imgClassName="hero-image-in-container"
+            src="../images/invision-case-study/iteration3.png"
             alt="inspect iteration"
           />
-          <img
+          <StaticImage
             className="iteration"
-            src={require("../images/invision-case-study/iteration4.png")}
+            imgClassName="hero-image-in-container"
+            src="../images/invision-case-study/iteration4.png"
             alt="inspect iteration"
           />
         </div>
@@ -434,25 +436,18 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="image-slide g1-9 final-image-iv">
-          <Tilt
-            className="Tilt"
-            options={{
-              max: 8,
-              perspective: 1000,
-              reverse: true,
-              speed: 2000,
-              scale: 1,
-            }}
-          >
-            <img
-              className="hero-image"
-              src={require("../images/invision-case-study/inspect-mode.png")}
+          <Tilt glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0.1} transitionSpeed={1600} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+            <StaticImage
+              className="hero-image-container"
+              imgClassName="hero-image-in-container"
+              src="../images/invision-case-study/inspect-mode.png"
               alt="invision inspect mode"
             />
           </Tilt>
         </div>
       </div>
     </section>
+
     <section className="end-of-cs">
       <div className="shim1" />
       <div className="case-study-grid">
@@ -479,9 +474,9 @@ const InvisionCS = () => (
         </div>
         <div className="go-to-inquicker g4-9">
           <div className="iq-copy">
-            <img
+            <StaticImage
               className="logo"
-              src={require("../images/inquicker-logo.png")}
+              src="../images/inquicker-logo.png"
               alt="inquicker logo"
             />
             <h2>Reinventing the Patient Experience</h2>
@@ -495,9 +490,9 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <img
+            <StaticImage
               className=""
-              src={require("../images/inquicker-hero.png")}
+              src="../images/inquicker-hero.png"
               alt="inquicker app"
             />
           </div>
