@@ -218,9 +218,11 @@ footer button.email-copy-button {
 //tooltip styling
 .tooltip {
   // opacity: 1 !important;
-  border-radius: 22px !important;
-  color: #e1e1e1 !important;
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 22px;
+  color: #e1e1e1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px 12px;
+  font-size: 13px;
   &.show {
     opacity: 1 !important;
   }

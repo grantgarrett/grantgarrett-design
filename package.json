@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@tippyjs/react": "^4.2.5",
     "gatsby": "^3.8.1",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-image": "^1.8.0",
