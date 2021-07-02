@@ -4,9 +4,17 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Tilt from "react-tilt"
 import { StaticImage } from "gatsby-plugin-image"
+
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconLeftArrow from "../images/icons/arrow-left"
+//Images
+import specialtyDropdown from "../images/inquicker-case-study/specialty-dropdown.gif"
+//Videos
+import mobileProviderMapSearch from "../images/inquicker-case-study/mobile-provider-map-search-short.mp4"
+import mobileDirection from "../images/inquicker-case-study/directions.mp4"
+import mobileScrollHeader from "../images/inquicker-case-study/scroll-size-header.mp4"
+
 
 const InvisionCS = () => (
   <Layout
@@ -42,16 +50,16 @@ const InvisionCS = () => (
               scale: 1,
             }}
           >
-            <img
-              className=""
-              src="/inquicker-iphone-hero.png"
+            <StaticImage
+              src="../images/inquicker-iphone-hero.png"
               alt="inquicker iphone screenshot"
             />
           </Tilt>
 
-          <img
-            className="hero-image hero-app"
-            src="/inquicker-app-hero.png"
+          <StaticImage
+            className="hero-image-container hero-app"
+            imgClassName="hero-image-in-container"
+            src="../images/inquicker-app-hero.png"
             alt="inquicker app screenshot"
           />
         </div>
@@ -87,9 +95,10 @@ const InvisionCS = () => (
         </div>
         <div className="g5-9">
           <div className="image-slide">
-            <img
-              className="hero-image"
-              src={require("../images/inquicker-case-study/inquicker-old-patient.png")}
+            <StaticImage
+              className="hero-image-container"
+              imgClassName="hero-image-in-container"
+              src="../images/inquicker-case-study/inquicker-old-patient.png"
               alt="old inquicker state"
             />
           </div>
@@ -170,9 +179,9 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g1-9">
-          <img
-            className="border"
-            src={require("../images/inquicker-case-study/wireframes1.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/inquicker-case-study/wireframes1.png"
             alt="wireframing"
           />
         </div>
@@ -193,9 +202,9 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g4-9">
-          <img
-            className="border"
-            src={require("../images/inquicker-case-study/wireframes2.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/inquicker-case-study/wireframes2.png"
             alt="wireframing"
           />
         </div>
@@ -220,9 +229,9 @@ const InvisionCS = () => (
             and background information.
           </p>
         </div>
-        <img
+        <StaticImage
           className="g4-9"
-          src={require("../images/inquicker-case-study/iteration-group.png")}
+          src="../images/inquicker-case-study/iteration-group.png"
           alt="iterating"
         />
         {/* <div class="g4-9 iterations">
@@ -278,9 +287,9 @@ const InvisionCS = () => (
         </div>
         <div className="g5-8">
           <div className="image-slide">
-            <img
+            <StaticImage
               className=""
-              src={require("../images/inquicker-case-study/debt1.png")}
+              src="../images/inquicker-case-study/debt1.png"
               alt="design debt"
             />
           </div>
@@ -297,9 +306,9 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g1-9">
-          <img
-            className="border"
-            src={require("../images/inquicker-case-study/insurance-dropdown.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/inquicker-case-study/insurance-dropdown.png"
             alt="insurance dropdown screenshot"
           />
         </div>
@@ -322,9 +331,9 @@ const InvisionCS = () => (
         </div>
         <div className="g5-9">
           <div className="image-slide">
-            <img
-              className="border"
-              src={require("../images/inquicker-case-study/pagination.png")}
+            <StaticImage
+              imgClassName="border"
+              src="../images/inquicker-case-study/pagination.png"
               alt="pagination"
             />
           </div>
@@ -343,9 +352,9 @@ const InvisionCS = () => (
         </div>
         <div className="g2-8">
           <div className="image-slide">
-            <img
-              className="border"
-              src={require("../images/inquicker-case-study/gps-paths.png")}
+            <StaticImage
+              imgClassName="border"
+              src="../images/inquicker-case-study/gps-paths.png"
               alt="pagination"
             />
           </div>
@@ -373,7 +382,7 @@ const InvisionCS = () => (
           <div className="image-slide">
             <img
               className="border"
-              src={require("../images/inquicker-case-study/specialty-dropdown.gif")}
+              src={specialtyDropdown}
               alt="pagination"
             />
           </div>
@@ -404,7 +413,7 @@ const InvisionCS = () => (
         <div className="g5-8">
           <video className="video" autoPlay playsInline loop muted>
             <source
-              src={require("../images/inquicker-case-study/mobile-provider-map-search-short.mp4")}
+              src={mobileProviderMapSearch}
               type="video/mp4"
             />
           </video>
@@ -438,7 +447,7 @@ const InvisionCS = () => (
         <div className="g5-7">
           <video className="video fixsize" autoPlay playsInline loop muted>
             <source
-              src={require("../images/inquicker-case-study/directions.mp4")}
+              src={mobileDirection}
               type="video/mp4"
             />
           </video>
@@ -446,7 +455,7 @@ const InvisionCS = () => (
         <div className="g7-9">
           <video className="video fixsize" autoPlay playsInline loop muted>
             <source
-              src={require("../images/inquicker-case-study/scroll-size-header.mp4")}
+              src={mobileScrollHeader}
               type="video/mp4"
             />
           </video>
@@ -478,9 +487,9 @@ const InvisionCS = () => (
             scale: 1,
           }}
         >
-          <img
+          <StaticImage
             className=" "
-            src={require("../images/inquicker-iphone-hero.png")}
+            src="../images/inquicker-iphone-hero.png"
             alt="inquicker iphone screenshot"
           />
         </Tilt>
@@ -494,9 +503,10 @@ const InvisionCS = () => (
             scale: 1,
           }}
         >
-          <img
-            className=" hero-image"
-            src={require("../images/inquicker-app-hero.png")}
+          <StaticImage
+            className="hero-image-container"
+            imgClassName="hero-image-in-container"
+            src="../images/inquicker-app-hero.png"
             alt="inquicker app screenshot"
           />
         </Tilt>
@@ -529,9 +539,10 @@ const InvisionCS = () => (
         </div>
         <div className="go-to-invision invision g4-9">
           <div className="iv-copy">
-            <img
+            <StaticImage
               className="logo"
-              src={require("../images/invision-logo.png")}
+              src="../images/invision-logo.png"
+              placeholder="tracedSVG"
               alt="invision logo"
             />
             <h2>Digital Product Design Platform</h2>
@@ -545,9 +556,10 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <img
-              className="hero-image"
-              src={require("../images/invision-case-study/inspect-mode.png")}
+            <StaticImage
+              className="hero-image-container"
+              imgClassName="hero-image-in-container"
+              src="../images/invision-case-study/inspect-mode.png"
               alt="invision inspect mode"
             />
           </div>
