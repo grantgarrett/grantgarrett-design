@@ -533,7 +533,7 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+            <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
               <StaticImage
                 className="hero-image-container"
                 imgClassName="hero-image-in-container"

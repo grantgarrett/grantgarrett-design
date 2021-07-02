@@ -436,7 +436,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="image-slide g1-9 final-image-iv">
-          <Tilt glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+          <Tilt glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0.1} transitionSpeed={1600} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
             <StaticImage
               className="hero-image-container"
               imgClassName="hero-image-in-container"
@@ -447,6 +447,7 @@ const InvisionCS = () => (
         </div>
       </div>
     </section>
+
     <section className="end-of-cs">
       <div className="shim1" />
       <div className="case-study-grid">
