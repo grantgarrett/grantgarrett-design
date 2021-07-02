@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import Tilt from 'react-parallax-tilt';
 
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -39,12 +40,14 @@ const InvisionCS = () => (
             <b>Role:</b> Lead Designer for Modern Care product on Sprinklr Platform and point of contact for the Hyperspace Design System.
           </p>
         </div>
-        <StaticImage
-          src="../images/sprinklr-hero.png"
-          className="hero-image"
-          imgClassName="hero-image"
-          alt="sprinklr screenshots"
-        />
+        <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.03} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+          <StaticImage
+            src="../images/sprinklr-hero.png"
+            className="hero-image"
+            imgClassName="hero-image"
+            alt="sprinklr screenshots"
+          />
+        </Tilt>
 
 
       </div>
@@ -289,11 +292,13 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <StaticImage
-              imgClassName="hero-image"
-              src="../images/invision-case-study/inspect-mode.png"
-              alt="invision inspect mode"
-            />
+            <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+              <StaticImage
+                imgClassName="hero-image"
+                src="../images/invision-case-study/inspect-mode.png"
+                alt="invision inspect mode"
+              />
+            </Tilt>
           </div>
         </div>
       </div>

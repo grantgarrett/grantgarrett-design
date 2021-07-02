@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Tilt from "react-tilt"
+import Tilt from 'react-parallax-tilt';
 import { StaticImage } from "gatsby-plugin-image"
 
 //Icons
@@ -60,14 +60,15 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <StaticImage
-          src={"../images/sprinklr-hero.png"}
-          className="hero-image"
-          imgClassName="hero-image"
-          alt="sprinklr screenshots" quality="100"
-          placeholder="none"
-        />
-
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={4} scale={1.02} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
+          <StaticImage
+            src={"../images/sprinklr-hero.png"}
+            className="hero-image"
+            imgClassName="hero-image"
+            alt="sprinklr screenshots" quality="100"
+            placeholder="none"
+          />
+        </Tilt>
       </div>
     </section>
     <section className="sightbox">
@@ -88,14 +89,16 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <StaticImage
-          src={("../images/sightbox-member-profile.png")}
-          className="hero-image"
-          imgClassName="hero-image"
-          alt="sightbox app screenshot"
-          quality="100"
-          placeholder="blurred"
-        />
+        <Tilt glareEnable={true} tiltMaxAngleX={4} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+          <StaticImage
+            src={("../images/sightbox-member-profile.png")}
+            className="hero-image"
+            imgClassName="hero-image"
+            alt="sightbox app screenshot"
+            quality="100"
+            placeholder="blurred"
+          />
+        </Tilt>
       </div>
     </section>
     <section className="inquicker">
@@ -119,16 +122,7 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="inquicker-hero-group">
-          <Tilt
-            className="Tilt hero-iphone"
-            options={{
-              max: 8,
-              perspective: 1000,
-              reverse: true,
-              speed: 2000,
-              scale: 1,
-            }}
-          >
+          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
             <StaticImage
               src="../images/inquicker-iphone-hero.png"
               className=""
@@ -136,15 +130,16 @@ const IndexPage = () => (
               placeholder="tracedSVG"
             />
           </Tilt>
-
-          <StaticImage
-            src="../images/inquicker-app-hero.png"
-            className="hero-image hero-app"
-            imgClassName="hero-image "
-            alt="inquicker app screenshot"
-            quality="100"
-            placeholder="blurred"
-          />
+          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+            <StaticImage
+              src="../images/inquicker-app-hero.png"
+              className="hero-image hero-app"
+              imgClassName="hero-image"
+              alt="inquicker app screenshot"
+              quality="100"
+              placeholder="blurred"
+            />
+          </Tilt>
         </div>
       </div>
     </section>
@@ -167,16 +162,7 @@ const IndexPage = () => (
             <IconRightArrow fill="#ff3366" />
           </Link>
         </div>
-        <Tilt
-          className="Tilt"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
+        <Tilt glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
             src="../images/invision-case-study/inspect-mode.png"
             width={718}

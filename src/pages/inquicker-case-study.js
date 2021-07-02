@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Tilt from "react-tilt"
+import Tilt from 'react-parallax-tilt';
 import { StaticImage } from "gatsby-plugin-image"
 
 //Icons
@@ -40,28 +40,20 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="inquicker-hero-group">
-          <Tilt
-            className="Tilt hero-iphone"
-            options={{
-              max: 8,
-              perspective: 1000,
-              reverse: true,
-              speed: 2000,
-              scale: 1,
-            }}
-          >
+          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
             <StaticImage
               src="../images/inquicker-iphone-hero.png"
               alt="inquicker iphone screenshot"
             />
           </Tilt>
-
-          <StaticImage
-            className="hero-image-container hero-app"
-            imgClassName="hero-image-in-container"
-            src="../images/inquicker-app-hero.png"
-            alt="inquicker app screenshot"
-          />
+          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+            <StaticImage
+              className="hero-image-container hero-app"
+              imgClassName="hero-image-in-container"
+              src="../images/inquicker-app-hero.png"
+              alt="inquicker app screenshot"
+            />
+          </Tilt>
         </div>
       </div>
     </section>
@@ -477,32 +469,14 @@ const InvisionCS = () => (
         </div>
       </div>
       <div className="case-study-grid final-iq">
-        <Tilt
-          className="Tilt hero-iphone"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
+        <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.04} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
             className=" "
             src="../images/inquicker-iphone-hero.png"
             alt="inquicker iphone screenshot"
           />
         </Tilt>
-        <Tilt
-          className="Tilt hero-app"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
+        <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
           <StaticImage
             className="hero-image-container"
             imgClassName="hero-image-in-container"
@@ -556,12 +530,14 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <StaticImage
-              className="hero-image-container"
-              imgClassName="hero-image-in-container"
-              src="../images/invision-case-study/inspect-mode.png"
-              alt="invision inspect mode"
-            />
+            <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+              <StaticImage
+                className="hero-image-container"
+                imgClassName="hero-image-in-container"
+                src="../images/invision-case-study/inspect-mode.png"
+                alt="invision inspect mode"
+              />
+            </Tilt>
           </div>
         </div>
       </div>

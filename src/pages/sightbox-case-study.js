@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import Tilt from 'react-parallax-tilt';
 
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -31,12 +32,14 @@ const InvisionCS = () => (
             <b>Role:</b> Product Design lead for Sightbox's internal CRM, IRIS.
           </p>
         </div>
-        <StaticImage
-          className="hero-image-header-container"
-          imgClassName="hero-image-header"
-          src="../images/sightbox-case-study/renewal-dashboard.png"
-          alt="sightbox renewal dashboard screenshot"
-        />
+        <Tilt glareEnable={true} tiltMaxAngleX={4} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+          <StaticImage
+            className="hero-image-header-container"
+            imgClassName="hero-image-header"
+            src="../images/sightbox-case-study/renewal-dashboard.png"
+            alt="sightbox renewal dashboard screenshot"
+          />
+        </Tilt>
 
       </div>
     </section>
@@ -278,11 +281,13 @@ const InvisionCS = () => (
         </div>
 
         <div className="final-screenshot g4-9">
-          <StaticImage
-            imgClassName="hero-image"
-            src="../images/sightbox-case-study/renewal-dashboard.png"
-            alt="sightbox renewal dashboard screenshot"
-          />
+          <Tilt glareEnable={true} tiltMaxAngleX={4} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+            <StaticImage
+              imgClassName="hero-image"
+              src="../images/sightbox-case-study/renewal-dashboard.png"
+              alt="sightbox renewal dashboard screenshot"
+            />
+          </Tilt>
         </div>
       </div>
     </section>
@@ -330,11 +335,13 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <StaticImage
-              imgClassName="hero-image"
-              src="../images/invision-case-study/inspect-mode.png"
-              alt="invision inspect mode"
-            />
+            <Tilt glareEnable={true} tiltMaxAngleX={4} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+              <StaticImage
+                imgClassName="hero-image"
+                src="../images/invision-case-study/inspect-mode.png"
+                alt="invision inspect mode"
+              />
+            </Tilt>
           </div>
         </div>
       </div>

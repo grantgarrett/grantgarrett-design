@@ -20,7 +20,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
-    "react-tilt": "^0.1.4",
+    "react-parallax-tilt": "^1.5.41",
     "react-tooltip": "^4.2.21",
     "typescript": "^4.3.4"
   },

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Tilt from "react-tilt"
+import Tilt from 'react-parallax-tilt';
 import { StaticImage } from "gatsby-plugin-image"
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
@@ -34,16 +34,7 @@ const InvisionCS = () => (
             <b>Role:</b> Product Design lead for Inspect Mode
           </p>
         </div>
-        <Tilt
-          className="Tilt g4-9"
-          options={{
-            max: 8,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
+        <Tilt glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
             className="hero-image-container"
             imgClassName="hero-image-in-container"
@@ -443,16 +434,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="image-slide g1-9 final-image-iv">
-          <Tilt
-            className="Tilt"
-            options={{
-              max: 8,
-              perspective: 1000,
-              reverse: true,
-              speed: 2000,
-              scale: 1,
-            }}
-          >
+          <Tilt glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
             <StaticImage
               className="hero-image-container"
               imgClassName="hero-image-in-container"
