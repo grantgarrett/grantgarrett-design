@@ -40,12 +40,15 @@ const InvisionCS = () => (
             <b>Role:</b> Lead Designer for Modern Care product on Sprinklr Platform and point of contact for the Hyperspace Design System.
           </p>
         </div>
-        <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.03} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+        <Tilt className="hero-image-container hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.03} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
           <StaticImage
             src="../images/sprinklr-hero.png"
             className="hero-image"
             imgClassName="hero-image"
             alt="sprinklr screenshots"
+            loading="eager"
+            placeholder="none"
+            backgroundColor="transparent"
           />
         </Tilt>
 

@@ -60,13 +60,14 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={4} scale={1.02} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
           <StaticImage
             src={"../images/sprinklr-hero.png"}
             className="hero-image"
             imgClassName="hero-image"
             alt="sprinklr screenshots" quality="100"
             placeholder="none"
+            loading="eager"
           />
         </Tilt>
       </div>
@@ -79,6 +80,7 @@ const IndexPage = () => (
             src="../images/sightbox-logo.png"
             alt="sightbox logo"
             placeholder="tracedSVG"
+            loading="eager"
           />
           <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
           <p>
@@ -89,7 +91,7 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <Tilt glareEnable={true} tiltMaxAngleX={4} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
             src={("../images/sightbox-member-profile.png")}
             className="hero-image"
@@ -122,7 +124,7 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="inquicker-hero-group">
-          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={6} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
             <StaticImage
               src="../images/inquicker-iphone-hero.png"
               className=""
@@ -130,7 +132,7 @@ const IndexPage = () => (
               placeholder="tracedSVG"
             />
           </Tilt>
-          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
             <StaticImage
               src="../images/inquicker-app-hero.png"
               className="hero-image hero-app"
@@ -162,7 +164,7 @@ const IndexPage = () => (
             <IconRightArrow fill="#ff3366" />
           </Link>
         </div>
-        <Tilt glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.02} glareMaxOpacity={0.1} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
           <StaticImage
             src="../images/invision-case-study/inspect-mode.png"
             width={718}

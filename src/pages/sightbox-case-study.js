@@ -32,7 +32,7 @@ const InvisionCS = () => (
             <b>Role:</b> Product Design lead for Sightbox's internal CRM, IRIS.
           </p>
         </div>
-        <Tilt glareEnable={true} tiltMaxAngleX={4} tiltMaxAngleY={4} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+        <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={2} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
             className="hero-image-header-container"
             imgClassName="hero-image-header"
@@ -323,6 +323,7 @@ const InvisionCS = () => (
               src="../images/invision-logo.png"
               placeholder="tracedSVG"
               alt="invision logo"
+              loading="eager"
             />
             <h2>Digital Product Design Platform</h2>
             <p>
@@ -340,6 +341,7 @@ const InvisionCS = () => (
                 imgClassName="hero-image"
                 src="../images/invision-case-study/inspect-mode.png"
                 alt="invision inspect mode"
+                loading="eager"
               />
             </Tilt>
           </div>

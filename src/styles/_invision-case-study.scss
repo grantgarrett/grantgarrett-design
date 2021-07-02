@@ -50,6 +50,6 @@ section {
   .hero-image {
     @include screenshot-dropshadow;
     margin-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 5px;
   }
 }

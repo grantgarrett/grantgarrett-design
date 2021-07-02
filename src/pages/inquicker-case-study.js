@@ -29,6 +29,7 @@ const InvisionCS = () => (
             className="logo"
             alt="inqucker logo"
             src="../images/inquicker-logo.png"
+            loading="eager"
           />
           <h2>Case Study: Patient Application 2.0</h2>
           <p>
@@ -40,18 +41,20 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="inquicker-hero-group">
-          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
+          <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
             <StaticImage
               src="../images/inquicker-iphone-hero.png"
               alt="inquicker iphone screenshot"
+              loading="eager"
             />
           </Tilt>
-          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
+          <Tilt className="hero-app" glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={3} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
             <StaticImage
               className="hero-image-container hero-app"
               imgClassName="hero-image-in-container"
               src="../images/inquicker-app-hero.png"
               alt="inquicker app screenshot"
+              loading="eager"
             />
           </Tilt>
         </div>

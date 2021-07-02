@@ -43,6 +43,9 @@ header {
     padding-bottom: 0;
     overflow: hidden;
   }
+  .hero-image-container {
+    align-self: end;
+  }
 }
 img.border.hyperspace-files {
   border: solid 5px #ececec;

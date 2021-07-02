@@ -24,6 +24,7 @@ const InvisionCS = () => (
             className="logo"
             src="../images/invision-logo.png"
             alt="invision logo"
+            loading="eager"
           />
           <h2>Case Study: Inspect Mode</h2>
           <p>
@@ -34,12 +35,13 @@ const InvisionCS = () => (
             <b>Role:</b> Product Design lead for Inspect Mode
           </p>
         </div>
-        <Tilt glareEnable={true} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.03} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
+        <Tilt className="g4-9" glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={3} scale={1.01} glareMaxOpacity={0.1} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
             className="hero-image-container"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/inspect-mode.png"
             alt="invision inspect mode"
+            loading="eager"
           />
         </Tilt>
       </div>
