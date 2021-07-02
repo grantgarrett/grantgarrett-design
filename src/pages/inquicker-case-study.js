@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Tilt from "react-tilt"
+import { StaticImage } from "gatsby-plugin-image"
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconLeftArrow from "../images/icons/arrow-left"
@@ -16,10 +17,10 @@ const InvisionCS = () => (
     <section className="inquicker intro">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
+          <StaticImage
             className="logo"
             alt="inqucker logo"
-            src={require("../images/inquicker-logo.png")}
+            src="../images/inquicker-logo.png"
           />
           <h2>Case Study: Patient Application 2.0</h2>
           <p>

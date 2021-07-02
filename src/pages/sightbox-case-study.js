@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// import Tilt from "react-tilt"
+import { StaticImage } from "gatsby-plugin-image"
+
 //Icons
 import IconRightArrow from "../images/icons/arrow-right"
 import IconLeftArrow from "../images/icons/arrow-left"
@@ -16,11 +17,11 @@ const InvisionCS = () => (
     <section className="sightbox intro">
       <div className="section-wrapper">
         <div className="section-content">
-          <img
-            width={275}
+          <StaticImage
             className="logo"
-            src={require("../images/sightbox-logo.png")}
+            src="../images/sightbox-logo.png"
             alt="sightbox logo"
+            placeholder="tracedSVG"
           />
           <h2>Case Study: Memberships Redesign</h2>
           <p>
@@ -30,14 +31,13 @@ const InvisionCS = () => (
             <b>Role:</b> Product Design lead for Sightbox's internal CRM, IRIS.
           </p>
         </div>
-        <div className="intro-hero">
-          <img
-            className="hero-image"
-            src={require("../images/sightbox-case-study/renewal-dashboard.png")}
-            alt="sightbox renewal dashboard screenshot"
-          />
+        <StaticImage
+          className="hero-image-header-container"
+          imgClassName="hero-image-header"
+          src="../images/sightbox-case-study/renewal-dashboard.png"
+          alt="sightbox renewal dashboard screenshot"
+        />
 
-        </div>
       </div>
     </section>
 
@@ -71,9 +71,9 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g1-9">
-          <img
-            className="border"
-            src={require("../images/sightbox-case-study/manual-renewal-process-flow-audit.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sightbox-case-study/manual-renewal-process-flow-audit.png"
             alt="manual renewal process flow audit"
           />
         </div>
@@ -101,9 +101,9 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g4-9">
-          <img
-            className="border"
-            src={require("../images/sightbox-case-study/membership-timelines.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sightbox-case-study/membership-timelines.png"
             alt="possible membership timelines"
           />
         </div>
@@ -112,9 +112,9 @@ const InvisionCS = () => (
     <section className="dark">
       <div className="case-study-grid">
         <div className="g1-5">
-          <img
-            className="border"
-            src={require("../images/sightbox-case-study/member-renewal-states-v1.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sightbox-case-study/member-renewal-states-v1.png"
             alt="wireframing"
           />
         </div>
@@ -136,9 +136,9 @@ const InvisionCS = () => (
 
         </div>
         <div className="g1-9">
-          <img
-            className="border"
-            src={require("../images/sightbox-case-study/member-renewal-states-v2.png")}
+          <StaticImage
+            imgClassName="border"
+            src="../images/sightbox-case-study/member-renewal-states-v2.png"
             alt="wireframing"
           />
         </div>
@@ -207,45 +207,50 @@ const InvisionCS = () => (
         </div>
         <div className="g1-5">
           <div className="image-slide">
-            <img
-              className="hero-image"
-              src={require("../images/sightbox-case-study/wireframes01.png")}
+            <StaticImage
+              // className="hero-image"
+              imgClassName="hero-image"
+              src="../images/sightbox-case-study/wireframes01.png"
               alt="sightbox app screenshot"
             />
           </div>
         </div>
         <div className="g2-6">
-          <div className="image-slide">
-            <img
-              className="hero-image wireframe-overlap"
-              src={require("../images/sightbox-case-study/wireframes02.png")}
+          <div className="image-slide wireframe-overlap">
+            <StaticImage
+              // className="hero-image"
+              imgClassName="hero-image"
+              src="../images/sightbox-case-study/wireframes02.png"
               alt="sightbox app screenshot"
             />
           </div>
         </div>
         <div className="g3-7">
           <div className="image-slide wireframe-overlap">
-            <img
-              className="hero-image"
-              src={require("../images/sightbox-case-study/wireframes03.png")}
+            <StaticImage
+              // className="hero-image"
+              imgClassName="hero-image"
+              src="../images/sightbox-case-study/wireframes03.png"
               alt="sightbox app screenshot"
             />
           </div>
         </div>
         <div className="g4-8">
           <div className="image-slide wireframe-overlap">
-            <img
-              className="hero-image"
-              src={require("../images/sightbox-case-study/wireframes04.png")}
+            <StaticImage
+              // className="hero-image"
+              imgClassName="hero-image"
+              src="../images/sightbox-case-study/wireframes04.png"
               alt="sightbox app screenshot"
             />
           </div>
         </div>
         <div className="g5-9">
           <div className="image-slide wireframe-overlap">
-            <img
-              className="hero-image"
-              src={require("../images/sightbox-case-study/wireframes05.png")}
+            <StaticImage
+              // className="hero-image"
+              imgClassName="hero-image"
+              src="../images/sightbox-case-study/wireframes05.png"
               alt="sightbox app screenshot"
             />
           </div>
@@ -273,9 +278,9 @@ const InvisionCS = () => (
         </div>
 
         <div className="final-screenshot g4-9">
-          <img
-            className="hero-image"
-            src={require("../images/sightbox-case-study/renewal-dashboard.png")}
+          <StaticImage
+            imgClassName="hero-image"
+            src="../images/sightbox-case-study/renewal-dashboard.png"
             alt="sightbox renewal dashboard screenshot"
           />
         </div>
@@ -308,9 +313,10 @@ const InvisionCS = () => (
         </div>
         <div className="go-to-invision invision g4-9">
           <div className="iv-copy">
-            <img
+            <StaticImage
               className="logo"
-              src={require("../images/invision-logo.png")}
+              src="../images/invision-logo.png"
+              placeholder="tracedSVG"
               alt="invision logo"
             />
             <h2>Digital Product Design Platform</h2>
@@ -324,9 +330,9 @@ const InvisionCS = () => (
             </Link>
           </div>
           <div className="hero">
-            <img
-              className="hero-image"
-              src={require("../images/invision-case-study/inspect-mode.png")}
+            <StaticImage
+              imgClassName="hero-image"
+              src="../images/invision-case-study/inspect-mode.png"
               alt="invision inspect mode"
             />
           </div>

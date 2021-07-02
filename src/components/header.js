@@ -6,7 +6,7 @@ import GLogo from "../images/icons/g-logo"
 import ReactTooltip from "react-tooltip"
 
 const Header = ({ siteTitle, pageTitle }) => {
-  const [emailTooltipText, setEmailTooltipText] = useState("Click to copy");
+  const [emailTooltipText, setEmailTooltipText] = useState("Click to copy my email");
   return (
     <header>
       <div className="header-wrapper section-wrapper">
@@ -31,7 +31,7 @@ const Header = ({ siteTitle, pageTitle }) => {
             grant@<span>grantgarrett.com</span>
           </button>
         </div>
-        <ReactTooltip id="emailTooltipHeader" className='tooltip' place="bottom" effect="solid" getContent={() => emailTooltipText} afterShow={() => setEmailTooltipText("Click to copy")} />
+        <ReactTooltip id="emailTooltipHeader" className='tooltip' place="bottom" effect="solid" getContent={() => emailTooltipText} afterShow={() => setEmailTooltipText("Click to copy my email")} />
 
       </div>
     </header>

@@ -40,6 +40,14 @@ header {
     // overflow: hidden;
   }
 }
+.hero-image-header-container {
+  @include screenshot-shadow-white;
+  border-radius: 8px;
+}
+.hero-image-header {
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
 .hero-image {
   @include screenshot-shadow-white;
   border-radius: 8px;
@@ -51,6 +59,13 @@ header {
   }
   .last-paragraph {
     margin-top: 60px;
+  }
+}
+.image-slide {
+  @include screenshot-shadow-white;
+  border-radius: 8px;
+  .hero-image {
+    box-shadow: none;
   }
 }
 .wireframe-overlap {

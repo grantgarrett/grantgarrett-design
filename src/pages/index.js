@@ -11,9 +11,7 @@ import IconDownArrow from "../images/icons/arrow-down"
 
 //Images
 import sprinklr_logo from "../images/sprinklr-logo.svg"
-import sprinklr_hero from "../images/sprinklr-hero.png"
-import inquicker_app_hero from "../images/inquicker-app-hero.png"
-import invision_inspect_mode from "../images/invision-case-study/inspect-mode.png"
+// import inquicker_app_hero from "../images/inquicker-app-hero.png"
 
 
 
@@ -62,7 +60,13 @@ const IndexPage = () => (
             <IconRightArrow />
           </Link>
         </div>
-        <img src={sprinklr_hero} className="hero-image" alt="sprinklr screenshots" />
+        <StaticImage
+          src={"../images/sprinklr-hero.png"}
+          className="hero-image"
+          imgClassName="hero-image"
+          alt="sprinklr screenshots" quality="100"
+          placeholder="none"
+        />
 
       </div>
     </section>
@@ -73,6 +77,7 @@ const IndexPage = () => (
             className="logo"
             src="../images/sightbox-logo.png"
             alt="sightbox logo"
+            placeholder="tracedSVG"
           />
           <h2>Simplifying Vision Care for Contact Lens Wearers</h2>
           <p>
@@ -84,10 +89,12 @@ const IndexPage = () => (
           </Link>
         </div>
         <StaticImage
-          className="hero-image"
           src={("../images/sightbox-member-profile.png")}
+          className="hero-image"
+          imgClassName="hero-image"
           alt="sightbox app screenshot"
           quality="100"
+          placeholder="blurred"
         />
       </div>
     </section>
@@ -96,8 +103,10 @@ const IndexPage = () => (
         <div className="section-content">
           <StaticImage
             className="logo"
+            // imgClassName="logo"
             src={"../images/inquicker-logo.png"}
             alt="inquicker logo"
+            placeholder="tracedSVG"
           />
           <h2>Reinventing the Patient Experience</h2>
           <p>
@@ -121,18 +130,20 @@ const IndexPage = () => (
             }}
           >
             <StaticImage
-              className=""
-              width={197}
               src="../images/inquicker-iphone-hero.png"
+              className=""
               alt="inquicker iphone screenshot"
+              placeholder="tracedSVG"
             />
           </Tilt>
 
-          <img
-            width={530}
+          <StaticImage
+            src="../images/inquicker-app-hero.png"
             className="hero-image hero-app"
-            src={inquicker_app_hero}
+            imgClassName="hero-image "
             alt="inquicker app screenshot"
+            quality="100"
+            placeholder="blurred"
           />
         </div>
       </div>
@@ -144,6 +155,7 @@ const IndexPage = () => (
             className="logo"
             src={("../images/invision-logo.png")}
             alt="invision logo"
+            placeholder="tracedSVG"
           />
           <h2>Digital Product Design Platform</h2>
           <p>
@@ -165,11 +177,13 @@ const IndexPage = () => (
             scale: 1,
           }}
         >
-          <img
+          <StaticImage
+            src="../images/invision-case-study/inspect-mode.png"
             width={718}
-            className="hero-image"
-            src={invision_inspect_mode}
+            // className="hero-image"
+            imgClassName="hero-image"
             alt="invision inspect mode"
+            quality="100"
           />
         </Tilt>
       </div>

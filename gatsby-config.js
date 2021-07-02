@@ -15,14 +15,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    //`gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, //need for dynamic images
+    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
           formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
+          placeholder: `blurred`,
           quality: 100,
           backgroundColor: `transparent`,
           tracedSVGOptions: {},
