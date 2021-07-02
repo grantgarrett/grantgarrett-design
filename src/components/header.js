@@ -2,8 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useRef } from "react"
 import GLogo from "../images/icons/g-logo"
-//https://www.npmjs.com/package/react-tooltip
-import ReactTooltip from "react-tooltip"
 import Tippy from '@tippyjs/react';
 
 const Header = ({ siteTitle, pageTitle }) => {
@@ -29,23 +27,11 @@ const Header = ({ siteTitle, pageTitle }) => {
           <button
             className="email-copy-button"
             ref={ref}
-            onClick={() => { setEmailTooltipText("Copied!"); navigator.clipboard.writeText("grant@grantgarrett.com") }}
+            onClick={() => { setEmailTooltipText("Copied! Email me!"); navigator.clipboard.writeText("grant@grantgarrett.com") }}
           >
             grant@<span>grantgarrett.com</span>
           </button>
-
-
-
-          {/* <button
-            className="email-copy-button"
-            onClick={() => { setEmailTooltipText("Copied!"); navigator.clipboard.writeText("grant@grantgarrett.com") }}
-            data-tip={emailTooltipText}
-            data-for="emailTooltipHeader"
-          >
-            grant@<span>grantgarrett.com</span>
-          </button> */}
         </div>
-        {/* <ReactTooltip id="emailTooltipHeader" className='tooltip' place="bottom" effect="solid" getContent={() => emailTooltipText} afterShow={() => setEmailTooltipText("Click to copy my email")} /> */}
 
       </div>
       <Tippy
@@ -55,7 +41,7 @@ const Header = ({ siteTitle, pageTitle }) => {
         reference={ref}
         hideOnClick={false}
         offset={[0, 8]}
-        // onUntrigger={() => setEmailTooltipText("Click to copy my email")}
+        animation={false}
         onHidden={() => setEmailTooltipText("Click to copy my email")}
       />
     </header>
