@@ -5,26 +5,34 @@ import GoToSprinklr from "./go-to-sprinklr"
 import GoToSightbox from "./go-to-sightbox"
 
 
-const SuggestNewCaseStudy = () => {
+const SuggestNewCaseStudy = (props) => {
   return (
     <section className="suggest-new-case-study">
       <div className="case-study-grid">
         <div className="g1-5">
-          <GoToSightbox />
+          {(() => {
+            switch (props.linkone) {
+              case "sprinklr": return <GoToSprinklr />;
+              case "sightbox": return <GoToSightbox />;
+              case "inquicker": return <GoToInquicker />;
+              case "invision": return <GoToInvision />;
+              default: return <GoToSprinklr />;
+            }
+          })()}
         </div>
         <div className="g5-9">
-          <GoToSprinklr />
+          {(() => {
+            switch (props.linktwo) {
+              case "sprinklr": return <GoToSprinklr />;
+              case "sightbox": return <GoToSightbox />;
+              case "inquicker": return <GoToInquicker />;
+              case "invision": return <GoToInvision />;
+              default: return <GoToSprinklr />;
+            }
+          })()}
         </div>
+      </div>
 
-      </div>
-      <div className="case-study-grid">
-        <div className="g1-5">
-          <GoToInvision />
-        </div>
-        <div className="g5-9">
-          <GoToInquicker />
-        </div>
-      </div>
     </section>
   );
 }

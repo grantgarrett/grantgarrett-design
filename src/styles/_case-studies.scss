@@ -164,13 +164,13 @@ img {
 }
 
 // LINKS AT END OF CASE STUDY
+section.suggest-new-case-study {
+  padding: 60px 0 0 0;
+}
 .suggest-new-case-study {
-  // display: grid;
-  // grid-template-columns: 1fr minmax(200px, 1200px) 1fr;
   background: #171c23;
   padding: 40px 0;
   overflow: hidden;
-
   .case-study-grid {
     padding: 0;
     //temp
@@ -185,8 +185,12 @@ img {
     font-size: 12px;
     line-height: 1.5em;
   }
-  .hero {
-    // padding-top: 30px;
+  .hero-image-container {
+    @include screenshot-shadow-white;
+    border-radius: 8px;
+  }
+  .hero-image {
+    border-radius: 8px;
   }
   .go-to-container {
     background-color: #e5eff6;

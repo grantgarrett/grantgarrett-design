@@ -293,7 +293,7 @@ const InvisionCS = () => (
       </div>
     </section>
 
-    <SuggestNewCaseStudy />
+    <SuggestNewCaseStudy linkone={"sprinklr"} linktwo={"inquicker"} />
   </Layout>
 )
 

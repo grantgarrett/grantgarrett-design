@@ -25,8 +25,8 @@ const GoToSightbox = () => {
         <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
           <StaticImage
             src={("../../images/sightbox-member-profile.png")}
-            className="hero-image-header-container"
-            imgClassName="hero-image-header"
+            className="hero-image-container"
+            imgClassName="hero-image"
             alt="sightbox app screenshot"
             quality="100"
             placeholder="blurred"
