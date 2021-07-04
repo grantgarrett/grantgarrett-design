@@ -145,67 +145,112 @@ a.case-study-link-home-button {
   //default fill
   fill: #000;
 }
-// end of case study home buttons
 
-a.case-study-link,
+// end of case study suggest links
+a.suggest-case-study-link,
 a.home-link {
-  &:hover {
-    text-decoration: none;
-  }
   font-size: 16px;
   text-decoration: none;
-  color: $color-inquicker-red;
+  color: #000;
   position: relative;
-}
-a.case-study-link:after,
-a.home-link:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-bottom: 1px solid rgba(238, 49, 36, 0.01);
-  width: 0;
-  left: 0;
-  transition: width 0.4s ease, 0.8s border-color ease;
-}
-a.home-link:after {
-  right: 0;
-  left: auto;
-}
-a.case-study-link:hover:after,
-a.home-link:hover:after {
-  width: 100%;
-  border-bottom: 1px solid rgba(238, 49, 36, 1);
-}
-.invision a.case-study-link {
-  color: $color-invision-pink;
+
+  &:hover {
+    text-decoration: none;
+    .arrow-right {
+      transform: translateX(3px);
+    }
+    //stretch underline on hover
+    &:after {
+      width: 100%;
+    }
+  }
+  //underline
   &:after {
-    border-bottom: 1px solid rgba(255, 51, 102, 0.01);
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid rgba(238, 49, 36, 0.01);
+    width: 0;
+    left: 0;
+    transition: width 0.4s ease, 0.8s border-color ease;
   }
-  &:hover:after {
-    border-bottom: 1px solid rgba(255, 51, 102, 1);
+
+  //brand specifics
+  &.sprinklr {
+    color: #fff;
+    .arrow-right {
+      fill: #fff;
+    }
+    &:after {
+      border-bottom: 1px solid rgba(238, 49, 36, 0.01);
+    }
+    &:hover:after {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  &.sightbox {
+    color: $color-sightbox-blue;
+    .arrow-right {
+      fill: $color-sightbox-blue;
+    }
+    &:after {
+      border-bottom: 1px solid rgba(238, 49, 36, 0.01);
+    }
+    &:hover:after {
+      border-bottom: 1px solid $color-sightbox-blue;
+    }
+  }
+  &.inquicker {
+    color: $color-inquicker-red;
+    .arrow-right {
+      fill: $color-inquicker-red;
+    }
+    &:after {
+      border-bottom: 1px solid rgba(238, 49, 36, 0.01);
+    }
+    &:hover:after {
+      border-bottom: 1px solid $color-inquicker-red;
+    }
+  }
+  &.invision {
+    color: $color-invision-pink;
+    .arrow-right {
+      fill: $color-invision-pink;
+    }
+    background-color: transparent;
+    &:after {
+      border-bottom: 1px solid rgba(255, 51, 102, 0.01);
+    }
+    &:hover:after {
+      border-bottom: 1px solid $color-invision-pink;
+    }
   }
 }
-a.home-link {
-  color: #cad5e2;
-  &:after {
-    border-bottom: 1px solid rgba(202, 213, 226, 0.01);
-  }
-  &:hover:after {
-    border-bottom: 1px solid rgba(202, 213, 226, 1);
-  }
-}
-a.case-study-link:hover .arrow-right,
-a.case-study-link-home-button:hover .arrow-right {
-  transform: translateX(3px);
-}
+
+// a.suggest-case-study-link-home-button:hover .arrow-right {
+//   transform: translateX(3px);
+// }
 .arrow-left {
   vertical-align: middle;
   padding-bottom: 3px;
   transition: 0.5s transform ease;
 }
-a.home-link:hover .arrow-left {
-  transform: translateX(-3px);
+a.home-link {
+  color: #cad5e2;
+
+  &:after {
+    right: 0;
+    left: auto;
+    border-bottom: 1px solid rgba(202, 213, 226, 0.01);
+  }
+  &:hover .arrow-left {
+    transform: translateX(-3px);
+  }
+  &:hover:after {
+    border-bottom: 1px solid rgba(202, 213, 226, 1);
+  }
 }
+
 section.inquicker,
 section.invision,
 section.sprintly,

@@ -1,13 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import Tilt from 'react-parallax-tilt';
+import SuggestNewCaseStudy from "../components/suggest-case-study/suggest-new-case-study"
 
 //Icons
-import IconRightArrow from "../images/icons/arrow-right"
-import IconLeftArrow from "../images/icons/arrow-left"
+// import IconRightArrow from "../images/icons/arrow-right"
+// import IconLeftArrow from "../images/icons/arrow-left"
 
 //Images
 import sprinklr_logo from "../images/sprinklr-logo.svg"
@@ -244,69 +245,9 @@ const InvisionCS = () => (
     </section>
 
 
+    <SuggestNewCaseStudy />
 
 
-
-
-
-
-
-
-    <section className="end-of-cs">
-      <div className="shim1" />
-      <div className="case-study-grid">
-        <div className="back-home dark g1-4">
-          <h3>Thanks for reading!</h3>
-          <p>
-            If you’d like to read more about my thoughts on design or my
-            approach and process check out my other case studies.
-          </p>
-          <h4>Please Feel Free to Say Hi</h4>
-          <p>
-            Twitter:{" "}
-            <a href="https://twitter.com/grantgarrett">@grantgarrett</a>
-            <br />
-            Email:{" "}
-            <a href="mailto:grant@grantgarrett.com?subject=Hi from your design site">
-              grant@grantgarrett.com
-            </a>
-          </p>
-          <Link to="/" className="home-link">
-            <IconLeftArrow />
-            Portfolio Home
-          </Link>
-        </div>
-        <div className="go-to-invision invision g4-9">
-          <div className="iv-copy">
-            <StaticImage
-              className="logo"
-              src="../images/invision-logo.png"
-              alt="invision logo"
-              placeholder="tracedSVG"
-            />
-            <h2>Digital Product Design Platform</h2>
-            <p>
-              <b>Case Study:</b> Redesign the core application to satisfy the
-              growing needs of our customers.
-            </p>
-            <Link to="/invision-case-study/" className="case-study-link">
-              InVision Case Study
-              <IconRightArrow fill="#ff3366" />
-            </Link>
-          </div>
-          <div className="hero">
-            <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
-              <StaticImage
-                imgClassName="hero-image"
-                src="../images/invision-case-study/inspect-mode.png"
-                alt="invision inspect mode"
-              />
-            </Tilt>
-          </div>
-        </div>
-      </div>
-      <div className="shim2" />
-    </section>
   </Layout>
 )
 
