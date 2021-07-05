@@ -165,16 +165,24 @@ img {
 
 // LINKS AT END OF CASE STUDY
 section.suggest-new-case-study {
-  padding: 60px 0 0 0;
+  // padding: 60px 0 0 0;
 }
 .suggest-new-case-study {
   background: #171c23;
   padding: 40px 0;
   overflow: hidden;
+  .thanks-for-reading {
+    h3 {
+      color: #f6f9fd;
+    }
+    p {
+      color: #94a2b4;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
   .case-study-grid {
     padding: 0;
-    //temp
-    margin-bottom: 50px;
   }
   .back-home {
     background-color: #292f3e;
@@ -206,8 +214,8 @@ section.suggest-new-case-study {
       font-weight: 300;
     }
     .logo {
-      margin-bottom: 3px;
-      width: 85%;
+      // margin-bottom: 3px;
+      max-width: 180px;
     }
     .content {
       padding: 40px 0 40px 40px;

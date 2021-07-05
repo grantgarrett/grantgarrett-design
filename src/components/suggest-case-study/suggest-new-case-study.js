@@ -9,6 +9,13 @@ const SuggestNewCaseStudy = (props) => {
   return (
     <section className="suggest-new-case-study">
       <div className="case-study-grid">
+        <div className="thanks-for-reading g2-8">
+          <h3>Thanks for reading!</h3>
+          <p>
+            If you’d like to read more about my thoughts on design or my
+            approach and process check out my other case studies.
+          </p>
+        </div>
         <div className="g1-5">
           {(() => {
             switch (props.linkone) {
