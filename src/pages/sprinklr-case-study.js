@@ -244,7 +244,7 @@ const InvisionCS = () => (
       </div>
     </section>
 
-    <SuggestNewCaseStudy linkone={"sightbox"} linktwo={"invision"} />
+    <SuggestNewCaseStudy linkone={"sightbox"} linktwo={"inquicker"} />
 
 
   </Layout>
