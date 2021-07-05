@@ -221,7 +221,10 @@
       }
       .hero {
         padding: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
+      }
+      &.go-to-sightbox .hero-image-container {
+        margin-top: 0;
       }
       &.go-to-inquicker .hero,
       &.go-to-sprinklr .hero {
