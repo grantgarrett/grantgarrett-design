@@ -104,7 +104,52 @@
     }
   }
 
-  //                  CASE STUDIES
+  .case-study-grid {
+    // grid-template-columns: 1fr;
+    display: block;
+    // padding: 20px;
+
+    //        BOTTOM OF CS LINKS
+    .back-home {
+      padding: 40px;
+      border-radius: 0px;
+    }
+    .hero {
+      margin: 20px 0 0 0;
+      padding: 0;
+    }
+  }
+  .sprinklr-case-study,
+  .inquicker-case-study,
+  .invision-case-study,
+  .sightbox-case-study {
+    section {
+      padding: 30px 0;
+    }
+    .video-fixsize {
+      width: 100%;
+      margin: 0;
+    }
+    .invision-iteration {
+      margin: 20px 0;
+    }
+    .inquicker-hero-group {
+      margin: 0 -1em;
+    }
+    .end-of-cs {
+      padding: 0;
+    }
+    .final-iq {
+      display: grid;
+      padding: 0;
+      grid-template-columns: 1em 1fr 16px 3fr 1em;
+    }
+    // .final-image-iv {
+    //   margin: 0 -2em;
+    // }
+  }
+
+  //////////////////   CASE STUDIES   //////////////////
 
   //Sprinklr
   .sprinklr.intro {
@@ -160,66 +205,31 @@
   }
   //end of sightbox
 
-  .case-study-grid {
-    // grid-template-columns: 1fr;
-    display: block;
-    // overflow: hidden;
-
-    //        BOTTOM OF CS LINKS
-    .back-home {
-      padding: 40px;
-      border-radius: 0px;
+  .suggest-new-case-study {
+    .case-study-grid {
+      padding: 20px;
     }
-    .go-to-invision {
-      display: block;
-      padding: 40px;
-      border-radius: 0;
-      .iv-copy {
-        padding: 0;
+    .thanks-for-reading {
+      // padding: 10px 10px 30px 10px;
+    }
+    .go-to-container {
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+      border-radius: 22px;
+      .content {
+        padding: 30px 30px 0px;
       }
-    }
-    .hero {
-      margin: 20px 0 0 0;
-      padding: 0;
-    }
-    .go-to-inquicker {
-      display: block;
-      border-radius: 0;
       .hero {
-        padding: 0 20px;
+        padding: 20px;
+        margin-top: 0px;
+      }
+      &.go-to-sightbox .hero-image-container {
         margin-top: 0;
       }
-      .iq-copy {
-        padding: 40px;
+      &.go-to-inquicker .hero,
+      &.go-to-sprinklr .hero {
+        padding-bottom: 0;
       }
-    }
-  }
-  .inquicker-case-study,
-  .invision-case-study,
-  .sightbox-case-study {
-    section {
-      padding: 60px 0;
-    }
-    .fixsize {
-      width: 100%;
-      margin: 0;
-    }
-    .inquicker-hero-group {
-      margin: 0 -1em;
-    }
-    .iteration {
-      margin: 20px 0;
-    }
-    .end-of-cs {
-      padding: 0;
-    }
-    .final-iq {
-      display: grid;
-      padding: 0;
-      grid-template-columns: 1em 1fr 16px 3fr 1em;
-    }
-    .final-image-iv {
-      margin: 0 -2em;
     }
   }
 }

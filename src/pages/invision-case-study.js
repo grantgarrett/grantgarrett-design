@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Tilt from 'react-parallax-tilt';
 import { StaticImage } from "gatsby-plugin-image"
+import SuggestNewCaseStudy from "../components/suggest-case-study/suggest-new-case-study"
 //Icons
-import IconRightArrow from "../images/icons/arrow-right"
-import IconLeftArrow from "../images/icons/arrow-left"
+// import IconRightArrow from "../images/icons/arrow-right"
+// import IconLeftArrow from "../images/icons/arrow-left"
 //Images
 // import sprinklr_logo from "../images/sprinklr-logo.svg"
 
@@ -382,25 +383,25 @@ const InvisionCS = () => (
         </div>
         <div className="g2-8">
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration1.png"
             alt="inspect iteration"
           />
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration2.png"
             alt="inspect iteration"
           />
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration3.png"
             alt="inspect iteration"
           />
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration4.png"
             alt="inspect iteration"
@@ -435,7 +436,7 @@ const InvisionCS = () => (
             Instead of two tabs they now became one scrolling column.
           </p>
         </div>
-        <div className="image-slide g1-9 final-image-iv">
+        <div className="image-slide g1-9">
           <Tilt glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0.1} transitionSpeed={1600} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
             <StaticImage
               className="hero-image-container"
@@ -448,58 +449,8 @@ const InvisionCS = () => (
       </div>
     </section>
 
-    <section className="end-of-cs">
-      <div className="shim1" />
-      <div className="case-study-grid">
-        <div className="back-home dark g1-4">
-          <h3>Thanks for reading!</h3>
-          <p>
-            If you’d like to read more about my thoughts on design or my
-            approach and process check out my other case studies.
-          </p>
-          <h4>Please Feel Free to Say Hi</h4>
-          <p>
-            Twitter:{" "}
-            <a href="https://twitter.com/grantgarrett">@grantgarrett</a>
-            <br />
-            Email:{" "}
-            <a href="mailto:grant@grantgarrett.com?subject=Hi from your design site">
-              grant@grantgarrett.com
-            </a>
-          </p>
-          <Link to="/" className="home-link">
-            <IconLeftArrow />
-            Portfolio Home
-          </Link>
-        </div>
-        <div className="go-to-inquicker g4-9">
-          <div className="iq-copy">
-            <StaticImage
-              className="logo"
-              src="../images/inquicker-logo.png"
-              alt="inquicker logo"
-            />
-            <h2>Reinventing the Patient Experience</h2>
-            <p>
-              <b>Case Study:</b> Redesign the core application to satisfy the
-              growing needs of our customers.
-            </p>
-            <Link to="/inquicker-case-study/" className="case-study-link">
-              InQuicker Case Study
-              <IconRightArrow fill="#ee3124" />
-            </Link>
-          </div>
-          <div className="hero">
-            <StaticImage
-              className=""
-              src="../images/inquicker-hero.png"
-              alt="inquicker app"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="shim2" />
-    </section>
+    <SuggestNewCaseStudy linkone={"sprinklr"} linktwo={"sightbox"} />
+
   </Layout>
 )
 
