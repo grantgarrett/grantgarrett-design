@@ -383,25 +383,25 @@ const InvisionCS = () => (
         </div>
         <div className="g2-8">
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration1.png"
             alt="inspect iteration"
           />
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration2.png"
             alt="inspect iteration"
           />
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration3.png"
             alt="inspect iteration"
           />
           <StaticImage
-            className="iteration"
+            className="invision-iteration"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration4.png"
             alt="inspect iteration"
@@ -436,7 +436,7 @@ const InvisionCS = () => (
             Instead of two tabs they now became one scrolling column.
           </p>
         </div>
-        <div className="image-slide g1-9 final-image-iv">
+        <div className="image-slide g1-9">
           <Tilt glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0.1} transitionSpeed={1600} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
             <StaticImage
               className="hero-image-container"

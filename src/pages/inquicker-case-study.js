@@ -441,7 +441,7 @@ const InvisionCS = () => (
           </p>
         </div>
         <div className="g5-7">
-          <video className="video fixsize" autoPlay playsInline loop muted>
+          <video className="video video-fixsize" autoPlay playsInline loop muted>
             <source
               src={mobileDirection}
               type="video/mp4"
@@ -449,7 +449,7 @@ const InvisionCS = () => (
           </video>
         </div>
         <div className="g7-9">
-          <video className="video fixsize" autoPlay playsInline loop muted>
+          <video className="video video-fixsize" autoPlay playsInline loop muted>
             <source
               src={mobileScrollHeader}
               type="video/mp4"
