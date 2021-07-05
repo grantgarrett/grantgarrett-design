@@ -148,7 +148,7 @@ a.case-study-link-home-button {
 
 // end of case study suggest links
 a.suggest-case-study-link,
-a.home-link {
+a.go-home-link {
   font-size: 16px;
   text-decoration: none;
   color: #000;
@@ -233,9 +233,10 @@ a.home-link {
 .arrow-left {
   vertical-align: middle;
   padding-bottom: 3px;
+  margin-right: 3px;
   transition: 0.5s transform ease;
 }
-a.home-link {
+a.go-home-link {
   color: #cad5e2;
 
   &:after {

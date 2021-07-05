@@ -1,20 +1,26 @@
 import React from "react"
+import { Link } from "gatsby"
 import GoToInvision from "./go-to-invision"
 import GoToInquicker from "./go-to-inquicker"
 import GoToSprinklr from "./go-to-sprinklr"
 import GoToSightbox from "./go-to-sightbox"
-
+//Icons
+import IconLeftArrow from "../../images/icons/arrow-left"
 
 const SuggestNewCaseStudy = (props) => {
   return (
     <section className="suggest-new-case-study">
       <div className="case-study-grid">
-        <div className="thanks-for-reading g2-8">
+        <div className="thanks-for-reading g3-7">
           <h3>Thanks for reading!</h3>
           <p>
             If you’d like to read more about my thoughts on design or my
             approach and process check out my other case studies.
           </p>
+          <Link to="/" className="go-home-link">
+            <IconLeftArrow />
+            Portfolio Home
+          </Link>
         </div>
         <div className="g1-5">
           {(() => {
