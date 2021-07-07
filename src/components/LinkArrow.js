@@ -55,30 +55,23 @@ const StyledLink = styled(Link)`
   &:hover:after {
     border-bottom: 1px solid ${({ theme }) => handleColor(theme)};;
   }
+  .arrow-right, .arrow-left {
+    vertical-align: middle;
+    padding-bottom: 3px;
+    transition: 0.5s transform ease;
+    fill: ${({ theme }) => handleColor(theme)};
+  }
   .arrow-left {
-    vertical-align: middle;
-    padding-bottom: 3px;
     margin-right: 3px;
-    transition: 0.5s transform ease;
-    fill: ${({ theme }) => handleColor(theme)};
   }
-  .arrow-right {
-    vertical-align: middle;
-    padding-bottom: 3px;
-    transition: 0.5s transform ease;
-    fill: ${({ theme }) => handleColor(theme)};
+  &:hover .arrow-left {
+    transform: translateX(-3px);
   }
+
   &.default {
     &:after {
       right: 0;
       left: auto;
-      border-bottom: 1px solid rgba(202, 213, 226, 0.01);
-    }
-    &:hover .arrow-left {
-      transform: translateX(-3px);
-    }
-    &:hover:after {
-      border-bottom: 1px solid ${({ theme }) => handleColor(theme)};
     }
   }
 `

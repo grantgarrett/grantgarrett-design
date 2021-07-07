@@ -1,13 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import GoToInvision from "./go-to-invision"
 import GoToInquicker from "./go-to-inquicker"
 import GoToSprinklr from "./go-to-sprinklr"
 import GoToSightbox from "./go-to-sightbox"
 import LinkArrow from "../LinkArrow"
 
-//Icons
-import IconLeftArrow from "../../images/icons/arrow-left"
 
 const SuggestNewCaseStudy = (props) => {
   return (
