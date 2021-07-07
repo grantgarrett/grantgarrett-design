@@ -214,6 +214,8 @@ section.suggest-new-case-study {
     grid-column-gap: 2em;
     height: 100%;
     overflow: hidden;
+    //hide image overflow on rounded corners in safari
+    transform: translate3d(0, 0, 0);
     @include screenshot-shadow-white;
     h2 {
       font-size: 16px;
