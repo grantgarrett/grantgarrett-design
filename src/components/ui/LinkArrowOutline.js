@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from 'prop-types';
 import { Link } from "gatsby"
 import styled from 'styled-components'
-
-
 //Icons
 import IconRightArrow from "../../images/icons/arrow-right"
 
@@ -21,8 +19,8 @@ const handleColor = theme => {
       return "#cad5e2";
   }
 };
-const handleHoverColor = theme => {
-  switch (theme) {
+const handleHoverColor = hoverColor => {
+  switch (hoverColor) {
     case "sprinklr":
       return "#000";
     case "sightbox":
@@ -35,7 +33,6 @@ const handleHoverColor = theme => {
       return "#fff";
   }
 };
-
 
 const StyledLink = styled(Link)`
   color: ${({ theme }) => handleColor(theme)};
