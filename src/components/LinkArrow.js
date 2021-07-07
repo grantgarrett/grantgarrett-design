@@ -30,6 +30,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => handleColor(theme)};
   position: relative;
+  background: transparent;
 
   &:hover {
     text-decoration: none;
