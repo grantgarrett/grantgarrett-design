@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 import GoToInvision from "./go-to-invision"
 import GoToInquicker from "./go-to-inquicker"
 import GoToSprinklr from "./go-to-sprinklr"
 import GoToSightbox from "./go-to-sightbox"
-//Icons
-import IconLeftArrow from "../../images/icons/arrow-left"
+//Components
+import LinkArrow from "../ui/LinkArrow"
+
 
 const SuggestNewCaseStudy = (props) => {
   return (
@@ -17,10 +17,8 @@ const SuggestNewCaseStudy = (props) => {
             If you’d like to read more about my thoughts on design or my
             approach and process check out my other case studies.
           </p>
-          <Link to="/" className="go-home-link">
-            <IconLeftArrow />
-            Portfolio Home
-          </Link>
+          <LinkArrow url={"/"} label={"Portfolio Home"} theme={"default"} arrowDirectionForward={false} />
+
         </div>
         <div className="g1-5">
           {(() => {

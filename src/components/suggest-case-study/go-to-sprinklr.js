@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import LinkArrow from "../link-arrow"
+import LinkArrow from "../ui/LinkArrow"
 import Tilt from 'react-parallax-tilt';
 //Images
 import sprinklr_logo from "../../images/sprinklr-logo.svg"
@@ -15,7 +15,7 @@ const GoToSprinklr = () => {
         <p>
           <b>Project:</b> Creating design guidelines and new patterns and components while updating, maintaining, and governing our design system called Hyperspace.
         </p>
-        <LinkArrow url="/sprinklr-case-study/" title="Sprinklr Design System" brand={"sprinklr"} />
+        <LinkArrow url="/sprinklr-case-study/" label="Sprinklr Design System" theme={"sprinklr"} arrowDirectionForward={true} />
       </div>
       <div className="hero">
         <Tilt glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.0} transitionSpeed={1200} tiltReverse="true" glarePosition="all"  >

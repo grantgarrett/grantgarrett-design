@@ -5,6 +5,7 @@ module.exports = {
     author: `@grantgarrett`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -16,7 +17,6 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`, //need for dynamic images
-    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

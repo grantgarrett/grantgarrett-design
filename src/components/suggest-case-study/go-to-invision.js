@@ -2,7 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Tilt from 'react-parallax-tilt';
-import LinkArrow from "../link-arrow";
+import LinkArrow from "../ui/LinkArrow";
 
 function GoToInvision() {
   return (
@@ -19,7 +19,7 @@ function GoToInvision() {
           <b>Case Study:</b> Redesign the core application to satisfy the
           growing needs of our customers.
         </p>
-        <LinkArrow url={"/invision-case-study/"} title={"InVision Case Study"} brand={"invision"} />
+        <LinkArrow url={"/invision-case-study/"} label={"InVision Case Study"} theme={"invision"} />
       </div>
       <div className="hero">
         <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
