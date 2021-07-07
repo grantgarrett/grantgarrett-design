@@ -67,7 +67,11 @@
 a.case-study-link-home-button {
   &:hover {
     text-decoration: none;
+    .arrow-right {
+      transform: translateX(3px);
+    }
   }
+
   font-size: 16px;
   text-decoration: none;
   color: #000;
@@ -144,112 +148,6 @@ a.case-study-link-home-button {
   transition: 0.5s transform ease;
   //default fill
   fill: #000;
-}
-
-// end of case study suggest links
-a.suggest-case-study-link,
-a.go-home-link {
-  font-size: 16px;
-  text-decoration: none;
-  color: #000;
-  position: relative;
-
-  &:hover {
-    text-decoration: none;
-    .arrow-right {
-      transform: translateX(3px);
-    }
-    //stretch underline on hover
-    &:after {
-      width: 100%;
-    }
-  }
-  //underline
-  &:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-bottom: 1px solid rgba(238, 49, 36, 0.01);
-    width: 0;
-    left: 0;
-    transition: width 0.4s ease, 0.8s border-color ease;
-  }
-
-  //brand specifics
-  &.sprinklr {
-    color: #fff;
-    .arrow-right {
-      fill: #fff;
-    }
-    &:after {
-      border-bottom: 1px solid rgba(238, 49, 36, 0.01);
-    }
-    &:hover:after {
-      border-bottom: 1px solid #fff;
-    }
-  }
-  &.sightbox {
-    color: $color-sightbox-blue;
-    .arrow-right {
-      fill: $color-sightbox-blue;
-    }
-    &:after {
-      border-bottom: 1px solid rgba(238, 49, 36, 0.01);
-    }
-    &:hover:after {
-      border-bottom: 1px solid $color-sightbox-blue;
-    }
-  }
-  &.inquicker {
-    color: $color-inquicker-red;
-    .arrow-right {
-      fill: $color-inquicker-red;
-    }
-    &:after {
-      border-bottom: 1px solid rgba(238, 49, 36, 0.01);
-    }
-    &:hover:after {
-      border-bottom: 1px solid $color-inquicker-red;
-    }
-  }
-  &.invision {
-    color: $color-invision-pink;
-    .arrow-right {
-      fill: $color-invision-pink;
-    }
-    background-color: transparent;
-    &:after {
-      border-bottom: 1px solid rgba(255, 51, 102, 0.01);
-    }
-    &:hover:after {
-      border-bottom: 1px solid $color-invision-pink;
-    }
-  }
-}
-
-// a.suggest-case-study-link-home-button:hover .arrow-right {
-//   transform: translateX(3px);
-// }
-.arrow-left {
-  vertical-align: middle;
-  padding-bottom: 3px;
-  margin-right: 3px;
-  transition: 0.5s transform ease;
-}
-a.go-home-link {
-  color: #cad5e2;
-
-  &:after {
-    right: 0;
-    left: auto;
-    border-bottom: 1px solid rgba(202, 213, 226, 0.01);
-  }
-  &:hover .arrow-left {
-    transform: translateX(-3px);
-  }
-  &:hover:after {
-    border-bottom: 1px solid rgba(202, 213, 226, 1);
-  }
 }
 
 section.inquicker,

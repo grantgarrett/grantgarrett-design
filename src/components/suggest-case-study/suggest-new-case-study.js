@@ -19,11 +19,7 @@ const SuggestNewCaseStudy = (props) => {
             If you’d like to read more about my thoughts on design or my
             approach and process check out my other case studies.
           </p>
-          <Link to="/" className="go-home-link">
-            <IconLeftArrow />
-            Portfolio Home
-          </Link>
-          <LinkArrow url={"/"} label={"Portfolio Home"} arrowDirectionForward={false} />
+          <LinkArrow url={"/"} label={"Portfolio Home"} theme={"default"} arrowDirectionForward={false} />
 
         </div>
         <div className="g1-5">
