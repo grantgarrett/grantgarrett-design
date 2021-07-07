@@ -363,7 +363,7 @@ const InvisionCS = () => (
         </div>
       </div>
     </section>
-    <section className="dark">
+    <section className="dark design-iterations">
       <div className="case-study-grid">
         <div className="column1 g2-7">
           <h2>Designs</h2>
@@ -383,25 +383,31 @@ const InvisionCS = () => (
         </div>
         <div className="g2-8">
           <StaticImage
-            className="invision-iteration"
+            className="hero-image-container"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration1.png"
             alt="inspect iteration"
           />
+        </div>
+        <div className="g2-8">
           <StaticImage
-            className="invision-iteration"
+            className="hero-image-container"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration2.png"
             alt="inspect iteration"
           />
+        </div>
+        <div className="g2-8">
           <StaticImage
-            className="invision-iteration"
+            className="hero-image-container"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration3.png"
             alt="inspect iteration"
           />
+        </div>
+        <div className="g2-8">
           <StaticImage
-            className="invision-iteration"
+            className="hero-image-container"
             imgClassName="hero-image-in-container"
             src="../images/invision-case-study/iteration4.png"
             alt="inspect iteration"

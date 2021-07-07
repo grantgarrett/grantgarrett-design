@@ -16,6 +16,11 @@ header {
 section {
   padding: 90px 0;
 }
+.design-iterations {
+  .case-study-grid {
+    grid-row-gap: 3em;
+  }
+}
 .hero-image-container {
   @include screenshot-shadow-white;
   border-radius: 8px;
