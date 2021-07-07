@@ -2,7 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Tilt from 'react-parallax-tilt';
-import LinkArrow from "../LinkArrow";
+import LinkArrow from "../ui/LinkArrow";
 
 function GoToInvision() {
   return (

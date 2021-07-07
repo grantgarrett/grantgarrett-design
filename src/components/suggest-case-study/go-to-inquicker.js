@@ -1,7 +1,7 @@
 import React from "react"
 import Tilt from 'react-parallax-tilt';
 import { StaticImage } from "gatsby-plugin-image"
-import LinkArrow from "../LinkArrow"
+import LinkArrow from "../ui/LinkArrow"
 
 const GoToInquicker = () => {
   return (

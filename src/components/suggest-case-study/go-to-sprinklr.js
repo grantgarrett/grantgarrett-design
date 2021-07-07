@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import LinkArrow from "../LinkArrow"
+import LinkArrow from "../ui/LinkArrow"
 import Tilt from 'react-parallax-tilt';
 //Images
 import sprinklr_logo from "../../images/sprinklr-logo.svg"

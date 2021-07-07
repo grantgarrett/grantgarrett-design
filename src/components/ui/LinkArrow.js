@@ -5,8 +5,8 @@ import styled from 'styled-components'
 
 
 //Icons
-import IconRightArrow from "../images/icons/arrow-right"
-import IconLeftArrow from "../images/icons/arrow-left"
+import IconRightArrow from "../../images/icons/arrow-right"
+import IconLeftArrow from "../../images/icons/arrow-left"
 
 const handleColor = theme => {
   switch (theme) {

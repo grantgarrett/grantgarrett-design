@@ -1,19 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Tilt from 'react-parallax-tilt';
+import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
-
+import Tilt from 'react-parallax-tilt';
 //Icons
-import IconRightArrow from "../images/icons/arrow-right"
 import IconDownArrow from "../images/icons/arrow-down"
-
 //Images
 import sprinklr_logo from "../images/sprinklr-logo.svg"
-// import inquicker_app_hero from "../images/inquicker-app-hero.png"
-
-
+//Components
+import LinkArrowOutline from "../components/ui/LinkArrowOutline";
 
 const IndexPage = () => (
   <Layout pageId="home">
@@ -55,10 +50,7 @@ const IndexPage = () => (
           <p>
             <b>Project:</b> Creating design guidelines and new patterns and components while updating, maintaining, and governing our design system called Hyperspace.
           </p>
-          <Link to="/sprinklr-case-study/" className="case-study-link-home-button">
-            Sprinklr Design System
-            <IconRightArrow />
-          </Link>
+          <LinkArrowOutline url="/sprinklr-case-study/" label="Sprinklr Design System" theme={"sprinklr"} />
         </div>
         <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={2} scale={1.01} glareMaxOpacity={0} transitionSpeed={900} tiltReverse="true" glarePosition="all" >
           <StaticImage
@@ -86,10 +78,7 @@ const IndexPage = () => (
           <p>
             <b>Case Study:</b> Design a process to automate the renewal of memberships.
           </p>
-          <Link to="/sightbox-case-study/" className="case-study-link-home-button">
-            Sightbox Case Study
-            <IconRightArrow />
-          </Link>
+          <LinkArrowOutline url="/sightbox-case-study/" label="Sightbox Case Study" theme={"sightbox"} />
         </div>
         <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
           <StaticImage
@@ -118,10 +107,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Redesign the core application to satisfy the
             growing needs of our customers.
           </p>
-          <Link to="/inquicker-case-study/" className="case-study-link-home-button">
-            InQuicker Case Study
-            <IconRightArrow fill="#ee3124" />
-          </Link>
+          <LinkArrowOutline url="/inquicker-case-study/" label="InQuicker Case Study" theme={"inquicker"} />
         </div>
         <div className="inquicker-hero-group">
           <Tilt className="hero-iphone" glareEnable={true} tiltMaxAngleX={2} tiltMaxAngleY={6} scale={1.01} glareMaxOpacity={0.2} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="5px" >
@@ -159,10 +145,7 @@ const IndexPage = () => (
             <b>Case Study:</b> Design a mode that helps close the gap between
             the end of the design process and the beginning of development.
           </p>
-          <Link to="/invision-case-study/" className="case-study-link-home-button">
-            InVision Case Study
-            <IconRightArrow fill="#ff3366" />
-          </Link>
+          <LinkArrowOutline url="/invision-case-study/" label="InVision Case Study" theme={"invision"} />
         </div>
         <Tilt glareEnable={true} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={1.02} glareMaxOpacity={0.1} transitionSpeed={900} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
           <StaticImage
@@ -176,59 +159,7 @@ const IndexPage = () => (
         </Tilt>
       </div>
     </section>
-    {/* <section className="sprintly">
-      <div className="section-wrapper">
-        <Tilt
-          className="Tilt"
-          options={{
-            max: 5,
-            perspective: 1000,
-            reverse: true,
-            speed: 2000,
-            scale: 1,
-          }}
-        >
-          <img
-            width={544}
-            className="hero-image"
-            src={require("../images/sprintly-hero.jpg")}
-            alt="sprintly app screenshot"
-          />
-        </Tilt>
-        <div className="section-content">
-          <img
-            width={275}
-            className="logo"
-            src={require("../images/sprintly-logo.png")}
-            alt="sprintly logo"
-          />
-          <h2>Project Management for Software Teams</h2>
-        </div>
-      </div>
-    </section>
-    <section className="appfog">
-      <div className="section-wrapper">
-        <div className="section-content">
-          <img
-            width={294}
-            className="logo"
-            src={require("../images/appfog-logo.png")}
-            alt="appfog logo"
-          />
-          <h2>
-            Platform for creating, scaling, and managing apps in the cloud.
-          </h2>
-        </div>
-
-        <img
-          width={534}
-          className="hero-image"
-          src={require("../images/appfog-hero.png")}
-          alt="appfog application screenshot"
-        />
-      </div>
-    </section> */}
-  </Layout >
+  </Layout>
 )
 
 export default IndexPage

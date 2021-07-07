@@ -3,7 +3,8 @@ import GoToInvision from "./go-to-invision"
 import GoToInquicker from "./go-to-inquicker"
 import GoToSprinklr from "./go-to-sprinklr"
 import GoToSightbox from "./go-to-sightbox"
-import LinkArrow from "../LinkArrow"
+//Components
+import LinkArrow from "../ui/LinkArrow"
 
 
 const SuggestNewCaseStudy = (props) => {
