@@ -1,7 +1,7 @@
 import React from "react"
 import Tilt from 'react-parallax-tilt';
 import { StaticImage } from "gatsby-plugin-image"
-import LinkArrow from "../link-arrow"
+import LinkArrow from "../LinkArrow"
 
 const GoToSightbox = () => {
   return (
@@ -19,7 +19,7 @@ const GoToSightbox = () => {
         <p>
           <b>Case Study:</b> Design a process to automate the renewal of memberships.
         </p>
-        <LinkArrow url="/sightbox-case-study/" title="Sightbox Case Study" brand={"sightbox"} />
+        <LinkArrow url="/sightbox-case-study/" label="Sightbox Case Study" theme={"sightbox"} arrowDirectionForward={true} />
       </div>
       <div className="hero">
         <Tilt glareEnable={true} tiltMaxAngleX={3} tiltMaxAngleY={3} scale={1.02} glareMaxOpacity={0.2} transitionSpeed={1200} tiltReverse="true" glarePosition="all" glareBorderRadius="8px" >
