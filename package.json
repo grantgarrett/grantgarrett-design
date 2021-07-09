@@ -39,6 +39,7 @@
     "@storybook/manager-webpack5": "^6.3.4",
     "@storybook/react": "^6.3.4",
     "babel-loader": "^8.2.2",
+    "chromatic": "^5.9.2",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -53,7 +54,8 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "repository": {
     "type": "git",
