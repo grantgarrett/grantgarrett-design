@@ -1,9 +1,9 @@
 import React from "react"
-import LinkArrow from './LinkArrow'
+import LinkArrowOutline from '../components/ui/LinkArrowOutline'
 
 export default {
-  title: "UI/Link Arrow",
-  component: LinkArrow,
+  title: "UI/Link Arrow Outline",
+  component: LinkArrowOutline,
   background: "#eee",
   argTypes: {
     theme: {
@@ -14,13 +14,12 @@ export default {
 }
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args) => <LinkArrow {...args} />;
+const Template = (args) => <LinkArrowOutline {...args} />;
 
 export const FirstStory = Template.bind({});
 
 FirstStory.args = {
   label: "Link Text",
-  arrowDirectionForward: true,
   theme: "inquicker"
   ,
 };
