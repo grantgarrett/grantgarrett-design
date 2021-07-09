@@ -37,6 +37,9 @@ const StyledLink = styled(Link)`
     .arrow-right {
       transform: translateX(3px);
     }
+    .arrow-left {
+      transform: translateX(-3px);
+    }
     //stretch underline on hover
     &:after {
       width: 100%;
@@ -63,12 +66,10 @@ const StyledLink = styled(Link)`
   }
   .arrow-left {
     margin-right: 3px;
-  }
-  &:hover .arrow-left {
-    transform: translateX(-3px);
+    ${'' /* fill: ${({ theme }) => handleColor(theme)}; */}
   }
 
-  &.default {
+  &.go-back {
     &:after {
       right: 0;
       left: auto;
@@ -83,7 +84,7 @@ const LinkArrow = (props) => {
   const arrowDirectionForward = props.arrowDirectionForward;
 
   return (
-    <StyledLink to={`${props.url}`} className={`${props.theme}`} theme={props.theme} >
+    <StyledLink to={`${props.url}`} className={`${props.theme} ${arrowDirectionForward === false && "go-back"}`} theme={props.theme} >
       {arrowDirectionForward === false && <IconLeftArrow />}
       {props.label}
       {arrowDirectionForward === true && <IconRightArrow />}

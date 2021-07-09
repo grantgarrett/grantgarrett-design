@@ -7,7 +7,7 @@ export default {
   background: "#eee",
   argTypes: {
     theme: {
-      options: ['sprinklr', 'sightbox', 'inquicker', 'invision'],
+      options: ['default', 'sprinklr', 'sightbox', 'inquicker', 'invision'],
       control: { type: 'select' }
     }
   }
