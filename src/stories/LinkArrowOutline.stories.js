@@ -1,5 +1,5 @@
 import React from "react"
-import LinkArrowOutline from './LinkArrowOutline'
+import LinkArrowOutline from '../components/ui/LinkArrowOutline'
 
 export default {
   title: "UI/Link Arrow Outline",
@@ -7,7 +7,7 @@ export default {
   background: "#eee",
   argTypes: {
     theme: {
-      options: ['sprinklr', 'sightbox', 'inquicker', 'invision'],
+      options: ['default', 'sprinklr', 'sightbox', 'inquicker', 'invision'],
       control: { type: 'select' }
     }
   }

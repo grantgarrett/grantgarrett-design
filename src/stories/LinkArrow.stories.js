@@ -1,5 +1,5 @@
 import React from "react"
-import LinkArrow from './LinkArrow'
+import LinkArrow from '../components/ui/LinkArrow'
 
 export default {
   title: "UI/Link Arrow",
@@ -7,7 +7,7 @@ export default {
   background: "#eee",
   argTypes: {
     theme: {
-      options: ['sprinklr', 'sightbox', 'inquicker', 'invision'],
+      options: ['default', 'sprinklr', 'sightbox', 'inquicker', 'invision'],
       control: { type: 'select' }
     }
   }
