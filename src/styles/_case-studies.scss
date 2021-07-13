@@ -171,6 +171,9 @@ section.suggest-new-case-study {
   background: #171c23;
   padding: 40px 0;
   overflow: hidden;
+  .cs-item {
+    overflow: hidden;
+  }
   .thanks-for-reading {
     background-color: #292f3e;
     border-radius: 16px;
@@ -210,7 +213,7 @@ section.suggest-new-case-study {
     background-color: #e5eff6;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) minmax(400px, 1fr);
+    grid-template-columns: minmax(240px, 1fr) minmax(400px, 1fr);
     grid-column-gap: 2em;
     height: 100%;
     overflow: hidden;

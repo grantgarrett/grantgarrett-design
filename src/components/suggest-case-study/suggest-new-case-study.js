@@ -20,7 +20,7 @@ const SuggestNewCaseStudy = (props) => {
           <LinkArrow url={"/"} label={"Portfolio Home"} theme={"default"} arrowDirectionForward={false} />
 
         </div>
-        <div className="g1-5">
+        <div className="g1-5 cs-item">
           {(() => {
             switch (props.linkone) {
               case "sprinklr": return <GoToSprinklr />;
@@ -31,7 +31,7 @@ const SuggestNewCaseStudy = (props) => {
             }
           })()}
         </div>
-        <div className="g5-9">
+        <div className="g5-9 cs-item">
           {(() => {
             switch (props.linktwo) {
               case "sprinklr": return <GoToSprinklr />;
@@ -43,7 +43,6 @@ const SuggestNewCaseStudy = (props) => {
           })()}
         </div>
       </div>
-
     </section>
   );
 }
