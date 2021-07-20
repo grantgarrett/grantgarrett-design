@@ -42,7 +42,7 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
-    <section className="sprinklr">
+    {/* <section className="sprinklr">
       <div className="section-wrapper">
         <div className="section-content">
           <img src={sprinklr_logo} className="logo" alt="sprinklr logo" />
@@ -63,7 +63,7 @@ const IndexPage = () => (
           />
         </Tilt>
       </div>
-    </section>
+    </section> */}
     <section className="sightbox">
       <div className="section-wrapper">
         <div className="section-content">
