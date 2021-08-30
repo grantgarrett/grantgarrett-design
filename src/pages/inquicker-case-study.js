@@ -491,8 +491,7 @@ const InvisionCS = () => (
       </div>
     </section>
 
-    {/* <SuggestNewCaseStudy linkone={"sprinklr"} linktwo={"invision"} /> */}
-    <SuggestNewCaseStudy linkone={"sightbox"} linktwo={"invision"} />
+    <SuggestNewCaseStudy linkone={"sprinklr"} linktwo={"invision"} />
   </Layout>
 )
 

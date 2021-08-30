@@ -7,7 +7,7 @@
   "dependencies": {
     "@tippyjs/react": "^4.2.5",
     "babel-plugin-styled-components": "^1.13.1",
-    "gatsby": "^3.8.1",
+    "gatsby": "^3.12.1",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-manifest": "^3.8.0",
